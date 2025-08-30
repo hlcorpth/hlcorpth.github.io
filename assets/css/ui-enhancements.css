@@ -1,0 +1,109 @@
+/* UI Enhancements (site-wide) */
+:root{
+  --ui-primary:#0ea5e9; /* sky-500 */
+  --ui-primary-dark:#0284c7; /* sky-600 */
+  --ui-text:#0f172a; /* slate-900 */
+  --ui-muted:#64748b; /* slate-500 */
+  --ui-border:#e5e7eb; /* gray-200 */
+  --ui-surface:#ffffff;
+  --ui-surface-muted:#f8fafc;
+}
+
+/* Section heading */
+.section-heading{ text-align:center; margin-bottom:32px; }
+.section-heading h6{ color:var(--ui-primary); text-transform:uppercase; letter-spacing:.12em; font-weight:700; font-size:12px; }
+.section-heading h4{ color:var(--ui-text); font-weight:800; }
+.section-heading .line-dec{ width:72px; height:4px; border-radius:999px; margin:14px auto 0; background:linear-gradient(90deg,var(--ui-primary),var(--ui-primary-dark)); }
+.section-subtitle{ color:var(--ui-muted); max-width:760px; margin:12px auto 0; }
+
+/* Buttons (map existing classes) */
+.primary-btn, .main-button, .btn-primary{ background:var(--ui-primary); color:#fff !important; border:0; border-radius:12px; padding:12px 18px; font-weight:700; letter-spacing:.02em; transition:transform .15s ease, box-shadow .2s ease; text-decoration:none; display:inline-block; }
+.primary-btn:hover, .main-button:hover, .btn-primary:hover{ background:var(--ui-primary-dark); transform:translateY(-1px); box-shadow:0 10px 24px rgba(2,132,199,.28); }
+.secondary-btn, .btn-outline{ background:#fff0; color:var(--ui-primary) !important; border:1px solid var(--ui-primary); border-radius:12px; padding:12px 18px; font-weight:700; letter-spacing:.02em; text-decoration:none; display:inline-block; transition:all .2s ease; }
+.secondary-btn:hover, .btn-outline:hover{ background:var(--ui-primary); color:#fff !important; box-shadow:0 10px 24px rgba(2,132,199,.24); }
+
+/* Card surfaces */
+.stat-item, .service-card, .portfolio-item, .testimonial-item, .blog-post{ background:var(--ui-surface); border:1px solid var(--ui-border); border-radius:16px; box-shadow:0 4px 14px rgba(15,23,42,.05); }
+
+/* Statistics */
+.statistics-section{ background:var(--ui-surface-muted); }
+.stat-item{ text-align:center; padding:28px 18px; transition:transform .2s ease, box-shadow .2s ease; }
+.stat-item:hover{ transform:translateY(-6px); box-shadow:0 16px 40px rgba(15,23,42,.1); }
+.stat-number{ color:var(--ui-primary); font-weight:900; }
+.stat-label{ color:var(--ui-muted); font-weight:700; letter-spacing:.06em; text-transform:uppercase; font-size:12px; }
+
+/* Services */
+.service-card{ padding:28px; }
+.service-card h5{ margin:10px 0 8px; font-weight:800; }
+.service-features li{ color:var(--ui-text); }
+.price{ color:var(--ui-primary); }
+
+/* Portfolio */
+.our-portfolio{ background:var(--ui-surface-muted); }
+.portfolio-item .down-content{ border-top:1px solid var(--ui-border); }
+.portfolio-tags .tag{ background:rgba(14,165,233,.12); color:var(--ui-primary); border-color:rgba(14,165,233,.26); }
+
+/* Portfolio overlay */
+.portfolio-item .thumb{ position:relative; }
+/* Softer portfolio overlay */
+.portfolio-overlay{ position:absolute; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,.06); color:#111; opacity:0; transition:opacity .25s ease; }
+.portfolio-item:hover .portfolio-overlay{ opacity:1; }
+.portfolio-overlay .overlay-content{ text-align:center; }
+.portfolio-overlay .overlay-content i{ font-size:28px; display:block; margin-bottom:6px; }
+.portfolio-overlay .overlay-content span{ font-weight:700; letter-spacing:.06em; text-transform:uppercase; font-size:12px; }
+
+/* Contact section */
+#contact .fill-form{ background:var(--ui-surface); border:1px solid var(--ui-border); border-radius:16px; padding:20px; box-shadow:0 8px 20px rgba(15,23,42,.06); }
+form#contact input, form#contact textarea{ border:1px solid var(--ui-border); border-radius:12px; padding:12px 14px; font-size:16px; transition:border-color .2s ease, box-shadow .2s ease; }
+form#contact input:focus, form#contact textarea:focus{ outline:0; border-color:var(--ui-primary); box-shadow:0 0 0 3px rgba(14,165,233,.18); }
+
+/* Footer */
+footer{ background:#0f172a; color:#cbd5e1; }
+footer a{ color:#e2e8f0; text-decoration:none; }
+footer a:hover{ color:#fff; }
+
+/* Utilities */
+.shadow-hover{ transition:transform .2s ease, box-shadow .2s ease; }
+.shadow-hover:hover{ transform:translateY(-6px); box-shadow:0 18px 48px rgba(15,23,42,.12); }
+.rounded-16{ border-radius:16px; }
+
+/* --- Trust / Clients strip --- */
+.logos-strip{ background:var(--ui-surface); border-top:1px solid var(--ui-border); border-bottom:1px solid var(--ui-border); }
+.logos-strip .inner{ display:flex; gap:24px; align-items:center; justify-content:center; padding:18px 0; flex-wrap:wrap; }
+.logos-strip .badge{ background:var(--ui-surface-muted); color:var(--ui-muted); border:1px solid var(--ui-border); padding:10px 14px; border-radius:999px; font-weight:700; font-size:12px; letter-spacing:.08em; text-transform:uppercase; }
+
+/* --- Why Choose Us --- */
+.why{ padding:72px 0; background:var(--ui-surface); }
+.why .cards{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+.why .card{ background:var(--ui-surface); border:1px solid var(--ui-border); border-radius:16px; padding:22px; box-shadow:0 8px 20px rgba(15,23,42,.06); transition:transform .2s ease, box-shadow .2s ease; }
+.why .card:hover{ transform:translateY(-6px); box-shadow:0 16px 40px rgba(15,23,42,.1); }
+.why .icon{ width:48px; height:48px; display:inline-flex; align-items:center; justify-content:center; border-radius:12px; background:rgba(14,165,233,.12); color:var(--ui-primary); margin-bottom:10px; font-size:20px; }
+.why h5{ margin:6px 0 6px; font-weight:800; }
+.why p{ color:var(--ui-muted); margin:0; }
+
+/* --- Pricing teaser --- */
+.pricing{ padding:72px 0; background:var(--ui-surface-muted); }
+.pricing .grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+.price-card{ background:var(--ui-surface); border:1px solid var(--ui-border); border-radius:16px; padding:26px; box-shadow:0 8px 20px rgba(15,23,42,.06); position:relative; }
+.price-card .label{ position:absolute; top:14px; right:14px; background:linear-gradient(90deg,var(--ui-primary),var(--ui-primary-dark)); color:#fff; padding:6px 10px; border-radius:999px; font-size:12px; font-weight:700; }
+.price-card h5{ font-weight:800; margin:4px 0 8px; }
+.price-card .price{ font-size:28px; font-weight:900; color:var(--ui-text); }
+.price-card .from{ color:var(--ui-muted); font-size:12px; }
+.price-card ul{ margin:14px 0 16px; padding:0; list-style:none; }
+.price-card li{ display:flex; align-items:center; gap:8px; color:var(--ui-text); margin:6px 0; }
+.price-card li i{ color:var(--ui-primary); }
+
+/* --- Sticky mobile CTA --- */
+.sticky-cta{ display:none; position:fixed; bottom:0; left:0; right:0; z-index:999; background:#ffffffea; backdrop-filter:saturate(180%) blur(8px); border-top:1px solid var(--ui-border); }
+.sticky-cta .inner{ display:flex; gap:10px; align-items:center; justify-content:center; padding:10px 12px; }
+@media (max-width: 992px){ .why .cards{ grid-template-columns:1fr; } .pricing .grid{ grid-template-columns:1fr; } .sticky-cta{ display:block; } }
+
+/* Ensure services decorative backgrounds sit behind content */
+.services{ position:relative; z-index:0; }
+.services::before, .services::after{ z-index:-1 !important; pointer-events:none; }
+
+/* Standardize section spacing to avoid cramped layout */
+.section, .our-portfolio, .testimonials-section, .contact-us{ padding-top:72px; padding-bottom:72px; }
+
+/* Reduce heavy shadows for a cleaner look */
+.stat-item, .service-card, .portfolio-item, .testimonial-item, .blog-post{ box-shadow:0 4px 14px rgba(15,23,42,.05); }

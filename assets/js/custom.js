@@ -146,6 +146,51 @@
   }
 
 
+  // Services Category Tabs
+document.addEventListener('DOMContentLoaded', function() {
+  const categoryTabs = document.querySelectorAll('.category-tab');
+  const serviceCards = document.querySelectorAll('.service-card');
+
+  categoryTabs.forEach(tab => {
+    tab.addEventListener('click', function() {
+      const category = this.getAttribute('data-category');
+      
+      // Remove active class from all tabs
+      categoryTabs.forEach(t => t.classList.remove('active'));
+      
+      // Add active class to clicked tab
+      this.classList.add('active');
+      
+      // Filter service cards
+      serviceCards.forEach(card => {
+        const cardCategory = card.getAttribute('data-category');
+        
+        if (category === 'all' || cardCategory === category) {
+          card.style.display = 'block';
+          card.style.animation = 'fadeInUp 0.6s ease forwards';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+});
+
+// Add fadeInUp animation
+const style = document.createElement('style');
+style.textContent = `
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+`;
+document.head.appendChild(style);
 
 
 })(window.jQuery);
