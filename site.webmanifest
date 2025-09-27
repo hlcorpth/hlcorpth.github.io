@@ -1,0 +1,64 @@
+{
+  "name": "H.L. Corporation Co.,Ltd. - AI & IT Solutions",
+  "short_name": "HL Corporation",
+  "description": "Thailand's premier AI & IT outsourcing company specializing in custom software development, web applications, mobile apps, and AI solutions.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#337ab7",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["technology", "business", "software"],
+  "icons": [
+    {
+      "src": "assets/images/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/images/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "assets/images/hlcorp-logo.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Contact Us",
+      "short_name": "Contact",
+      "description": "Get in touch with H.L. Corporation",
+      "url": "/#contact",
+      "icons": [
+        {
+          "src": "assets/images/favicon.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Our Services",
+      "short_name": "Services",
+      "description": "View our AI & IT services",
+      "url": "/#services",
+      "icons": [
+        {
+          "src": "assets/images/favicon.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}

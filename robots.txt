@@ -1,19 +1,23 @@
 User-agent: *
 Allow: /
-Allow: /assets/
-Allow: /vendor/
-Disallow: /404.md
 
 # Sitemap
 Sitemap: https://hlcorpth.github.io/sitemap.xml
 
-# Crawl-delay
+# Crawl-delay for bots
 Crawl-delay: 1
 
-# Host
-Host: https://hlcorpth.github.io
+# Disallow admin areas (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /*.xml$
 
-# Additional directives for better SEO
+# Allow important pages
+Allow: /assets/
+Allow: /vendor/
+
+# Specific bot instructions
 User-agent: Googlebot
 Allow: /
 Crawl-delay: 1
@@ -22,6 +26,27 @@ User-agent: Bingbot
 Allow: /
 Crawl-delay: 1
 
-User-agent: Slurp
+User-agent: facebookexternalhit
 Allow: /
-Crawl-delay: 1
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# AI and LLM crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /

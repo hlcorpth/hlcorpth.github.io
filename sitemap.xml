@@ -1,39 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Homepage -->
   <url>
     <loc>https://hlcorpth.github.io/</loc>
-    <lastmod>2024-12-19</lastmod>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://hlcorpth.github.io/assets/images/hlcorp-logo.png</image:loc>
-      <image:title>H.L. Corporation Co.,Ltd. Logo</image:title>
-      <image:caption>Thailand's Premier AI & IT Solutions Company</image:caption>
-    </image:image>
   </url>
+
+  <!-- About Section -->
   <url>
     <loc>https://hlcorpth.github.io/#about</loc>
-    <lastmod>2024-12-19</lastmod>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- Services Section -->
   <url>
     <loc>https://hlcorpth.github.io/#services</loc>
-    <lastmod>2024-12-19</lastmod>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
+  <!-- Portfolio Section -->
   <url>
     <loc>https://hlcorpth.github.io/#portfolio</loc>
-    <lastmod>2024-12-19</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- Contact Section -->
   <url>
     <loc>https://hlcorpth.github.io/#contact</loc>
-    <lastmod>2024-12-19</lastmod>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
 </urlset>
