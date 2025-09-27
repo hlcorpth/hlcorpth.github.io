@@ -5,7 +5,7 @@ Features: Enhanced layout, modern styling, improved UX, better visual hierarchy
 
 /* Contact Hero Section Enhancement */
 .contact-hero {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  background: linear-gradient(135deg, #337ab7 0%, #4a90e2 50%, #667eea 100%);
   color: white;
   padding: 100px 0;
   text-align: center;
@@ -20,8 +20,8 @@ Features: Enhanced layout, modern styling, improved UX, better visual hierarchy
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="contact-grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23contact-grid)"/></svg>') center/cover;
-  opacity: 0.3;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="contact-grid" width="30" height="30" patternUnits="userSpaceOnUse"><circle cx="15" cy="15" r="2" fill="rgba(255,255,255,0.15)"/></pattern></defs><rect width="100" height="100" fill="url(%23contact-grid)"/></svg>') center/cover;
+  opacity: 0.4;
 }
 
 .contact-hero-content {

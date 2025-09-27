@@ -1,0 +1,59 @@
+/*
+Showcase Header Styling
+Clean, modern header for product showcase section
+*/
+
+.showcase-header {
+  margin-bottom: 3rem;
+  padding: 2rem 0;
+}
+
+.showcase-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.showcase-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #337ab7 0%, #4a90e2 100%);
+  border-radius: 2px;
+}
+
+.showcase-subtitle {
+  font-size: 1.1rem;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .showcase-header {
+    margin-bottom: 2rem;
+    padding: 1.5rem 0;
+  }
+  
+  .showcase-title {
+    font-size: 2rem;
+  }
+  
+  .showcase-subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .showcase-title {
+    font-size: 1.75rem;
+  }
+}
