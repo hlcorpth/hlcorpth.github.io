@@ -1,0 +1,371 @@
+/*
+Header Fix - Modern Professional Header Design
+Based on the clean, corporate design from the image
+*/
+
+/* Top Contact Bar */
+.topbar {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: white;
+  padding: 0.75rem 0;
+  font-size: 0.875rem;
+  position: relative;
+  z-index: 1001;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.topbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.contact-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
+}
+
+.contact-list li {
+  margin: 0;
+}
+
+.contact-list a {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+.contact-list a:hover {
+  color: white;
+}
+
+.contact-list i {
+  font-size: 0.875rem;
+  color: #3498db;
+}
+
+.social-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
+}
+
+.social-list a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 0.875rem;
+}
+
+.social-list a:hover {
+  background: #3498db;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+}
+
+/* Main Header */
+.site-header {
+  background: white;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Brand/Logo */
+.brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 1rem;
+}
+
+.brand img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+.brand::after {
+  content: "H.L. CORPORATION Co.,Ltd.";
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #2c3e50;
+  white-space: nowrap;
+}
+
+/* Mobile Menu Toggle */
+.header-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #2c3e50;
+  font-size: 1.125rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.header-toggle:hover {
+  background-color: rgba(52, 122, 183, 0.1);
+}
+
+/* Main Navigation */
+.main-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 0.5rem;
+}
+
+.main-menu li {
+  margin: 0;
+}
+
+.main-menu a {
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.main-menu a:hover {
+  color: #337ab7;
+  background-color: rgba(51, 122, 183, 0.1);
+}
+
+.main-menu a.active {
+  color: white;
+  background: linear-gradient(135deg, #337ab7 0%, #4a90e2 100%);
+  box-shadow: 0 4px 12px rgba(51, 122, 183, 0.3);
+}
+
+.main-menu a.active::before {
+  content: '';
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #337ab7;
+}
+
+/* Header Actions */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-actions .border-none {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(51, 122, 183, 0.1);
+  border-radius: 50%;
+  color: #337ab7;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.header-actions .border-none:hover {
+  background: #337ab7;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(51, 122, 183, 0.3);
+}
+
+.btn-cta {
+  background: linear-gradient(135deg, #337ab7 0%, #4a90e2 100%);
+  color: white !important;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(51, 122, 183, 0.3);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(51, 122, 183, 0.4);
+  color: white !important;
+}
+
+.btn-cta i {
+  font-size: 0.875rem;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .contact-list {
+    gap: 1rem;
+  }
+  
+  .contact-list a {
+    font-size: 0.8rem;
+  }
+  
+  .brand::after {
+    font-size: 0.9rem;
+  }
+  
+  .main-menu {
+    gap: 0.25rem;
+  }
+  
+  .main-menu a {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .topbar {
+    display: none;
+  }
+  
+  .header-toggle {
+    display: block;
+  }
+  
+  .main-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    padding: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 999;
+  }
+  
+  .main-menu.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .main-menu li {
+    width: 100%;
+  }
+  
+  .main-menu a {
+    display: block;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .brand::after {
+    display: none;
+  }
+  
+  .header-actions {
+    gap: 0.5rem;
+  }
+  
+  .btn-cta {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-inner {
+    padding: 0 0.75rem;
+  }
+  
+  .brand img {
+    height: 40px;
+  }
+  
+  .btn-cta {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.85rem;
+  }
+  
+  .btn-cta span {
+    display: none;
+  }
+}
+
+/* Animation for smooth transitions */
+.site-header {
+  transition: all 0.3s ease;
+}
+
+/* Ensure proper stacking */
+.site-header,
+.topbar {
+  position: relative;
+  z-index: 1000;
+}
+
+/* Fix for main content spacing */
+.main-banner {
+  padding-top: 140px; /* Account for fixed header */
+}
+
+/* Logo styling improvements */
+.brand img {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  transition: transform 0.3s ease;
+}
+
+.brand:hover img {
+  transform: scale(1.05);
+}
