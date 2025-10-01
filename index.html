@@ -436,6 +436,7 @@
     <link rel="stylesheet" href="assets/css/header-fix.css">
     <link rel="stylesheet" href="assets/css/contact-enhancement.css">
     <link rel="stylesheet" href="assets/css/showcase-header.css">
+    <link rel="stylesheet" href="assets/css/about-redesign.css">
 
 <!--
 
@@ -573,79 +574,76 @@ https://templatemo.com/tm-568-digimedia
 
   <section id="about" class="about section" role="region" aria-labelledby="about-heading">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="about-left-image  wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-                <img src="assets/images/about-dec-v3.png" alt="H.L. Corporation About Us - AI & IT Solutions Company Thailand" loading="lazy">
+      <div class="about-container">
+        <!-- Left Side - Visual -->
+        <div class="about-visual wow fadeInLeft" data-wow-delay="0.3s">
+          <div class="about-image-wrapper">
+            <img src="assets/images/about-dec-v3.png" alt="H.L. Corporation About Us - AI & IT Solutions Company Thailand" loading="lazy">
+          </div>
+          <div class="floating-stats">
+            <div class="mini-stat">
+              <span class="num">50+</span>
+              <span class="txt">Projects</span>
+            </div>
+            <div class="mini-stat">
+              <span class="num">100+</span>
+              <span class="txt">Clients</span>
+            </div>
+            <div class="mini-stat">
+              <span class="num">5+</span>
+              <span class="txt">Years</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right Side - Content -->
+        <div class="about-content wow fadeInRight" data-wow-delay="0.3s">
+          <span class="about-badge">About H.L. Corporation</span>
+          <h2 id="about-heading">Thailand's Leading <span class="highlight">AI & IT Solutions</span> Provider</h2>
+          <p class="intro">H.L. Corporation Co.,Ltd. is Thailand's premier AI & IT outsourcing company, established in 2019 and specializing in cutting-edge software development, web applications, mobile apps, and AI solutions.</p>
+          
+          <!-- Feature Cards Grid -->
+          <div class="about-features-grid">
+            <div class="feature-card">
+              <div class="icon"><i class="fa fa-rocket"></i></div>
+              <div class="text">
+                <h5>5+ Years Experience</h5>
+                <p>Industry expertise with 50+ successful projects</p>
               </div>
             </div>
-            <div class="col-lg-6 align-self-center  wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-              <div class="about-right-content">
-                <div class="section-heading">
-                  <h6>About H.L. Corporation Co.,Ltd.</h6>
-                  <h4 id="about-heading">Thailand's Leading <em>AI & IT Solutions Provider</em></h4>
-                  <div class="line-dec"></div>
-                </div>
-                <p>H.L. Corporation Co.,Ltd. is Thailand's premier AI & IT outsourcing company, established in 2019 and specializing in cutting-edge software development, web applications, mobile apps, and AI solutions. As a leading technology company in Bangkok, we serve businesses across Thailand and Southeast Asia with innovative digital transformation services. Our expert team combines over 5 years of industry experience with modern technologies to deliver scalable, efficient, and cost-effective IT solutions.</p>
-                <div class="row">
-                  <div class="col-lg-4 col-sm-4">
-                    <div class="skill-item first-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
-                      <div class="progress" data-percentage="100">
-                        <span class="progress-left">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <span class="progress-right">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <div class="progress-value">
-                          <div>100%<br>
-                            <span>Performance</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-sm-4">
-                    <div class="skill-item second-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
-                      <div class="progress" data-percentage="100">
-                        <span class="progress-left">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <span class="progress-right">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <div class="progress-value">
-                          <div>
-                            100%<br>
-                            <span>Stable</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-sm-4">
-                    <div class="skill-item third-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
-                      <div class="progress" data-percentage="100">
-                        <span class="progress-left">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <span class="progress-right">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <div class="progress-value">
-                          <div>
-                            100%<br>
-                            <span>Delivery</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div> 
+            <div class="feature-card">
+              <div class="icon"><i class="fa fa-code"></i></div>
+              <div class="text">
+                <h5>Modern Tech Stack</h5>
+                <p>React, Node.js, Vue.js, Laravel, Python, Flutter</p>
               </div>
             </div>
+            <div class="feature-card">
+              <div class="icon"><i class="fa fa-brain"></i></div>
+              <div class="text">
+                <h5>AI & ML Solutions</h5>
+                <p>Cutting-edge artificial intelligence development</p>
+              </div>
+            </div>
+            <div class="feature-card">
+              <div class="icon"><i class="fa fa-shield"></i></div>
+              <div class="text">
+                <h5>Quality Guaranteed</h5>
+                <p>Scalable, efficient, and cost-effective solutions</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Action Buttons -->
+          <div class="about-actions">
+            <a href="#services" class="btn-primary">
+              <span>Explore Our Services</span>
+              <i class="fa fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn-secondary">
+              <span>Get In Touch</span>
+              <i class="fa fa-envelope"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -855,88 +853,6 @@ https://templatemo.com/tm-568-digimedia
       </div>
     </div>
   </main>
-
-  <section id="about" class="about section" role="region" aria-labelledby="about-heading">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="about-left-image  wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-                <img src="assets/images/about-dec-v3.png" alt="H.L. Corporation About Us - AI & IT Solutions Company Thailand - Modern technology illustration showing digital transformation and AI development services" loading="lazy">
-              </div>
-            </div>
-            <div class="col-lg-6 align-self-center  wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-              <div class="about-right-content">
-          <header class="section-heading">
-            <h6>About H.L. Corporation Co.,Ltd.</h6>
-            <h4 id="about-heading">Thailand's Leading <em>AI & IT Solutions Provider</em></h4>
-            <div class="line-dec"></div>
-          </header>
-                <p>H.L. Corporation Co.,Ltd. is Thailand's premier AI & IT outsourcing company, established in 2019 and specializing in cutting-edge software development, web applications, mobile apps, and AI solutions. As a leading technology company in Bangkok, we serve businesses across Thailand and Southeast Asia with innovative digital transformation services. Our expert team combines over 5 years of industry experience with modern technologies including React.js, Node.js, Vue.js, Laravel, Python, Flutter, and React Native to deliver scalable, efficient, and cost-effective IT solutions that drive business growth and digital innovation. We provide comprehensive services including artificial intelligence development, machine learning solutions, cloud computing, DevOps, database design, API development, blockchain technology, and IoT solutions.</p>
-                <div class="row">
-                  <div class="col-lg-4 col-sm-4">
-                    <div class="skill-item first-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
-                      <div class="progress" data-percentage="100">
-                        <span class="progress-left">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <span class="progress-right">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <div class="progress-value">
-                          <div>100%<br>
-                            <span>Performance</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-sm-4">
-                    <div class="skill-item second-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
-                      <div class="progress" data-percentage="100">
-                        <span class="progress-left">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <span class="progress-right">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <div class="progress-value">
-                          <div>
-                            100%<br>
-                            <span>Stable</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-sm-4">
-                    <div class="skill-item third-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
-                      <div class="progress" data-percentage="100">
-                        <span class="progress-left">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <span class="progress-right">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <div class="progress-value">
-                          <div>
-                            100%<br>
-                            <span>Delivery</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div> 
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
 
   <!-- Why Choose Us -->
 <section class="why">
