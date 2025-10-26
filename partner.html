@@ -99,6 +99,52 @@
   <link rel="stylesheet" href="assets/css/news-section.css">
   <link rel="stylesheet" href="assets/css/language-switcher.css">
 
+  <!-- Memorial Banner Styles -->
+  <style>
+    .memorial-banner {
+      background-color: #000000;
+      color: #ffffff;
+      text-align: center;
+      padding: 8px 0;
+      font-size: 14px;
+      line-height: 1.5;
+      position: relative;
+      z-index: 10000;
+      width: 100%;
+    }
+    
+    .memorial-banner p {
+      margin: 0;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    
+    .memorial-banner .ribbon-icon {
+      display: inline-block;
+      font-size: 16px;
+      line-height: 1;
+      filter: grayscale(100%) brightness(10);
+    }
+    
+    @media (max-width: 768px) {
+      .memorial-banner {
+        font-size: 12px;
+        padding: 6px 0;
+      }
+      
+      .memorial-banner p {
+        gap: 6px;
+      }
+      
+      .memorial-banner .ribbon-icon {
+        font-size: 14px;
+      }
+    }
+  </style>
+
   <!-- Custom Partner Page Styles -->
   <style>
     :root {
@@ -904,6 +950,15 @@
 </head>
 
 <body>
+  <!-- Memorial Banner -->
+  <div class="memorial-banner">
+    <p>
+      <span class="ribbon-icon">🎗️</span>
+      ขอน้อมส่งเสด็จสู่สวรรคาลัย ธ สถิตในดวงใจไทยนิรันดร์ สมเด็จพระนางเจ้าสิริกิติ์ พระบรมราชินีนาถ พระบรมราชชนนีพันปีหลวง
+      <span class="ribbon-icon">🎗️</span>
+    </p>
+  </div>
+
   <!-- Topbar -->
   <div class="topbar">
     <div class="container topbar-inner">
