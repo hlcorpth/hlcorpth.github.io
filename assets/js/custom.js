@@ -149,7 +149,7 @@
   // Services Category Tabs
 document.addEventListener('DOMContentLoaded', function() {
   const categoryTabs = document.querySelectorAll('.category-tab');
-  const serviceCards = document.querySelectorAll('.service-card');
+  const serviceContainers = document.querySelectorAll('.services-grid .col-lg-4.col-md-6');
 
   categoryTabs.forEach(tab => {
     tab.addEventListener('click', function() {
@@ -161,15 +161,18 @@ document.addEventListener('DOMContentLoaded', function() {
       // Add active class to clicked tab
       this.classList.add('active');
       
-      // Filter service cards
-      serviceCards.forEach(card => {
-        const cardCategory = card.getAttribute('data-category');
+      // Filter service card containers (parent divs with data-category)
+      serviceContainers.forEach(container => {
+        const containerCategory = container.getAttribute('data-category');
         
-        if (category === 'all' || cardCategory === category) {
-          card.style.display = 'block';
-          card.style.animation = 'fadeInUp 0.6s ease forwards';
+        if (category === 'all' || containerCategory === category) {
+          container.style.display = 'block';
+          const card = container.querySelector('.service-card');
+          if (card) {
+            card.style.animation = 'fadeInUp 0.6s ease forwards';
+          }
         } else {
-          card.style.display = 'none';
+          container.style.display = 'none';
         }
       });
     });

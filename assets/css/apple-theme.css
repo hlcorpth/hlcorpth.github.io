@@ -98,6 +98,10 @@ h2{ font-size: clamp(28px, 4vw, 40px); }
 .secondary-btn, .service-btn{ background:transparent; color:#111 !important; border:1px solid var(--apple-border); }
 .secondary-btn:hover, .service-btn:hover{ background:#000; color:#fff !important; border-color:#000; }
 
+/* Ensure primary service buttons render with white text on black background */
+.service-btn.primary{ background:#000; color:#fff !important; border-color:#000; }
+.service-btn.primary:hover{ background:#111; border-color:#111; color:#fff !important; }
+
 /* Hide heavy template decorations for a clean look */
 .main-banner::before, .main-banner::after{ display:none !important; content:'' !important; }
 .services::before, .services::after{ display:none !important; content:'' !important; }
@@ -297,6 +301,10 @@ p, .hero-description, .section-subtitle, .service-card p, .contact-card p, .cta-
 .category-tab.active{ background:var(--apple-text); color:#fff; border-color:var(--apple-text); }
 
 .services-grid{ margin-bottom:60px; }
+.services-grid .col-lg-4.col-md-6{ margin-bottom:30px; padding-left:20px; padding-right:20px; }
+@media (max-width: 991px){
+  .services-grid .col-lg-4.col-md-6{ padding-left:15px; padding-right:15px; }
+}
 .service-card{ background:var(--apple-surface); border:1px solid var(--apple-border); border-radius:16px; padding:32px; position:relative; transition:all .3s ease; height:100%; display:flex; flex-direction:column; }
 .service-card:hover{ transform:translateY(-8px); box-shadow:0 20px 40px rgba(0,0,0,.1); border-color:var(--apple-text); }
 .service-card.premium{ border:2px solid #007AFF; background:linear-gradient(135deg,var(--apple-surface) 0%,rgba(0,122,255,.05) 100%); }
