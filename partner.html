@@ -317,28 +317,158 @@
       padding: 60px 50px;
       box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
       border: 1px solid rgba(59, 130, 246, 0.1);
-      max-width: 800px;
+      max-width: 900px;
       margin: 0 auto;
     }
 
-    .btn-invest {
-      background: var(--accent-blue);
-      color: white;
-      border: none;
-      padding: 16px 32px;
-      border-radius: 8px;
-      font-weight: 600;
-      text-transform: none;
-      letter-spacing: 0.5px;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+    .partner-intro {
+      max-width: 560px;
+      margin: 0 auto 48px;
     }
 
-    .btn-invest:hover {
-      background: var(--dark-blue);
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+    .partner-contact-options {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .partner-contact-card {
+      background: #f8fafc;
+      border-radius: 16px;
+      padding: 32px;
+      border: 1px solid rgba(59, 130, 246, 0.15);
+      box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .partner-contact-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 44px rgba(59, 130, 246, 0.18);
+    }
+
+    .partner-contact-card.line-card {
+      background: linear-gradient(135deg, rgba(59, 130, 246, 0.08), rgba(59, 130, 246, 0.02));
+    }
+
+    .partner-contact-card.whatsapp-card {
+      background: linear-gradient(135deg, rgba(37, 211, 102, 0.12), rgba(37, 211, 102, 0.03));
+    }
+
+    .contact-card-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .contact-card-header .contact-icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 16px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
       color: white;
+      background: var(--accent-blue);
+      box-shadow: 0 10px 26px rgba(59, 130, 246, 0.3);
+    }
+
+    .partner-contact-card.whatsapp-card .contact-card-header .contact-icon {
+      background: #25d366;
+      box-shadow: 0 12px 28px rgba(37, 211, 102, 0.35);
+    }
+
+    .contact-card-header h5 {
+      margin-bottom: 8px;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--text-dark);
+    }
+
+    .contact-card-subtitle {
+      color: var(--text-light);
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .contact-card-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 12px;
+    }
+
+    .contact-card-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      color: var(--text-light);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .contact-card-list i {
+      color: rgba(59, 130, 246, 0.9);
+      margin-top: 4px;
+    }
+
+    .partner-contact-card.whatsapp-card .contact-card-list i {
+      color: #25d366;
+    }
+
+    .qr-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 16px;
+      background: white;
+      border-radius: 18px;
+      border: 1px dashed rgba(59, 130, 246, 0.25);
+    }
+
+    .qr-wrapper img {
+      max-width: 220px;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 12px 28px rgba(15, 23, 42, 0.15);
+    }
+
+    .contact-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 28px;
+      border-radius: 999px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      color: white;
+    }
+
+    .contact-cta:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 24px rgba(15, 23, 42, 0.2);
+      color: white;
+    }
+
+    .contact-cta.line-btn {
+      background: var(--accent-blue);
+      box-shadow: 0 12px 26px rgba(59, 130, 246, 0.32);
+    }
+
+    .contact-cta.whatsapp-btn {
+      background: #25d366;
+      box-shadow: 0 14px 30px rgba(37, 211, 102, 0.4);
+    }
+
+    .contact-cta.whatsapp-btn:hover {
+      box-shadow: 0 18px 36px rgba(37, 211, 102, 0.45);
     }
 
     /* Modern button styles for hero section */
@@ -474,60 +604,6 @@
       color: var(--accent-blue) !important;
     }
 
-    /* Form styling */
-    .form-control {
-      border: 1px solid rgba(59, 130, 246, 0.2);
-      border-radius: 12px;
-      padding: 16px 20px;
-      transition: all 0.3s ease;
-      font-size: 16px;
-      margin-bottom: 24px;
-      background-color: #fafafa;
-    }
-
-    .form-control:focus {
-      border-color: var(--accent-blue);
-      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
-      background-color: white;
-    }
-
-    .form-control::placeholder {
-      color: #9ca3af;
-      font-size: 15px;
-    }
-
-    .form-group {
-      margin-bottom: 0;
-    }
-
-    .contact-form .row {
-      margin-bottom: 0;
-    }
-
-    .contact-form .row .col-lg-6 {
-      padding-left: 12px;
-      padding-right: 12px;
-    }
-
-    .contact-form .row .col-lg-6:first-child {
-      padding-left: 0;
-      padding-right: 12px;
-    }
-
-    .contact-form .row .col-lg-6:last-child {
-      padding-left: 12px;
-      padding-right: 0;
-    }
-
-
-    /* Button improvements */
-    .btn-invest {
-      padding: 18px 40px;
-      font-size: 1.1rem;
-      margin-top: 20px;
-      min-width: 250px;
-    }
-
     /* Responsive improvements */
     @media (max-width: 768px) {
       .partner-form {
@@ -539,10 +615,39 @@
         padding: 60px 0;
       }
       
+      .partner-contact-options {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .partner-contact-card {
+        padding: 26px;
+      }
+
       .section-heading h2 {
         font-size: 2rem;
       }
       
+    }
+
+    @media (max-width: 576px) {
+      .contact-card-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .contact-card-header .contact-icon {
+        width: 52px;
+        height: 52px;
+      }
+
+      .contact-cta {
+        width: 100%;
+      }
+
+      .qr-wrapper img {
+        max-width: 180px;
+      }
     }
 
     /* ROI metrics */
@@ -1845,56 +1950,81 @@
       <div class="row justify-content-center">
         <div class="col-lg-8">
           <div class="partner-form">
-            <div class="text-center mb-4">
+            <div class="partner-intro text-center">
               <h4>
-                <span lang="en">Ready to Partner with Us?</span>
-                <span lang="th">พร้อมเป็นพันธมิตรกับเราแล้วหรือยัง?</span>
+                <span lang="en">Connect with Our Partnership Team</span>
+                <span lang="th">ติดต่อทีมพันธมิตรของเรา</span>
               </h4>
               <p class="text-muted">
-                <span lang="en">Let's discuss your investment goals and how we can achieve mutual success.</span>
-                <span lang="th">มาหารือเกี่ยวกับเป้าหมายการลงทุนของคุณและวิธีที่เราสามารถประสบความสำเร็จร่วมกันได้</span>
+                <span lang="en">Choose LINE Official Account or WhatsApp for immediate support from our investment specialists.</span>
+                <span lang="th">เลือกติดต่อผ่าน LINE Official Account หรือ WhatsApp เพื่อรับการดูแลจากทีมที่ปรึกษาการลงทุนของเราได้ทันที</span>
               </p>
             </div>
-            <form id="partner-form" class="contact-form">
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+            <div class="partner-contact-options">
+              <div class="partner-contact-card line-card">
+                <div class="contact-card-header">
+                  <div class="contact-icon">
+                    <i class="fa fa-comment"></i>
+                  </div>
+                  <div>
+                    <h5>
+                      <span lang="en">LINE Official Account</span>
+                      <span lang="th">LINE Official Account</span>
+                    </h5>
+                    <p class="contact-card-subtitle">
+                      <span lang="en">Scan the QR code or tap the button to chat with us instantly.</span>
+                      <span lang="th">สแกนคิวอาร์โค้ดหรือแตะปุ่มเพื่อเริ่มแชทกับเราได้ทันที</span>
+                    </p>
                   </div>
                 </div>
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                <div class="qr-wrapper">
+                  <img src="assets/images/line-oa-qrcode.png" alt="LINE Official Account QR Code - H.L. Corporation">
+                </div>
+                <a href="https://lin.ee/pz2YLa3" class="contact-cta line-btn" target="_blank" rel="noopener">
+                  <i class="fa fa-comment"></i>
+                  <span lang="en">Add LINE OA</span>
+                  <span lang="th">เพิ่ม LINE OA</span>
+                </a>
+              </div>
+              <div class="partner-contact-card whatsapp-card">
+                <div class="contact-card-header">
+                  <div class="contact-icon">
+                    <i class="fa fa-whatsapp"></i>
+                  </div>
+                  <div>
+                    <h5>
+                      <span lang="en">WhatsApp Connect</span>
+                      <span lang="th">เชื่อมต่อผ่าน WhatsApp</span>
+                    </h5>
+                    <p class="contact-card-subtitle">
+                      <span lang="en">Message our partnership team on WhatsApp for real-time updates.</span>
+                      <span lang="th">ส่งข้อความถึงทีมพันธมิตรของเราผ่าน WhatsApp เพื่อรับการอัปเดตแบบเรียลไทม์</span>
+                    </p>
                   </div>
                 </div>
+                <ul class="contact-card-list">
+                  <li>
+                    <i class="fa fa-clock-o"></i>
+                    <span>
+                      <span lang="en">Available Mon - Fri, 09:00 - 18:00 (ICT)</span>
+                      <span lang="th">พร้อมตอบกลับ จันทร์ - ศุกร์ 09:00 - 18:00 น.</span>
+                    </span>
+                  </li>
+                  <li>
+                    <i class="fa fa-globe"></i>
+                    <span>
+                      <span lang="en">English & Thai support</span>
+                      <span lang="th">รองรับภาษาไทยและอังกฤษ</span>
+                    </span>
+                  </li>
+                </ul>
+                <a href="https://wa.me/66954194942" class="contact-cta whatsapp-btn" target="_blank" rel="noopener">
+                  <i class="fa fa-whatsapp"></i>
+                  <span lang="en">Chat on WhatsApp</span>
+                  <span lang="th">แชทบน WhatsApp</span>
+                </a>
               </div>
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <input type="text" name="company" class="form-control" placeholder="Company Name">
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <select name="investment-interest" class="form-control" required>
-                  <option value="">Select Investment Interest</option>
-                  <option value="saas-products">SaaS Product Development</option>
-                  <option value="mobile-apps">Mobile Application Portfolio</option>
-                  <option value="digital-transformation">Digital Transformation Services</option>
-                  <option value="all-opportunities">All Opportunities</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <textarea name="message" class="form-control" rows="5" placeholder="Tell us about your investment goals and timeline..." required></textarea>
-              </div>
-              <div class="text-center">
-                <button type="submit" class="btn btn-invest btn-lg">
-                  <i class="fas fa-handshake"></i>
-                  <span lang="en">Send Investment Inquiry</span>
-                  <span lang="th">ส่งคำสอบถามการลงทุน</span>
-                </button>
-              </div>
-            </form>
+            </div>
           </div>
         </div>
       </div>
@@ -2017,40 +2147,6 @@
             scrollTop: target.offset().top - 100
           }, 1000);
         }
-      });
-
-      // Partner form submission
-      $('#partner-form').on('submit', function(e) {
-        e.preventDefault();
-        
-        // Get form data
-        var formData = {
-          name: $('input[name="name"]').val(),
-          email: $('input[name="email"]').val(),
-          company: $('input[name="company"]').val(),
-          investment_interest: $('select[name="investment-interest"]').val(),
-          message: $('textarea[name="message"]').val()
-        };
-
-        // Create email content
-        var emailSubject = 'Investment Inquiry - ' + formData.name;
-        var emailBody = `
-Investment Inquiry Details:
-Name: ${formData.name}
-Email: ${formData.email}
-Company: ${formData.company}
-Investment Interest: ${formData.investment_interest}
-Message: ${formData.message}
-        `;
-
-        // Create mailto link
-        var mailtoLink = `mailto:hlcorp.th@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
-        
-        // Open email client
-        window.location.href = mailtoLink;
-
-        // Show success message
-        alert('Thank you for your interest! Your email client should open with a pre-filled message. Please send it to complete your inquiry.');
       });
 
       // Language Switcher - Enhanced version with localStorage support

@@ -2269,31 +2269,38 @@ https://templatemo.com/tm-568-digimedia
     </script>
 
     <!-- Floating Contact Button -->
-    <div class="floating-contact">
-      <div class="floating-contact-toggle">
+    <div class="floating-contact" aria-live="polite">
+      <div class="floating-contact-toggle" role="button" tabindex="0" aria-label="Open chat options">
         <i class="fa fa-comments"></i>
       </div>
       <div class="floating-contact-menu">
-        <a href="mailto:hlcorp.th@gmail.com" class="floating-contact-item">
-          <i class="fa fa-envelope"></i>
-          <span>Email</span>
-        </a>
-        <a href="#contact" class="floating-contact-item">
-          <i class="fa fa-paper-plane"></i>
-          <span>Contact Form</span>
-        </a>
-        <div class="floating-contact-item" onclick="openFacebookChat()">
+        <div class="floating-contact-item" onclick="openFacebookChat()" role="button" tabindex="0" aria-label="Open Facebook Chat">
           <i class="fa fa-facebook"></i>
           <span>Facebook Chat</span>
+        </div>
+        <div class="floating-contact-item" onclick="openLineChat()" role="button" tabindex="0" aria-label="Open LINE Chatbot">
+          <i class="fa fa-comment"></i>
+          <span>LINE Chatbot</span>
         </div>
       </div>
     </div>
 
     <script>
       // Floating contact toggle
-      document.querySelector('.floating-contact-toggle').addEventListener('click', function () {
-        document.querySelector('.floating-contact').classList.toggle('active');
-      });
+      var floatingToggle = document.querySelector('.floating-contact-toggle');
+      var floatingContainer = document.querySelector('.floating-contact');
+      if (floatingToggle && floatingContainer) {
+        floatingToggle.addEventListener('click', function () {
+          floatingContainer.classList.toggle('active');
+        });
+
+        floatingToggle.addEventListener('keypress', function (event) {
+          if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            floatingContainer.classList.toggle('active');
+          }
+        });
+      }
 
       // Open Facebook chat
       function openFacebookChat() {
@@ -2307,10 +2314,14 @@ https://templatemo.com/tm-568-digimedia
 
       // Close floating contact when clicking outside
       document.addEventListener('click', function (e) {
-        if (!e.target.closest('.floating-contact')) {
-          document.querySelector('.floating-contact').classList.remove('active');
+        if (!e.target.closest('.floating-contact') && floatingContainer) {
+          floatingContainer.classList.remove('active');
         }
       });
+
+      function openLineChat() {
+        window.open('https://lin.ee/pz2YLa3', '_blank');
+      }
 
       // Mobile menu toggle functionality
       document.addEventListener('DOMContentLoaded', function () {
