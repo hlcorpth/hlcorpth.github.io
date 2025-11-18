@@ -2205,6 +2205,42 @@ https://templatemo.com/tm-568-digimedia
       </div>
     </footer>
 
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-consent" class="cookie-consent" role="dialog" aria-live="assertive" aria-label="Cookie consent and terms notice">
+      <div class="cookie-consent-inner">
+        <button class="cookie-consent-close" type="button" data-cookie-action="dismiss" aria-label="Close cookie notice">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
+        <div class="cookie-consent-content">
+          <p class="cookie-consent-eyebrow">
+            <span lang="en">Terms & Cookie Preference</span>
+            <span lang="th">ข้อกำหนดและการตั้งค่าคุกกี้</span>
+          </p>
+          <h5>
+            <span lang="en">We protect your data & respect your choices</span>
+            <span lang="th">เราปกป้องข้อมูลของคุณและเคารพการตัดสินใจของคุณ</span>
+          </h5>
+          <p>
+            <span lang="en">Essential cookies keep sessions secure and remember your language. Optional analytics/marketing cookies activate only if you allow them. Review how we store, retain, and delete data in our <a href="#terms">Terms & Conditions</a>.</span>
+            <span lang="th">คุกกี้ที่จำเป็นช่วยให้การใช้งานปลอดภัยและจำภาษาที่คุณเลือก คุกกี้วิเคราะห์/การตลาดจะทำงานก็ต่อเมื่อคุณอนุญาตเท่านั้น ดูรายละเอียดการจัดเก็บและการลบข้อมูลได้ที่ <a href="#terms">ข้อกำหนดและเงื่อนไข</a>.</span>
+          </p>
+        </div>
+        <div class="cookie-consent-actions">
+          <button class="btn-secondary cookie-deny" type="button" data-cookie-action="deny">
+            <span lang="en">Deny non-essential</span>
+            <span lang="th">ปฏิเสธคุกกี้เสริม</span>
+          </button>
+          <button class="btn-primary cookie-accept" type="button" data-cookie-action="accept">
+            <span lang="en">Allow all cookies</span>
+            <span lang="th">อนุญาตทั้งหมด</span>
+          </button>
+        </div>
+        <a class="cookie-consent-link" href="mailto:hlcorp.th@gmail.com">
+          <span lang="en">Request cookie report or revoke consent</span>
+          <span lang="th">ขอรายงานคุกกี้หรือยกเลิกความยินยอม</span>
+        </a>
+      </div>
+    </div>
 
 
     <!-- Scripts -->
@@ -2553,6 +2589,65 @@ https://templatemo.com/tm-568-digimedia
           }
         }
       });
+    </script>
+
+    <!-- Cookie Consent Logic -->
+    <script>
+      (function () {
+        const banner = document.getElementById('cookie-consent');
+        if (!banner) return;
+
+        const storageKey = 'hlc-cookie-consent';
+        const root = document.documentElement;
+
+        function persistDecision(value) {
+          try {
+            localStorage.setItem(storageKey, value);
+          } catch (error) {
+            console.warn('Unable to persist cookie consent:', error);
+          }
+        }
+
+        function setState(status, shouldPersist = true) {
+          root.dataset.cookieConsent = status;
+          if (shouldPersist) {
+            persistDecision(status);
+          }
+          banner.classList.add('is-hidden');
+          window.dispatchEvent(new CustomEvent('cookieConsentChange', {
+            detail: { status }
+          }));
+        }
+
+        function restoreState() {
+          try {
+            return localStorage.getItem(storageKey);
+          } catch (error) {
+            console.warn('Unable to read cookie consent:', error);
+            return null;
+          }
+        }
+
+        const existingDecision = restoreState();
+        if (existingDecision) {
+          root.dataset.cookieConsent = existingDecision;
+          banner.classList.add('is-hidden');
+          return;
+        }
+
+        banner.querySelectorAll('[data-cookie-action]').forEach(button => {
+          const action = button.getAttribute('data-cookie-action');
+          button.addEventListener('click', () => {
+            if (action === 'accept') {
+              setState('accepted');
+            } else if (action === 'deny') {
+              setState('denied');
+            } else if (action === 'dismiss') {
+              setState('dismissed', false);
+            }
+          });
+        });
+      })();
     </script>
 
 </body>

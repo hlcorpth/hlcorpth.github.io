@@ -479,3 +479,145 @@ p, .hero-description, .section-subtitle, .service-card p, .contact-card p, .cta-
 .work-stats i{ color:var(--apple-accent); }
 .work-tech{ display:flex; gap:8px; flex-wrap:wrap; }
 .tech-tag{ background:var(--apple-accent); color:#fff; padding:4px 10px; border-radius:4px; font-size:11px; font-weight:500; }
+
+/* Cookie Consent Banner */
+.cookie-consent {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 24px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0 24px;
+  z-index: 1100;
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.cookie-consent.is-hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+}
+
+.cookie-consent-inner {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  background: var(--apple-surface);
+  border: 1px solid var(--apple-border);
+  border-radius: 18px;
+  padding: 28px 32px 32px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.cookie-consent-content h5 {
+  margin: 0;
+  font-size: 20px;
+  color: var(--apple-text);
+}
+
+.cookie-consent-content p {
+  margin: 10px 0 0;
+  color: var(--apple-muted);
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.cookie-consent-content a {
+  color: var(--apple-accent);
+  text-decoration: underline;
+}
+
+.cookie-consent-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--apple-accent);
+  margin: 0;
+}
+
+.cookie-consent-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.cookie-consent-actions .btn-primary,
+.cookie-consent-actions .btn-secondary {
+  flex: 1;
+  min-width: 180px;
+  justify-content: center;
+}
+
+.cookie-consent-link {
+  font-size: 13px;
+  color: var(--apple-muted);
+  text-decoration: none;
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.cookie-consent-link:hover {
+  color: var(--apple-accent);
+  text-decoration: underline;
+}
+
+.cookie-consent-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid var(--apple-border);
+  background: transparent;
+  color: var(--apple-text);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.cookie-consent-close:hover {
+  background: var(--apple-surface-alt);
+  color: var(--apple-accent);
+}
+
+@media (max-width: 768px) {
+  .cookie-consent {
+    bottom: 16px;
+    padding: 0 16px;
+  }
+
+  .cookie-consent-inner {
+    padding: 24px;
+  }
+
+  .cookie-consent-actions {
+    flex-direction: column;
+  }
+
+  .cookie-consent-actions .btn-primary,
+  .cookie-consent-actions .btn-secondary {
+    width: 100%;
+    min-width: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .cookie-consent-inner {
+    padding: 20px 20px 24px;
+  }
+
+  .cookie-consent-close {
+    top: 12px;
+    right: 12px;
+  }
+}
