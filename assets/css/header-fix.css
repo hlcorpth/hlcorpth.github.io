@@ -116,14 +116,14 @@ Based on the clean, corporate design from the image
   object-fit: contain;
 }
 
-.brand::after {
+/* .brand::after {
   content: "H.L. CORPORATION Co.,Ltd.";
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   font-weight: 700;
   color: #2c3e50;
   white-space: nowrap;
-}
+} */
 
 /* Mobile Menu Toggle */
 .header-toggle {
@@ -249,19 +249,19 @@ Based on the clean, corporate design from the image
   .contact-list {
     gap: 1rem;
   }
-  
+
   .contact-list a {
     font-size: 0.8rem;
   }
-  
+
   .brand::after {
     font-size: 0.9rem;
   }
-  
+
   .main-menu {
     gap: 0.25rem;
   }
-  
+
   .main-menu a {
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
@@ -272,11 +272,11 @@ Based on the clean, corporate design from the image
   .topbar {
     display: none;
   }
-  
+
   .header-toggle {
     display: block;
   }
-  
+
   .main-menu {
     position: absolute;
     top: 100%;
@@ -292,32 +292,32 @@ Based on the clean, corporate design from the image
     transition: all 0.3s ease;
     z-index: 999;
   }
-  
+
   .main-menu.active {
     transform: translateY(0);
     opacity: 1;
     visibility: visible;
   }
-  
+
   .main-menu li {
     width: 100%;
   }
-  
+
   .main-menu a {
     display: block;
     padding: 1rem;
     border-radius: 8px;
     margin-bottom: 0.5rem;
   }
-  
+
   .brand::after {
     display: none;
   }
-  
+
   .header-actions {
     gap: 0.5rem;
   }
-  
+
   .btn-cta {
     padding: 0.6rem 1rem;
     font-size: 0.9rem;
@@ -328,16 +328,16 @@ Based on the clean, corporate design from the image
   .nav-inner {
     padding: 0 0.75rem;
   }
-  
+
   .brand img {
     height: 40px;
   }
-  
+
   .btn-cta {
     padding: 0.5rem 0.75rem;
     font-size: 0.85rem;
   }
-  
+
   .btn-cta span {
     display: none;
   }
@@ -357,7 +357,8 @@ Based on the clean, corporate design from the image
 
 /* Fix for main content spacing */
 .main-banner {
-  padding-top: 140px; /* Account for fixed header */
+  padding-top: 140px;
+  /* Account for fixed header */
 }
 
 /* Logo styling improvements */
