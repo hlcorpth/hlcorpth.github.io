@@ -1449,3 +1449,92 @@ p {
   transform: none;
   box-shadow: none;
 }
+
+/* FAQ Section Redesign */
+.faq-section {
+  background: var(--bg-light);
+  padding: 80px 0;
+}
+
+.faq-card {
+  background: var(--bg-white);
+  border: 1px solid var(--border-light);
+  border-radius: 20px;
+  padding: 2.5rem;
+  height: 100%;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 20px var(--shadow-light);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.faq-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 60px var(--shadow-medium), var(--shadow-gradient);
+  border-color: transparent;
+}
+
+.faq-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--gradient-primary);
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+  transform-origin: left;
+}
+
+.faq-card:hover::before {
+  transform: scaleX(1);
+}
+
+.faq-icon {
+  width: 60px;
+  height: 60px;
+  background: var(--gradient-primary);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-gradient);
+}
+
+.faq-card:hover .faq-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.faq-content h5 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.faq-content p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+/* Responsive adjustments for FAQ grid */
+@media (max-width: 768px) {
+  .faq-card {
+    padding: 2rem;
+  }
+
+  .faq-content h5 {
+    font-size: 1.1rem;
+  }
+}
