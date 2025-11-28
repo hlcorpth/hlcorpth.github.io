@@ -1,0 +1,414 @@
+/*
+Gradient Theme - Vibrant Purple-Blue-Cyan Color Scheme
+Applies the beautiful gradient colors from products page to the entire site
+*/
+
+/* Override Color Palette with Vibrant Gradients */
+:root {
+    /* Modern Gradient Colors */
+    --gradient-primary: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 50%, #06B6D4 100%) !important;
+    --gradient-purple-blue: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%) !important;
+    --gradient-blue-cyan: linear-gradient(135deg, #3B82F6 0%, #06B6D4 100%) !important;
+
+    /* Primary Colors */
+    --primary-purple: #8B5CF6 !important;
+    --primary-blue: #3B82F6 !important;
+    --primary-cyan: #06B6D4 !important;
+    --primary-purple-dark: #7C3AED !important;
+    --primary-blue-dark: #2563EB !important;
+    --primary-cyan-dark: #0891B2 !important;
+
+    /* Shadow Colors with Gradient */
+    --shadow-gradient: 0 10px 40px rgba(139, 92, 246, 0.15), 0 4px 15px rgba(59, 130, 246, 0.1) !important;
+}
+
+/* Hero/Banner Section - Vibrant Gradient Background */
+.main-banner {
+    background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 50%, #06B6D4 100%) !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-banner::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: pulse 8s ease-in-out infinite;
+    pointer-events: none;
+}
+
+.main-banner::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: pulse 8s ease-in-out infinite 4s;
+    pointer-events: none;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+}
+
+/* Make hero text white for better contrast */
+.main-banner .main-title,
+.main-banner h1 {
+    color: white !important;
+}
+
+.main-banner .hero-description,
+.main-banner p {
+    color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.main-banner .gradient-text {
+    background: white !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+}
+
+/* Buttons with Gradient */
+.primary-btn,
+.main-button,
+.border-first-button a,
+.main-button-icon a {
+    background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%) !important;
+    color: white !important;
+    border: none !important;
+    box-shadow: 0 10px 40px rgba(139, 92, 246, 0.15), 0 4px 15px rgba(59, 130, 246, 0.1) !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.primary-btn:hover,
+.main-button:hover,
+.border-first-button a:hover,
+.main-button-icon a:hover {
+    background: linear-gradient(135deg, #7C3AED 0%, #2563EB 100%) !important;
+    transform: translateY(-3px) !important;
+    box-shadow: 0 15px 50px rgba(139, 92, 246, 0.25), 0 8px 20px rgba(59, 130, 246, 0.15) !important;
+    color: white !important;
+}
+
+/* Secondary/Outline Buttons */
+.secondary-btn,
+.btn-outline,
+.border-first-button.scroll-to-section a {
+    background: white !important;
+    color: var(--primary-blue) !important;
+    border: 2px solid var(--primary-blue) !important;
+}
+
+.secondary-btn:hover,
+.btn-outline:hover {
+    background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%) !important;
+    color: white !important;
+    border-color: transparent !important;
+}
+
+/* Header CTA Button */
+.btn-cta,
+.header-actions a {
+    background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%) !important;
+    color: white !important;
+    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3) !important;
+}
+
+.btn-cta:hover,
+.header-actions a:hover {
+    background: linear-gradient(135deg, #7C3AED 0%, #2563EB 100%) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 25px rgba(139, 92, 246, 0.4) !important;
+    color: white !important;
+}
+
+/* Navigation Menu Active/Hover States */
+.main-menu a:hover,
+.main-menu a.active {
+    color: var(--primary-blue) !important;
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%) !important;
+}
+
+.main-menu a::after {
+    background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%) !important;
+}
+
+/* Section Headings with Gradient */
+.section-heading h6,
+.section-heading .gradient-text {
+    background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 50%, #06B6D4 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    background-size: 200% auto;
+    animation: gradient-shift 3s ease infinite;
+}
+
+@keyframes gradient-shift {
+
+    0%,
+    100% {
+        background-position: 0% center;
+    }
+
+    50% {
+        background-position: 100% center;
+    }
+}
+
+.section-heading h4 em {
+    background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 50%, #06B6D4 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+}
+
+.line-dec {
+    background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%) !important;
+}
+
+/* Service Cards with Gradient Accents */
+.service-card::before,
+.service-item::before {
+    background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%) !important;
+}
+
+.service-icon,
+.service-item .icon {
+    background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 50%, #06B6D4 100%) !important;
+    box-shadow: 0 10px 40px rgba(139, 92, 246, 0.15), 0 4px 15px rgba(59, 130, 246, 0.1) !important;
+}
+
+.service-card:hover,
+.service-item:hover {
+    box-shadow: 0 20px 60px rgba(15, 23, 42, 0.12), 0 10px 40px rgba(139, 92, 246, 0.15), 0 4px 15px rgba(59, 130, 246, 0.1) !important;
+}
+
+/* Portfolio/Project Cards */
+.portfolio-item:hover,
+.naccs .menu div.active {
+    box-shadow: 0 20px 60px rgba(15, 23, 42, 0.12), 0 10px 40px rgba(139, 92, 246, 0.15), 0 4px 15px rgba(59, 130, 246, 0.1) !important;
+}
+
+.portfolio-overlay {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.95) 0%, rgba(59, 130, 246, 0.95) 100%) !important;
+}
+
+.portfolio-tags .tag {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%) !important;
+    color: var(--primary-blue) !important;
+}
+
+.portfolio-tags .tag:hover {
+    background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%) !important;
+    color: white !important;
+}
+
+/* Contact Section */
+.contact-icon {
+    background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 50%, #06B6D4 100%) !important;
+    box-shadow: 0 10px 40px rgba(139, 92, 246, 0.15), 0 4px 15px rgba(59, 130, 246, 0.1) !important;
+}
+
+.contact-card:hover {
+    box-shadow: 0 20px 60px rgba(15, 23, 42, 0.12), 0 10px 40px rgba(139, 92, 246, 0.15), 0 4px 15px rgba(59, 130, 246, 0.1) !important;
+}
+
+/* Form Focus States */
+.contact-form-container input:focus,
+.contact-form-container textarea:focus,
+input:focus,
+textarea:focus {
+    border-color: var(--primary-blue) !important;
+    box-shadow: 0 0 0 4px rgba(139, 92, 246, 0.1) !important;
+}
+
+/* Submit Button */
+.contact-submit-btn,
+button[type="submit"],
+input[type="submit"] {
+    background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%) !important;
+    color: white !important;
+    box-shadow: 0 10px 40px rgba(139, 92, 246, 0.15), 0 4px 15px rgba(59, 130, 246, 0.1) !important;
+}
+
+.contact-submit-btn:hover,
+button[type="submit"]:hover,
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, #7C3AED 0%, #2563EB 100%) !important;
+    transform: translateY(-3px) !important;
+    box-shadow: 0 15px 50px rgba(139, 92, 246, 0.25), 0 8px 20px rgba(59, 130, 246, 0.15) !important;
+}
+
+/* Links and Accents */
+a {
+    color: var(--primary-blue) !important;
+}
+
+a:hover {
+    color: var(--primary-purple) !important;
+}
+
+/* Icons with Gradient Color */
+.fa-check-circle,
+.service-features li i {
+    color: var(--primary-blue) !important;
+}
+
+/* Stats/Counter Section */
+.counter-number,
+.stat-number {
+    background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 50%, #06B6D4 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+}
+
+/* Badges and Labels */
+.badge,
+.label,
+.tag,
+.service-badge,
+.product-badge {
+    background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%) !important;
+    color: white !important;
+    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4) !important;
+}
+
+/* About Section Enhancements */
+.about-left-image img {
+    box-shadow: 0 20px 60px rgba(139, 92, 246, 0.15), 0 10px 30px rgba(59, 130, 246, 0.1) !important;
+}
+
+/* News/Blog Cards */
+.blog-post:hover,
+.news-card:hover {
+    box-shadow: 0 20px 60px rgba(15, 23, 42, 0.12), 0 10px 40px rgba(139, 92, 246, 0.15), 0 4px 15px rgba(59, 130, 246, 0.1) !important;
+}
+
+/* Footer Social Icons */
+.footer-social a:hover {
+    background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%) !important;
+}
+
+/* Topbar Social Icons */
+.social-list a:hover {
+    color: var(--primary-blue) !important;
+}
+
+/* Language Switcher */
+.lang-btn.active {
+    background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%) !important;
+    color: white !important;
+}
+
+.lang-btn:hover {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%) !important;
+    color: var(--primary-blue) !important;
+}
+
+/* Scroll to Top Button */
+.scroll-to-top {
+    background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%) !important;
+    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4) !important;
+}
+
+.scroll-to-top:hover {
+    background: linear-gradient(135deg, #7C3AED 0%, #2563EB 100%) !important;
+    box-shadow: 0 8px 25px rgba(139, 92, 246, 0.5) !important;
+}
+
+/* Preloader */
+.js-preloader .dot,
+.js-preloader .dots span {
+    background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%) !important;
+}
+
+/* Owl Carousel Navigation */
+.owl-nav button,
+.owl-dots .owl-dot.active span,
+.owl-dots .owl-dot:hover span {
+    background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%) !important;
+}
+
+/* Progress Bars */
+.progress-bar {
+    background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%) !important;
+}
+
+/* Tabs and Navigation */
+.nav-tabs .nav-link.active,
+.nav-pills .nav-link.active {
+    background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%) !important;
+    color: white !important;
+}
+
+/* Alerts and Notifications */
+.alert-info {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%) !important;
+    border-color: var(--primary-blue) !important;
+    color: var(--primary-blue) !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%) !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #7C3AED 0%, #2563EB 100%) !important;
+}
+
+/* Selection Color */
+::selection {
+    background: rgba(139, 92, 246, 0.3) !important;
+    color: var(--text-primary) !important;
+}
+
+::-moz-selection {
+    background: rgba(139, 92, 246, 0.3) !important;
+    color: var(--text-primary) !important;
+}
+
+/* Hover Effects for Interactive Elements */
+.clickable:hover,
+.interactive:hover {
+    color: var(--primary-blue) !important;
+}
+
+/* Loading Spinner */
+.spinner,
+.loader {
+    border-top-color: var(--primary-purple) !important;
+    border-right-color: var(--primary-blue) !important;
+    border-bottom-color: var(--primary-cyan) !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+
+    .main-banner::before,
+    .main-banner::after {
+        width: 400px;
+        height: 400px;
+    }
+}
