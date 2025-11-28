@@ -370,3 +370,53 @@ Based on the clean, corporate design from the image
 .brand:hover img {
   transform: scale(1.05);
 }
+
+/* Memorial Banner Styles */
+.memorial-banner {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 12px !important;
+  line-height: 1.5;
+  position: relative;
+  z-index: 10000;
+  width: 100%;
+}
+
+.memorial-banner p {
+  margin: 0;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #ffffff !important;
+  font-size: 12px !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5), 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.memorial-banner .ribbon-icon {
+  display: inline-block;
+  font-size: 12px !important;
+  line-height: 1;
+  filter: grayscale(100%) brightness(10);
+}
+
+@media (max-width: 768px) {
+  .memorial-banner {
+    font-size: 12px !important;
+    padding: 6px 0;
+  }
+
+  .memorial-banner p {
+    gap: 6px;
+    color: #ffffff !important;
+    font-size: 12px !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5), 0 2px 6px rgba(0, 0, 0, 0.3);
+  }
+
+  .memorial-banner .ribbon-icon {
+    font-size: 12px !important;
+  }
+}

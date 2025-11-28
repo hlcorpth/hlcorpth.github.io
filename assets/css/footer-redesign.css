@@ -1,0 +1,190 @@
+/* Footer Redesign - Based on Reference Image */
+.site-footer {
+    background-color: #0B1120;
+    /* Deep Navy/Black */
+    color: #94A3B8;
+    /* Slate 400 */
+    padding: 80px 0 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.site-footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+/* Brand Section */
+.footer-brand {
+    margin-bottom: 20px;
+}
+
+.footer-logo-icon {
+    width: 50px;
+    height: auto;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.footer-brand h5 {
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.footer-brand p {
+    color: #94A3B8;
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 350px;
+    margin-bottom: 25px;
+}
+
+/* Social Icons */
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #1E293B;
+    /* Slate 800 */
+    color: #3B82F6;
+    /* Blue 500 */
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.footer-social a:hover {
+    background-color: #3B82F6;
+    color: #FFFFFF;
+    transform: translateY(-3px);
+}
+
+/* Footer Headings */
+.footer-section h6 {
+    color: #FFFFFF;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+/* Links */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    color: #FFFFFF !important;
+    /* White for links */
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #3B82F6 !important;
+    /* Blue on hover */
+    text-decoration: none;
+}
+
+/* Contact Info */
+.footer-contact .contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 15px;
+    color: #94A3B8;
+}
+
+.footer-contact .contact-item i {
+    color: #FFFFFF;
+    margin-top: 5px;
+}
+
+.footer-contact .contact-item a {
+    color: #FFFFFF !important;
+    /* White for email link */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-contact .contact-item a:hover {
+    color: #3B82F6 !important;
+    /* Blue on hover */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    border-top: 1px solid #1E293B;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-bottom p {
+    color: #64748B;
+    /* Slate 500 */
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.footer-bottom-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-bottom-links a {
+    color: #FFFFFF !important;
+    /* White for bottom links */
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+    color: #3B82F6 !important;
+    /* Blue on hover */
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}

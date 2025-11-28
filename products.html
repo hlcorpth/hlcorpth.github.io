@@ -5,329 +5,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description"
-        content="Explore H.L. Corporation's comprehensive product portfolio including AI-powered solutions, modern accounting systems, POS systems, real estate platforms, and more. Innovative software solutions for businesses in Thailand.">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="author" content="H.L. Corporation Co.,Ltd.">
-    <meta name="keywords"
-        content="AI Solutions, Accounting Software, POS System, Real Estate Platform, E-commerce, Travel Agency System, Construction Management, HR Recruitment, Thailand Software">
-
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Products Gallery - H.L. Corporation | Software Solutions Thailand">
-    <meta property="og:description"
-        content="Discover our innovative software products: AI-powered dashboards, modern accounting systems, POS solutions, real estate platforms, and more.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://hlcorpth.github.io/products.html">
-    <meta property="og:image" content="https://hlcorpth.github.io/assets/images/hlcorp-logo.png">
-
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Products Gallery - H.L. Corporation">
-    <meta name="twitter:description" content="Explore our comprehensive software solutions portfolio">
-    <meta name="twitter:image" content="https://hlcorpth.github.io/assets/images/hlcorp-logo.png">
-
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://hlcorpth.github.io/products.html">
+        content="Discover powerful software that scales your business. From AI to Accounting & POS. Don't just browse—transform your operations. Request a demo now!">
+    <title>Enterprise Software Solutions | H.L. Corporation - Boost Efficiency Today</title>
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon.png">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
 
-    <title>Products Gallery - H.L. Corporation | Innovative Software Solutions Thailand</title>
-
-    <!-- Bootstrap core CSS -->
+    <!-- CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/templatemo-digimedia-v3.css">
     <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/header-modern.css">
+    <link rel="stylesheet" href="assets/css/ui-enhancements.css">
     <link rel="stylesheet" href="assets/css/modern-clean-theme.css">
     <link rel="stylesheet" href="assets/css/header-fix.css">
     <link rel="stylesheet" href="assets/css/language-switcher.css">
+    <link rel="stylesheet" href="assets/css/language-switcher.css">
+    <link rel="stylesheet" href="assets/css/gradient-theme.css">
+    <link rel="stylesheet" href="assets/css/footer-redesign.css">
 
     <style>
-        /* Products Gallery Specific Styles */
-        :root {
-            --gradient-primary: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 50%, #06B6D4 100%);
-            --gradient-purple-blue: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%);
-            --primary-purple: #8B5CF6;
-            --primary-blue: #3B82F6;
-            --primary-cyan: #06B6D4;
-            --bg-white: #FFFFFF;
-            --bg-light: #F8FAFC;
-            --text-primary: #0F172A;
-            --text-secondary: #475569;
-            --text-muted: #64748B;
-            --border-light: #E2E8F0;
-            --shadow-light: rgba(15, 23, 42, 0.08);
-            --shadow-medium: rgba(15, 23, 42, 0.12);
-            --shadow-gradient: 0 10px 40px rgba(139, 92, 246, 0.15), 0 4px 15px rgba(59, 130, 246, 0.1);
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
         body {
-            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background-color: var(--bg-light);
-            color: var(--text-primary);
+            font-family: 'Poppins', sans-serif;
+            background: #f8fafc;
+            color: #0F172A;
             overflow-x: hidden;
         }
 
-        /* Hero Section */
-        .products-hero {
+
+        /* Hero */
+        .hero {
             background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 50%, #06B6D4 100%);
             padding: 140px 0 80px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .products-hero::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -10%;
-            width: 800px;
-            height: 800px;
-            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
-            border-radius: 50%;
-            animation: pulse 8s ease-in-out infinite;
-        }
-
-        .products-hero::after {
-            content: '';
-            position: absolute;
-            bottom: -30%;
-            left: -10%;
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
-            border-radius: 50%;
-            animation: pulse 8s ease-in-out infinite 4s;
-        }
-
-        @keyframes pulse {
-
-            0%,
-            100% {
-                transform: scale(1);
-                opacity: 0.5;
-            }
-
-            50% {
-                transform: scale(1.1);
-                opacity: 0.8;
-            }
-        }
-
-        .products-hero h1 {
+            text-align: center;
             color: white;
-            font-size: 4rem;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
             font-weight: 800;
-            margin-bottom: 1.5rem;
-            position: relative;
-            z-index: 1;
+            margin-bottom: 1rem;
+            color: #ffffff !important;
         }
 
-        .products-hero p {
-            color: rgba(255, 255, 255, 0.95);
-            font-size: 1.5rem;
-            max-width: 800px;
-            margin: 0 auto 2rem;
-            position: relative;
-            z-index: 1;
+        .hero p {
+            font-size: 1.25rem;
+            opacity: 0.95;
+            max-width: 700px;
+            margin: 0 auto;
+            color: #ffffff !important;
         }
 
-        .breadcrumb-custom {
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(10px);
-            padding: 1rem 1.5rem;
-            border-radius: 50px;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            position: relative;
-            z-index: 1;
+        /* Product Infographic */
+        .products-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
         }
 
-        .breadcrumb-custom a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-
-        .breadcrumb-custom a:hover {
-            opacity: 0.8;
-        }
-
-        .breadcrumb-custom span {
-            color: rgba(255, 255, 255, 0.7);
-        }
-
-        /* Filter Section */
-        .filter-section {
-            background: white;
-            padding: 2rem 0;
-            box-shadow: 0 4px 20px var(--shadow-light);
-            position: sticky;
-            top: 80px;
-            z-index: 100;
-        }
-
-        .filter-buttons {
+        .product-infographic {
             display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .filter-btn {
-            background: white;
-            border: 2px solid var(--border-light);
-            color: var(--text-secondary);
-            padding: 0.75rem 2rem;
-            border-radius: 50px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            font-size: 1rem;
-        }
-
-        .filter-btn:hover {
-            border-color: var(--primary-blue);
-            color: var(--primary-blue);
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.2);
-        }
-
-        .filter-btn.active {
-            background: var(--gradient-purple-blue);
-            border-color: transparent;
-            color: white;
-            box-shadow: var(--shadow-gradient);
-        }
-
-        /* Products Grid */
-        .products-section {
-            padding: 80px 0;
-        }
-
-        .product-card {
+            align-items: center;
+            gap: 4rem;
+            margin-bottom: 6rem;
             background: white;
             border-radius: 24px;
-            overflow: hidden;
-            box-shadow: 0 4px 20px var(--shadow-light);
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            height: 100%;
-            display: flex;
-            flex-direction: column;
+            padding: 3rem;
+            box-shadow: 0 10px 40px rgba(15, 23, 42, 0.08);
             position: relative;
+            overflow: hidden;
         }
 
-        .product-card::before {
+        .product-infographic::before {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
+            width: 6px;
+            height: 100%;
+            background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%);
+        }
+
+        .product-infographic:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .product-infographic:nth-child(even)::before {
+            left: auto;
             right: 0;
-            height: 5px;
-            background: var(--gradient-primary);
-            transform: scaleX(0);
-            transition: transform 0.4s ease;
         }
 
-        .product-card:hover {
-            transform: translateY(-12px);
-            box-shadow: 0 20px 60px var(--shadow-medium), var(--shadow-gradient);
+        .product-image {
+            flex: 1;
+            position: relative;
         }
 
-        .product-card:hover::before {
-            transform: scaleX(1);
+        .product-image img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(139, 92, 246, 0.15);
         }
 
         .product-badge {
             position: absolute;
             top: 20px;
             right: 20px;
-            background: var(--gradient-purple-blue);
+            background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%);
             color: white;
             padding: 0.5rem 1.25rem;
             border-radius: 50px;
             font-size: 0.75rem;
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 0.05em;
             box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4);
-            z-index: 10;
-        }
-
-        .product-image {
-            position: relative;
-            overflow: hidden;
-            height: 280px;
-            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-        }
-
-        .product-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .product-card:hover .product-image img {
-            transform: scale(1.08);
-        }
-
-        .product-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(139, 92, 246, 0.95) 0%, rgba(59, 130, 246, 0.95) 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            transition: opacity 0.4s ease;
-        }
-
-        .product-card:hover .product-overlay {
-            opacity: 1;
-        }
-
-        .overlay-content {
-            text-align: center;
-            color: white;
-        }
-
-        .overlay-content i {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            display: block;
-        }
-
-        .overlay-content p {
-            font-size: 1rem;
-            font-weight: 600;
-            margin: 0;
         }
 
         .product-content {
-            padding: 2rem;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
+            flex: 1;
         }
 
         .product-category {
-            color: var(--primary-blue);
+            color: #3B82F6;
             font-size: 0.875rem;
             font-weight: 700;
             text-transform: uppercase;
@@ -336,1111 +148,611 @@
         }
 
         .product-title {
-            font-size: 1.75rem;
-            font-weight: 700;
-            color: var(--text-primary);
+            font-size: 2rem;
+            font-weight: 800;
+            color: #0F172A;
             margin-bottom: 1rem;
-            line-height: 1.3;
         }
 
         .product-description {
-            color: var(--text-secondary);
-            font-size: 1rem;
+            color: #475569;
+            font-size: 1.1rem;
             line-height: 1.7;
-            margin-bottom: 1.5rem;
-            flex-grow: 1;
+            margin-bottom: 2rem;
         }
 
         .product-features {
             list-style: none;
-            padding: 0;
-            margin: 0 0 1.5rem 0;
+            margin-bottom: 2rem;
         }
 
         .product-features li {
-            padding: 0.5rem 0;
-            color: var(--text-secondary);
+            padding: 0.75rem 0;
+            color: #475569;
             display: flex;
             align-items: center;
-            gap: 0.75rem;
-            font-size: 0.95rem;
+            gap: 1rem;
+            font-size: 1rem;
+            border-bottom: 1px solid #E2E8F0;
+        }
+
+        .product-features li:last-child {
+            border-bottom: none;
         }
 
         .product-features li i {
-            color: var(--primary-blue);
-            font-size: 1rem;
-            flex-shrink: 0;
+            color: #3B82F6;
+            font-size: 1.25rem;
+            width: 24px;
         }
 
         .product-tags {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-bottom: 1.5rem;
+            gap: 0.75rem;
+            margin-bottom: 2rem;
         }
 
         .product-tag {
             background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%);
-            color: var(--primary-blue);
-            padding: 0.4rem 1rem;
+            color: #3B82F6;
+            padding: 0.5rem 1.25rem;
             border-radius: 50px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-
-        .product-tag:hover {
-            background: var(--gradient-purple-blue);
-            color: white;
-            transform: translateY(-2px);
-        }
-
-        .product-footer {
-            border-top: 1px solid var(--border-light);
-            padding-top: 1.5rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .product-status {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            color: var(--text-muted);
             font-size: 0.875rem;
-        }
-
-        .status-dot {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background: #10B981;
-            animation: blink 2s ease-in-out infinite;
-        }
-
-        @keyframes blink {
-
-            0%,
-            100% {
-                opacity: 1;
-            }
-
-            50% {
-                opacity: 0.5;
-            }
+            font-weight: 600;
         }
 
         .product-link {
-            background: var(--gradient-purple-blue);
-            color: white;
-            padding: 0.75rem 1.5rem;
+            background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%);
+            color: white !important;
+            padding: 1rem 2.5rem;
             border-radius: 12px;
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 700;
             display: inline-flex;
             align-items: center;
-            gap: 0.5rem;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+            gap: 0.75rem;
+            box-shadow: 0 10px 40px rgba(139, 92, 246, 0.15);
+            transition: all 0.3s;
         }
 
         .product-link:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(139, 92, 246, 0.4);
-            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 15px 50px rgba(139, 92, 246, 0.25);
+            color: white !important;
         }
 
-        /* Stats Section */
-        .stats-section {
-            background: var(--gradient-primary);
-            padding: 60px 0;
-            color: white;
+        /* Stats */
+        .stats {
+            background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 50%, #06B6D4 100%);
+            padding: 4rem 0;
         }
 
-        .stat-card {
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
             text-align: center;
-            padding: 2rem;
+        }
+
+        .stats-grid>div {
+            color: #ffffff !important;
         }
 
         .stat-number {
-            font-size: 3.5rem;
+            font-size: 3rem;
             font-weight: 800;
-            margin-bottom: 0.5rem;
             display: block;
+            margin-bottom: 0.5rem;
+            color: #ffffff !important;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
         }
 
         .stat-label {
             font-size: 1.1rem;
-            opacity: 0.95;
-            font-weight: 500;
+            font-weight: 600;
+            color: #ffffff !important;
+            text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+            opacity: 1;
         }
 
-        /* CTA Section */
-        .cta-section {
-            background: white;
-            padding: 80px 0;
+        /* Footer */
+        .footer {
+            background: #0F172A;
+            color: white;
+            padding: 3rem 0 1.5rem;
             text-align: center;
         }
 
-        .cta-title {
-            font-size: 3rem;
-            font-weight: 800;
-            margin-bottom: 1.5rem;
-            background: var(--gradient-primary);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+        .footer p {
+            color: #94A3B8;
+            margin: 0;
         }
 
-        .cta-description {
-            font-size: 1.25rem;
-            color: var(--text-secondary);
-            max-width: 700px;
-            margin: 0 auto 2.5rem;
-        }
-
-        .cta-buttons {
-            display: flex;
-            gap: 1.5rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .cta-btn-primary {
-            background: var(--gradient-purple-blue);
-            color: white;
-            padding: 1.25rem 3rem;
-            border-radius: 12px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1.1rem;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.75rem;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            box-shadow: var(--shadow-gradient);
-        }
-
-        .cta-btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 50px rgba(139, 92, 246, 0.3);
-            color: white;
-        }
-
-        .cta-btn-secondary {
-            background: white;
-            color: var(--primary-blue);
-            border: 2px solid var(--border-light);
-            padding: 1.25rem 3rem;
-            border-radius: 12px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1.1rem;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.75rem;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .cta-btn-secondary:hover {
-            border-color: var(--primary-blue);
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.2);
-            color: var(--primary-blue);
-        }
-
-        /* Responsive Design */
+        /* Responsive */
         @media (max-width: 768px) {
-            .products-hero h1 {
-                font-size: 2.5rem;
+            .hero h1 {
+                font-size: 2rem;
             }
 
-            .products-hero p {
-                font-size: 1.1rem;
+            .product-infographic {
+                flex-direction: column !important;
+                gap: 2rem;
+                padding: 2rem;
             }
 
-            .filter-section {
-                top: 60px;
-            }
-
-            .filter-btn {
-                padding: 0.6rem 1.5rem;
-                font-size: 0.9rem;
+            .product-image img {
+                height: 250px;
             }
 
             .product-title {
                 font-size: 1.5rem;
             }
 
-            .stat-number {
-                font-size: 2.5rem;
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
 
-            .cta-title {
-                font-size: 2rem;
-            }
-
-            .cta-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .cta-btn-primary,
-            .cta-btn-secondary {
-                width: 100%;
-                max-width: 300px;
-                justify-content: center;
-            }
-        }
-
-        /* Loading Animation */
-        .product-card.fade-in {
-            animation: fadeInUp 0.6s ease-out;
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
+            .main-menu {
+                display: none;
             }
         }
     </style>
 </head>
 
 <body>
-
     <!-- Memorial Banner -->
     <div class="memorial-banner"
         style="background-color: #000000; color: #ffffff; text-align: center; padding: 8px 0; font-size: 12px;">
         <p
             style="margin: 0; font-weight: 500; display: flex; align-items: center; justify-content: center; gap: 10px; color: #ffffff; font-size: 12px;">
-            <span style="font-size: 14px;">🎗️</span>
+            <span class="ribbon-icon" style="font-size: 14px;">🎗️</span>
             ขอน้อมส่งเสด็จสู่สวรรคาลัย ธ สถิตในดวงใจไทยนิรันดร์ สมเด็จพระนางเจ้าสิริกิติ์ พระบรมราชินีนาถ
             พระบรมราชชนนีพันปีหลวง
-            <span style="font-size: 14px;">🎗️</span>
+            <span class="ribbon-icon" style="font-size: 14px;">🎗️</span>
         </p>
     </div>
 
+    <!-- Preloader -->
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
     <!-- Topbar -->
-    <div class="topbar" style="background: #0F172A; padding: 0.75rem 0;">
-        <div class="container"
-            style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
-            <ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: 1.5rem;">
-                <li><a href="mailto:hlcorp.th@gmail.com"
-                        style="color: #94A3B8; text-decoration: none; font-size: 0.875rem;"><i
-                            class="fa fa-envelope"></i> hlcorp.th@gmail.com</a></li>
-                <li><a href="https://maps.app.goo.gl/" target="_blank"
-                        style="color: #94A3B8; text-decoration: none; font-size: 0.875rem;"><i
-                            class="fa fa-map-marker"></i> Bangkok, TH</a></li>
+    <div class="topbar">
+        <div class="container topbar-inner">
+            <ul class="contact-list">
+                <li><a href="mailto:hlcorp.th@gmail.com"><i class="fa fa-envelope"></i> hlcorp.th@gmail.com</a></li>
+                <li><a href="https://maps.app.goo.gl/" target="_blank"><i class="fa fa-map-marker"></i> Bangkok, TH</a>
+                </li>
             </ul>
-            <ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: 1rem;">
-                <li><a href="https://www.facebook.com/hlcth" target="_blank"
-                        style="color: #94A3B8; text-decoration: none;"><i class="fa fa-facebook"></i></a></li>
+            <ul class="social-list">
+                <li><a href="https://www.facebook.com/hlcth" target="_blank" aria-label="Facebook"><i
+                            class="fa fa-facebook"></i></a></li>
                 <li><a href="https://www.linkedin.com/company/hlcorporation-th/" target="_blank"
-                        style="color: #94A3B8; text-decoration: none;"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="https://lin.ee/pz2YLa3" target="_blank" style="color: #94A3B8; text-decoration: none;"><i
-                            class="fa fa-comment"></i></a></li>
+                        aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://lin.ee/pz2YLa3" target="_blank" aria-label="LINE"><i class="fa fa-comment"></i></a>
+                </li>
             </ul>
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="en">
+                    <span class="flag">🇬🇧</span>
+                    <span>EN</span>
+                </button>
+                <button class="lang-btn" data-lang="th">
+                    <span class="flag">🇹🇭</span>
+                    <span>ไทย</span>
+                </button>
+            </div>
         </div>
     </div>
 
     <!-- Header -->
     <header class="site-header">
-        <div class="container nav-inner" style="display: flex; justify-content: space-between; align-items: center;">
+        <div class="container nav-inner">
             <a href="index.html" class="brand">
-                <img src="assets/images/hlcorp-logo.png" alt="H.L. Corporation Logo" width="50" height="50">
+                <img src="assets/images/hlcorp-logo.png"
+                    alt="H.L. Corporation Co.,Ltd. - AI & IT Solutions Company Logo" width="50" height="50"
+                    loading="eager">
             </a>
-            <button class="header-toggle" type="button" aria-label="Toggle Menu" style="display: none;">
+            <button class="header-toggle" type="button" aria-label="Toggle Menu">
                 <i class="fa fa-bars"></i> Menu
             </button>
-            <ul class="main-menu" style="list-style: none; margin: 0; padding: 0; display: flex; gap: 1rem;">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#services">Services</a></li>
-                <li><a href="products.html" class="active">Products</a></li>
-                <li><a href="index.html#portfolio">Projects</a></li>
-                <li><a href="partner.html">Partner</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
+            <ul class="main-menu">
+                <li><a href="index.html">
+                        <span lang="en">Home</span>
+                        <span lang="th">หน้าหลัก</span>
+                    </a></li>
+                <li><a href="index.html#about">
+                        <span lang="en">About</span>
+                        <span lang="th">เกี่ยวกับเรา</span>
+                    </a></li>
+                <li><a href="index.html#services">
+                        <span lang="en">Services</span>
+                        <span lang="th">บริการ</span>
+                    </a></li>
+                <li><a href="products.html" class="active">
+                        <span lang="en">Products</span>
+                        <span lang="th">ผลิตภัณฑ์</span>
+                    </a></li>
+                <li><a href="index.html#portfolio">
+                        <span lang="en">Projects</span>
+                        <span lang="th">โปรเจกต์</span>
+                    </a></li>
+                <li><a href="partner.html">
+                        <span lang="en">Partner</span>
+                        <span lang="th">พันธมิตร</span>
+                    </a></li>
+                <li><a href="index.html#contact">
+                        <span lang="en">Contact</span>
+                        <span lang="th">ติดต่อเรา</span>
+                    </a></li>
             </ul>
             <div class="header-actions">
-                <a href="index.html#contact" class="btn-cta"
-                    style="background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%); color: white; padding: 0.75rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600;">
-                    <i class="fa fa-envelope"></i> Get Quote
+                <a href="index.html#contact" class="btn-cta">
+                    <i class="fa fa-envelope"></i>
+                    <span lang="en">Get Quote</span>
+                    <span lang="th">ขอใบเสนอราคา</span>
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="products-hero">
-        <div class="container text-center">
-            <div class="breadcrumb-custom">
-                <a href="index.html"><i class="fa fa-home"></i> Home</a>
-                <span>/</span>
-                <span>Products</span>
-            </div>
-            <h1 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-                Our Product Gallery
-            </h1>
-            <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-                Discover our comprehensive portfolio of innovative software solutions designed to transform businesses
-                across Thailand and Southeast Asia
-            </p>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1>Our Product Portfolio</h1>
+            <p>Innovative software solutions designed to transform businesses across Thailand and Southeast Asia</p>
         </div>
     </section>
 
-    <!-- Filter Section -->
-    <section class="filter-section">
-        <div class="container">
-            <div class="filter-buttons">
-                <button class="filter-btn active" data-filter="all">
-                    <i class="fa fa-th"></i> All Products
-                </button>
-                <button class="filter-btn" data-filter="ai">
-                    <i class="fa fa-brain"></i> AI Solutions
-                </button>
-                <button class="filter-btn" data-filter="business">
-                    <i class="fa fa-briefcase"></i> Business Systems
-                </button>
-                <button class="filter-btn" data-filter="ecommerce">
-                    <i class="fa fa-shopping-cart"></i> E-Commerce
-                </button>
-                <button class="filter-btn" data-filter="mobile">
-                    <i class="fa fa-mobile"></i> Mobile Apps
-                </button>
+    <!-- Products -->
+    <div class="products-container">
+
+
+
+        <!-- Product 2 -->
+        <div class="product-infographic">
+            <div class="product-image">
+                <span class="product-badge">Best Seller</span>
+                <img src="assets/images/modern-accounting-system.png" alt="Accounting System">
+            </div>
+            <div class="product-content">
+                <div class="product-category">Business Systems</div>
+                <h2 class="product-title">Modern Accounting System</h2>
+                <p class="product-description">Cloud-based accounting solution with automated workflows and Thai tax
+                    compliance.</p>
+                <ul class="product-features">
+                    <li><i class="fa fa-check-circle"></i> Automated bookkeeping</li>
+                    <li><i class="fa fa-check-circle"></i> Thai tax compliance</li>
+                    <li><i class="fa fa-check-circle"></i> Multi-currency support</li>
+                    <li><i class="fa fa-check-circle"></i> Financial reporting</li>
+                </ul>
+                <div class="product-tags">
+                    <span class="product-tag">Accounting</span>
+                    <span class="product-tag">Cloud-Based</span>
+                    <span class="product-tag">Tax</span>
+                </div>
+                <a href="index.html#contact" class="product-link">Contact Sales <i class="fa fa-envelope"></i></a>
             </div>
         </div>
-    </section>
 
-    <!-- Products Section -->
-    <section class="products-section">
-        <div class="container">
-            <div class="row" id="products-grid">
-
-                <!-- Product 1: AI-Powered Dashboard -->
-                <div class="col-lg-4 col-md-6 mb-4 product-item fade-in" data-category="ai">
-                    <div class="product-card">
-                        <span class="product-badge">AI Powered</span>
-                        <div class="product-image">
-                            <img src="assets/images/ai-powered-dashboard.png" alt="AI-Powered Dashboard">
-                            <div class="product-overlay">
-                                <div class="overlay-content">
-                                    <i class="fa fa-search-plus"></i>
-                                    <p>View Details</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-category">AI Solutions</div>
-                            <h3 class="product-title">AI-Powered Analytics Dashboard</h3>
-                            <p class="product-description">
-                                Intelligent business intelligence platform with machine learning capabilities for
-                                predictive analytics, real-time insights, and automated reporting.
-                            </p>
-                            <ul class="product-features">
-                                <li><i class="fa fa-check-circle"></i> Real-time data visualization</li>
-                                <li><i class="fa fa-check-circle"></i> Predictive analytics & forecasting</li>
-                                <li><i class="fa fa-check-circle"></i> Custom KPI tracking</li>
-                                <li><i class="fa fa-check-circle"></i> Automated insights generation</li>
-                            </ul>
-                            <div class="product-tags">
-                                <span class="product-tag">AI/ML</span>
-                                <span class="product-tag">Analytics</span>
-                                <span class="product-tag">Dashboard</span>
-                            </div>
-                            <div class="product-footer">
-                                <div class="product-status">
-                                    <span class="status-dot"></span>
-                                    <span>Available Now</span>
-                                </div>
-                                <a href="index.html#contact" class="product-link">
-                                    Learn More <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+        <!-- Product 3 -->
+        <div class="product-infographic">
+            <div class="product-image">
+                <span class="product-badge">Popular</span>
+                <img src="assets/images/pos-image-00.jpg" alt="POS System">
+            </div>
+            <div class="product-content">
+                <div class="product-category">Business Systems</div>
+                <h2 class="product-title">Smart POS System</h2>
+                <p class="product-description">All-in-one point of sale for retail and F&B with inventory management and
+                    analytics.</p>
+                <ul class="product-features">
+                    <li><i class="fa fa-check-circle"></i> Inventory management</li>
+                    <li><i class="fa fa-check-circle"></i> Customer loyalty programs</li>
+                    <li><i class="fa fa-check-circle"></i> Multi-store support</li>
+                    <li><i class="fa fa-check-circle"></i> Sales analytics</li>
+                </ul>
+                <div class="product-tags">
+                    <span class="product-tag">POS</span>
+                    <span class="product-tag">Retail</span>
+                    <span class="product-tag">F&B</span>
                 </div>
-
-                <!-- Product 2: Modern Accounting System -->
-                <div class="col-lg-4 col-md-6 mb-4 product-item fade-in" data-category="business">
-                    <div class="product-card">
-                        <span class="product-badge">Best Seller</span>
-                        <div class="product-image">
-                            <img src="assets/images/modern-accounting-system.png" alt="Modern Accounting System">
-                            <div class="product-overlay">
-                                <div class="overlay-content">
-                                    <i class="fa fa-search-plus"></i>
-                                    <p>View Details</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-category">Business Systems</div>
-                            <h3 class="product-title">Modern Accounting System</h3>
-                            <p class="product-description">
-                                Comprehensive cloud-based accounting solution with automated workflows, financial
-                                reporting, and seamless integration with Thai tax regulations.
-                            </p>
-                            <ul class="product-features">
-                                <li><i class="fa fa-check-circle"></i> Automated bookkeeping</li>
-                                <li><i class="fa fa-check-circle"></i> Thai tax compliance</li>
-                                <li><i class="fa fa-check-circle"></i> Multi-currency support</li>
-                                <li><i class="fa fa-check-circle"></i> Financial reporting & analytics</li>
-                            </ul>
-                            <div class="product-tags">
-                                <span class="product-tag">Accounting</span>
-                                <span class="product-tag">Cloud-Based</span>
-                                <span class="product-tag">Tax Compliance</span>
-                            </div>
-                            <div class="product-footer">
-                                <div class="product-status">
-                                    <span class="status-dot"></span>
-                                    <span>Available Now</span>
-                                </div>
-                                <a href="index.html#contact" class="product-link">
-                                    Learn More <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product 3: POS System -->
-                <div class="col-lg-4 col-md-6 mb-4 product-item fade-in" data-category="business">
-                    <div class="product-card">
-                        <span class="product-badge">Popular</span>
-                        <div class="product-image">
-                            <img src="assets/images/pos-image-00.jpg" alt="Point of Sale System">
-                            <div class="product-overlay">
-                                <div class="overlay-content">
-                                    <i class="fa fa-search-plus"></i>
-                                    <p>View Details</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-category">Business Systems</div>
-                            <h3 class="product-title">Smart POS System</h3>
-                            <p class="product-description">
-                                All-in-one point of sale solution for retail and F&B businesses with inventory
-                                management, customer loyalty programs, and real-time sales analytics.
-                            </p>
-                            <ul class="product-features">
-                                <li><i class="fa fa-check-circle"></i> Inventory management</li>
-                                <li><i class="fa fa-check-circle"></i> Customer loyalty programs</li>
-                                <li><i class="fa fa-check-circle"></i> Multi-store support</li>
-                                <li><i class="fa fa-check-circle"></i> Sales analytics & reporting</li>
-                            </ul>
-                            <div class="product-tags">
-                                <span class="product-tag">POS</span>
-                                <span class="product-tag">Retail</span>
-                                <span class="product-tag">F&B</span>
-                            </div>
-                            <div class="product-footer">
-                                <div class="product-status">
-                                    <span class="status-dot"></span>
-                                    <span>Available Now</span>
-                                </div>
-                                <a href="index.html#contact" class="product-link">
-                                    Learn More <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product 4: Real Estate Platform -->
-                <div class="col-lg-4 col-md-6 mb-4 product-item fade-in" data-category="business">
-                    <div class="product-card">
-                        <span class="product-badge">New</span>
-                        <div class="product-image">
-                            <img src="assets/images/real-estate-image-01.jpg" alt="Real Estate Platform">
-                            <div class="product-overlay">
-                                <div class="overlay-content">
-                                    <i class="fa fa-search-plus"></i>
-                                    <p>View Details</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-category">Business Systems</div>
-                            <h3 class="product-title">Real Estate Management Platform</h3>
-                            <p class="product-description">
-                                Complete property management solution with listing management, customer relationship
-                                tools, virtual tours, and automated marketing campaigns.
-                            </p>
-                            <ul class="product-features">
-                                <li><i class="fa fa-check-circle"></i> Property listing management</li>
-                                <li><i class="fa fa-check-circle"></i> CRM & lead tracking</li>
-                                <li><i class="fa fa-check-circle"></i> Virtual tour integration</li>
-                                <li><i class="fa fa-check-circle"></i> Automated marketing</li>
-                            </ul>
-                            <div class="product-tags">
-                                <span class="product-tag">Real Estate</span>
-                                <span class="product-tag">CRM</span>
-                                <span class="product-tag">Marketing</span>
-                            </div>
-                            <div class="product-footer">
-                                <div class="product-status">
-                                    <span class="status-dot"></span>
-                                    <span>Available Now</span>
-                                </div>
-                                <a href="index.html#contact" class="product-link">
-                                    Learn More <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product 5: E-Commerce Platform -->
-                <div class="col-lg-4 col-md-6 mb-4 product-item fade-in" data-category="ecommerce">
-                    <div class="product-card">
-                        <span class="product-badge">Featured</span>
-                        <div class="product-image">
-                            <img src="assets/images/webe-commerce.png" alt="E-Commerce Platform">
-                            <div class="product-overlay">
-                                <div class="overlay-content">
-                                    <i class="fa fa-search-plus"></i>
-                                    <p>View Details</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-category">E-Commerce</div>
-                            <h3 class="product-title">E-Commerce Platform</h3>
-                            <p class="product-description">
-                                Full-featured online store solution with payment gateway integration, inventory
-                                management, order tracking, and marketing automation tools.
-                            </p>
-                            <ul class="product-features">
-                                <li><i class="fa fa-check-circle"></i> Multi-payment gateway support</li>
-                                <li><i class="fa fa-check-circle"></i> Inventory & order management</li>
-                                <li><i class="fa fa-check-circle"></i> SEO optimization</li>
-                                <li><i class="fa fa-check-circle"></i> Marketing automation</li>
-                            </ul>
-                            <div class="product-tags">
-                                <span class="product-tag">E-Commerce</span>
-                                <span class="product-tag">Online Store</span>
-                                <span class="product-tag">Payment</span>
-                            </div>
-                            <div class="product-footer">
-                                <div class="product-status">
-                                    <span class="status-dot"></span>
-                                    <span>Available Now</span>
-                                </div>
-                                <a href="index.html#contact" class="product-link">
-                                    Learn More <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product 6: Online Travel Agency -->
-                <div class="col-lg-4 col-md-6 mb-4 product-item fade-in" data-category="business">
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="assets/images/online-travel-agency.jpg" alt="Online Travel Agency System">
-                            <div class="product-overlay">
-                                <div class="overlay-content">
-                                    <i class="fa fa-search-plus"></i>
-                                    <p>View Details</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-category">Business Systems</div>
-                            <h3 class="product-title">Online Travel Agency System</h3>
-                            <p class="product-description">
-                                Comprehensive travel booking platform with hotel reservations, flight bookings, tour
-                                packages, and integrated payment processing.
-                            </p>
-                            <ul class="product-features">
-                                <li><i class="fa fa-check-circle"></i> Hotel & flight booking</li>
-                                <li><i class="fa fa-check-circle"></i> Tour package management</li>
-                                <li><i class="fa fa-check-circle"></i> Customer portal</li>
-                                <li><i class="fa fa-check-circle"></i> Commission tracking</li>
-                            </ul>
-                            <div class="product-tags">
-                                <span class="product-tag">Travel</span>
-                                <span class="product-tag">Booking</span>
-                                <span class="product-tag">Tourism</span>
-                            </div>
-                            <div class="product-footer">
-                                <div class="product-status">
-                                    <span class="status-dot"></span>
-                                    <span>Available Now</span>
-                                </div>
-                                <a href="index.html#contact" class="product-link">
-                                    Learn More <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product 7: Construction Claim System -->
-                <div class="col-lg-4 col-md-6 mb-4 product-item fade-in" data-category="business">
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="assets/images/constrcution-claim-sys01.jpg" alt="Construction Claim System">
-                            <div class="product-overlay">
-                                <div class="overlay-content">
-                                    <i class="fa fa-search-plus"></i>
-                                    <p>View Details</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-category">Business Systems</div>
-                            <h3 class="product-title">Construction Claim Management</h3>
-                            <p class="product-description">
-                                Specialized system for construction project management with claim tracking, document
-                                management, approval workflows, and progress monitoring.
-                            </p>
-                            <ul class="product-features">
-                                <li><i class="fa fa-check-circle"></i> Claim tracking & management</li>
-                                <li><i class="fa fa-check-circle"></i> Document management</li>
-                                <li><i class="fa fa-check-circle"></i> Approval workflows</li>
-                                <li><i class="fa fa-check-circle"></i> Progress reporting</li>
-                            </ul>
-                            <div class="product-tags">
-                                <span class="product-tag">Construction</span>
-                                <span class="product-tag">Project Management</span>
-                                <span class="product-tag">Claims</span>
-                            </div>
-                            <div class="product-footer">
-                                <div class="product-status">
-                                    <span class="status-dot"></span>
-                                    <span>Available Now</span>
-                                </div>
-                                <a href="index.html#contact" class="product-link">
-                                    Learn More <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product 8: Approval Flow System -->
-                <div class="col-lg-4 col-md-6 mb-4 product-item fade-in" data-category="business">
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="assets/images/approval-flow-sys01.jpg" alt="Approval Flow System">
-                            <div class="product-overlay">
-                                <div class="overlay-content">
-                                    <i class="fa fa-search-plus"></i>
-                                    <p>View Details</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-category">Business Systems</div>
-                            <h3 class="product-title">Approval Flow & Workflow System</h3>
-                            <p class="product-description">
-                                Streamline business processes with customizable approval workflows, automated
-                                notifications, and comprehensive audit trails for compliance.
-                            </p>
-                            <ul class="product-features">
-                                <li><i class="fa fa-check-circle"></i> Custom workflow builder</li>
-                                <li><i class="fa fa-check-circle"></i> Multi-level approvals</li>
-                                <li><i class="fa fa-check-circle"></i> Automated notifications</li>
-                                <li><i class="fa fa-check-circle"></i> Audit trail & reporting</li>
-                            </ul>
-                            <div class="product-tags">
-                                <span class="product-tag">Workflow</span>
-                                <span class="product-tag">Approval</span>
-                                <span class="product-tag">Automation</span>
-                            </div>
-                            <div class="product-footer">
-                                <div class="product-status">
-                                    <span class="status-dot"></span>
-                                    <span>Available Now</span>
-                                </div>
-                                <a href="index.html#contact" class="product-link">
-                                    Learn More <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product 9: HR Recruitment System -->
-                <div class="col-lg-4 col-md-6 mb-4 product-item fade-in" data-category="business">
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="assets/images/hlcorp-hr-recruitment.png" alt="HR Recruitment System">
-                            <div class="product-overlay">
-                                <div class="overlay-content">
-                                    <i class="fa fa-search-plus"></i>
-                                    <p>View Details</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-category">Business Systems</div>
-                            <h3 class="product-title">HR Recruitment & Management</h3>
-                            <p class="product-description">
-                                Complete HR solution with applicant tracking, employee onboarding, performance
-                                management, and payroll integration for modern businesses.
-                            </p>
-                            <ul class="product-features">
-                                <li><i class="fa fa-check-circle"></i> Applicant tracking system</li>
-                                <li><i class="fa fa-check-circle"></i> Employee onboarding</li>
-                                <li><i class="fa fa-check-circle"></i> Performance management</li>
-                                <li><i class="fa fa-check-circle"></i> Leave & attendance tracking</li>
-                            </ul>
-                            <div class="product-tags">
-                                <span class="product-tag">HR</span>
-                                <span class="product-tag">Recruitment</span>
-                                <span class="product-tag">Employee Management</span>
-                            </div>
-                            <div class="product-footer">
-                                <div class="product-status">
-                                    <span class="status-dot"></span>
-                                    <span>Available Now</span>
-                                </div>
-                                <a href="index.html#contact" class="product-link">
-                                    Learn More <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product 10: Mobile Development Platform -->
-                <div class="col-lg-4 col-md-6 mb-4 product-item fade-in" data-category="mobile">
-                    <div class="product-card">
-                        <span class="product-badge">Cross-Platform</span>
-                        <div class="product-image">
-                            <img src="assets/images/website-mobile-development-system.png"
-                                alt="Mobile Development Platform">
-                            <div class="product-overlay">
-                                <div class="overlay-content">
-                                    <i class="fa fa-search-plus"></i>
-                                    <p>View Details</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-category">Mobile Apps</div>
-                            <h3 class="product-title">Mobile App Development Platform</h3>
-                            <p class="product-description">
-                                Cross-platform mobile application development using React Native and Flutter for iOS and
-                                Android with native performance and user experience.
-                            </p>
-                            <ul class="product-features">
-                                <li><i class="fa fa-check-circle"></i> Cross-platform development</li>
-                                <li><i class="fa fa-check-circle"></i> Native performance</li>
-                                <li><i class="fa fa-check-circle"></i> Push notifications</li>
-                                <li><i class="fa fa-check-circle"></i> Offline functionality</li>
-                            </ul>
-                            <div class="product-tags">
-                                <span class="product-tag">Mobile</span>
-                                <span class="product-tag">React Native</span>
-                                <span class="product-tag">Flutter</span>
-                            </div>
-                            <div class="product-footer">
-                                <div class="product-status">
-                                    <span class="status-dot"></span>
-                                    <span>Available Now</span>
-                                </div>
-                                <a href="index.html#contact" class="product-link">
-                                    Learn More <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product 11: Digital Marketing Platform -->
-                <div class="col-lg-4 col-md-6 mb-4 product-item fade-in" data-category="business">
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="assets/images/digital-marketing.jpg" alt="Digital Marketing Platform">
-                            <div class="product-overlay">
-                                <div class="overlay-content">
-                                    <i class="fa fa-search-plus"></i>
-                                    <p>View Details</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-category">Business Systems</div>
-                            <h3 class="product-title">Digital Marketing Platform</h3>
-                            <p class="product-description">
-                                All-in-one marketing automation platform with email campaigns, social media management,
-                                analytics, and customer segmentation tools.
-                            </p>
-                            <ul class="product-features">
-                                <li><i class="fa fa-check-circle"></i> Email marketing automation</li>
-                                <li><i class="fa fa-check-circle"></i> Social media management</li>
-                                <li><i class="fa fa-check-circle"></i> Analytics & reporting</li>
-                                <li><i class="fa fa-check-circle"></i> Customer segmentation</li>
-                            </ul>
-                            <div class="product-tags">
-                                <span class="product-tag">Marketing</span>
-                                <span class="product-tag">Automation</span>
-                                <span class="product-tag">Analytics</span>
-                            </div>
-                            <div class="product-footer">
-                                <div class="product-status">
-                                    <span class="status-dot"></span>
-                                    <span>Available Now</span>
-                                </div>
-                                <a href="index.html#contact" class="product-link">
-                                    Learn More <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product 12: IT Outsourcing Services -->
-                <div class="col-lg-4 col-md-6 mb-4 product-item fade-in" data-category="business">
-                    <div class="product-card">
-                        <span class="product-badge">Service</span>
-                        <div class="product-image">
-                            <img src="assets/images/it-outsourcing-development.jpg" alt="IT Outsourcing Services">
-                            <div class="product-overlay">
-                                <div class="overlay-content">
-                                    <i class="fa fa-search-plus"></i>
-                                    <p>View Details</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-category">Business Systems</div>
-                            <h3 class="product-title">IT Outsourcing & Development</h3>
-                            <p class="product-description">
-                                Professional IT outsourcing services with dedicated development teams, project
-                                management, and technical support for your business needs.
-                            </p>
-                            <ul class="product-features">
-                                <li><i class="fa fa-check-circle"></i> Dedicated development teams</li>
-                                <li><i class="fa fa-check-circle"></i> Project management</li>
-                                <li><i class="fa fa-check-circle"></i> Technical support</li>
-                                <li><i class="fa fa-check-circle"></i> Quality assurance</li>
-                            </ul>
-                            <div class="product-tags">
-                                <span class="product-tag">Outsourcing</span>
-                                <span class="product-tag">Development</span>
-                                <span class="product-tag">Support</span>
-                            </div>
-                            <div class="product-footer">
-                                <div class="product-status">
-                                    <span class="status-dot"></span>
-                                    <span>Available Now</span>
-                                </div>
-                                <a href="index.html#contact" class="product-link">
-                                    Learn More <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+                <a href="index.html#contact" class="product-link">Contact Sales <i class="fa fa-envelope"></i></a>
             </div>
         </div>
-    </section>
 
-    <!-- Stats Section -->
-    <section class="stats-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="stat-card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
-                        <span class="stat-number">12+</span>
-                        <span class="stat-label">Products & Solutions</span>
-                    </div>
+        <!-- Product 4 -->
+        <div class="product-infographic">
+            <div class="product-image">
+                <span class="product-badge">New</span>
+                <img src="assets/images/real-estate-image-01.jpg" alt="Real Estate">
+            </div>
+            <div class="product-content">
+                <div class="product-category">Business Systems</div>
+                <h2 class="product-title">Real Estate Platform</h2>
+                <p class="product-description">Complete property management with listings, CRM, and virtual tours.</p>
+                <ul class="product-features">
+                    <li><i class="fa fa-check-circle"></i> Property listing management</li>
+                    <li><i class="fa fa-check-circle"></i> CRM & lead tracking</li>
+                    <li><i class="fa fa-check-circle"></i> Virtual tour integration</li>
+                    <li><i class="fa fa-check-circle"></i> Automated marketing</li>
+                </ul>
+                <div class="product-tags">
+                    <span class="product-tag">Real Estate</span>
+                    <span class="product-tag">CRM</span>
+                    <span class="product-tag">Marketing</span>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="stat-card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-                        <span class="stat-number">50+</span>
-                        <span class="stat-label">Happy Clients</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="stat-card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-                        <span class="stat-number">15+</span>
-                        <span class="stat-label">Years Experience</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="stat-card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-                        <span class="stat-number">99%</span>
-                        <span class="stat-label">Client Satisfaction</span>
-                    </div>
-                </div>
+                <a href="index.html#contact" class="product-link">Contact Sales <i class="fa fa-envelope"></i></a>
             </div>
         </div>
-    </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <h2 class="cta-title wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-                Ready to Transform Your Business?
-            </h2>
-            <p class="cta-description wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-                Get in touch with our team to discuss how our products can help you achieve your business goals. We
-                offer free consultations and custom solutions tailored to your needs.
-            </p>
-            <div class="cta-buttons wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
-                <a href="index.html#contact" class="cta-btn-primary">
-                    <i class="fa fa-envelope"></i> Get Free Consultation
-                </a>
-                <a href="index.html#portfolio" class="cta-btn-secondary">
-                    <i class="fa fa-folder-open"></i> View Our Projects
-                </a>
+        <!-- Product 5 -->
+        <div class="product-infographic">
+            <div class="product-image">
+                <span class="product-badge">Featured</span>
+                <img src="assets/images/webe-commerce.png" alt="E-Commerce">
+            </div>
+            <div class="product-content">
+                <div class="product-category">E-Commerce</div>
+                <h2 class="product-title">E-Commerce Platform</h2>
+                <p class="product-description">Full-featured online store with payment gateway and marketing automation.
+                </p>
+                <ul class="product-features">
+                    <li><i class="fa fa-check-circle"></i> Multi-payment gateway</li>
+                    <li><i class="fa fa-check-circle"></i> Inventory & order management</li>
+                    <li><i class="fa fa-check-circle"></i> SEO optimization</li>
+                    <li><i class="fa fa-check-circle"></i> Marketing automation</li>
+                </ul>
+                <div class="product-tags">
+                    <span class="product-tag">E-Commerce</span>
+                    <span class="product-tag">Online Store</span>
+                    <span class="product-tag">Payment</span>
+                </div>
+                <a href="index.html#contact" class="product-link">Contact Sales <i class="fa fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-infographic">
+            <div class="product-image">
+                <img src="assets/images/travel-hub.png" alt="Travel Agency">
+            </div>
+            <div class="product-content">
+                <div class="product-category">Business Systems</div>
+                <h2 class="product-title">Travel Agency System</h2>
+                <p class="product-description">Comprehensive travel booking platform with hotels, flights, and tour
+                    packages.</p>
+                <ul class="product-features">
+                    <li><i class="fa fa-check-circle"></i> Hotel & flight booking</li>
+                    <li><i class="fa fa-check-circle"></i> Tour package management</li>
+                    <li><i class="fa fa-check-circle"></i> Customer portal</li>
+                    <li><i class="fa fa-check-circle"></i> Commission tracking</li>
+                </ul>
+                <div class="product-tags">
+                    <span class="product-tag">Travel</span>
+                    <span class="product-tag">Booking</span>
+                    <span class="product-tag">Tourism</span>
+                </div>
+                <a href="index.html#contact" class="product-link">Contact Sales <i class="fa fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="product-infographic">
+            <div class="product-image">
+                <img src="assets/images/constrcution-claim-sys01.jpg" alt="Construction">
+            </div>
+            <div class="product-content">
+                <div class="product-category">Business Systems</div>
+                <h2 class="product-title">Construction Management</h2>
+                <p class="product-description">Project management with claim tracking and approval workflows.</p>
+                <ul class="product-features">
+                    <li><i class="fa fa-check-circle"></i> Claim tracking</li>
+                    <li><i class="fa fa-check-circle"></i> Document management</li>
+                    <li><i class="fa fa-check-circle"></i> Approval workflows</li>
+                    <li><i class="fa fa-check-circle"></i> Progress reporting</li>
+                </ul>
+                <div class="product-tags">
+                    <span class="product-tag">Construction</span>
+                    <span class="product-tag">Project Management</span>
+                </div>
+                <a href="index.html#contact" class="product-link">Contact Sales <i class="fa fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="product-infographic">
+            <div class="product-image">
+                <img src="assets/images/approval-flow-sys01.jpg" alt="Workflow">
+            </div>
+            <div class="product-content">
+                <div class="product-category">Business Systems</div>
+                <h2 class="product-title">Workflow System</h2>
+                <p class="product-description">Customizable approval workflows with automated notifications.</p>
+                <ul class="product-features">
+                    <li><i class="fa fa-check-circle"></i> Custom workflow builder</li>
+                    <li><i class="fa fa-check-circle"></i> Multi-level approvals</li>
+                    <li><i class="fa fa-check-circle"></i> Automated notifications</li>
+                    <li><i class="fa fa-check-circle"></i> Audit trail</li>
+                </ul>
+                <div class="product-tags">
+                    <span class="product-tag">Workflow</span>
+                    <span class="product-tag">Automation</span>
+                </div>
+                <a href="index.html#contact" class="product-link">Contact Sales <i class="fa fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <!-- Product 9 -->
+        <div class="product-infographic">
+            <div class="product-image">
+                <img src="assets/images/hlcorp-hr-recruitment.png" alt="HR System">
+            </div>
+            <div class="product-content">
+                <div class="product-category">Business Systems</div>
+                <h2 class="product-title">HR Management</h2>
+                <p class="product-description">Complete HR solution with recruitment and performance management.</p>
+                <ul class="product-features">
+                    <li><i class="fa fa-check-circle"></i> Applicant tracking</li>
+                    <li><i class="fa fa-check-circle"></i> Employee onboarding</li>
+                    <li><i class="fa fa-check-circle"></i> Performance management</li>
+                    <li><i class="fa fa-check-circle"></i> Leave tracking</li>
+                </ul>
+                <div class="product-tags">
+                    <span class="product-tag">HR</span>
+                    <span class="product-tag">Recruitment</span>
+                </div>
+                <a href="index.html#contact" class="product-link">Contact Sales <i class="fa fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <!-- Product 10 -->
+        <div class="product-infographic">
+            <div class="product-image">
+                <span class="product-badge">Cross-Platform</span>
+                <img src="assets/images/website-mobile-development-system.png" alt="Mobile">
+            </div>
+            <div class="product-content">
+                <div class="product-category">Mobile Apps</div>
+                <h2 class="product-title">Mobile Development</h2>
+                <p class="product-description">Cross-platform apps using React Native and Flutter.</p>
+                <ul class="product-features">
+                    <li><i class="fa fa-check-circle"></i> Cross-platform development</li>
+                    <li><i class="fa fa-check-circle"></i> Native performance</li>
+                    <li><i class="fa fa-check-circle"></i> Push notifications</li>
+                    <li><i class="fa fa-check-circle"></i> Offline functionality</li>
+                </ul>
+                <div class="product-tags">
+                    <span class="product-tag">Mobile</span>
+                    <span class="product-tag">React Native</span>
+                    <span class="product-tag">Flutter</span>
+                </div>
+                <a href="index.html#contact" class="product-link">Contact Sales <i class="fa fa-envelope"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Stats -->
+    <section class="stats">
+        <div class="stats-grid">
+            <div>
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Products</span>
+            </div>
+            <div>
+                <span class="stat-number">50+</span>
+                <span class="stat-label">Clients</span>
+            </div>
+            <div>
+                <span class="stat-number">15+</span>
+                <span class="stat-label">Years</span>
+            </div>
+            <div>
+                <span class="stat-number">99%</span>
+                <span class="stat-label">Satisfaction</span>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="site-footer" style="background: #0F172A; color: white; padding: 4rem 0 2rem;">
+    <footer class="site-footer">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
+            <div class="footer-content">
+                <!-- Brand Section -->
+                <div class="footer-section">
                     <div class="footer-brand">
-                        <img src="assets/images/hlcorp-logo.png" alt="H.L. Corporation Logo" height="40">
-                        <h5 style="color: white; margin-top: 1rem;">H.L. Corporation Co.,Ltd.</h5>
-                        <p style="color: #94A3B8;">Leading AI & IT Solutions Company in Thailand. We deliver innovative
-                            software solutions that drive digital transformation.</p>
+                        <img src="assets/images/hlcorp-logo.png" alt="HL Corporation" class="footer-logo-icon">
+                        <h5>H.L. Corporation Co.,Ltd.</h5>
+                        <p>
+                            Professional tech solutions for modern businesses. We transform ideas into powerful digital
+                            experiences.
+                        </p>
                     </div>
-                </div>
-                <div class="col-lg-2 col-md-6 mb-4">
-                    <h6 style="color: white; font-weight: 700; margin-bottom: 1.5rem;">Quick Links</h6>
-                    <ul style="list-style: none; padding: 0;">
-                        <li style="margin-bottom: 0.75rem;"><a href="index.html"
-                                style="color: #94A3B8; text-decoration: none;">Home</a></li>
-                        <li style="margin-bottom: 0.75rem;"><a href="index.html#about"
-                                style="color: #94A3B8; text-decoration: none;">About</a></li>
-                        <li style="margin-bottom: 0.75rem;"><a href="index.html#services"
-                                style="color: #94A3B8; text-decoration: none;">Services</a></li>
-                        <li style="margin-bottom: 0.75rem;"><a href="products.html"
-                                style="color: #94A3B8; text-decoration: none;">Products</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <h6 style="color: white; font-weight: 700; margin-bottom: 1.5rem;">Contact Info</h6>
-                    <ul style="list-style: none; padding: 0;">
-                        <li style="margin-bottom: 0.75rem; color: #94A3B8;"><i class="fa fa-map-marker"
-                                style="margin-right: 0.5rem;"></i> Bangkok, Thailand</li>
-                        <li style="margin-bottom: 0.75rem;"><a href="mailto:hlcorp.th@gmail.com"
-                                style="color: #94A3B8; text-decoration: none;"><i class="fa fa-envelope"
-                                    style="margin-right: 0.5rem;"></i> hlcorp.th@gmail.com</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <h6 style="color: white; font-weight: 700; margin-bottom: 1.5rem;">Follow Us</h6>
-                    <div style="display: flex; gap: 0.75rem;">
-                        <a href="https://www.facebook.com/hlcth" target="_blank"
-                            style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: rgba(255, 255, 255, 0.1); border-radius: 10px; color: white; text-decoration: none;">
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/hlcth" target="_blank" aria-label="Facebook">
                             <i class="fa fa-facebook"></i>
                         </a>
                         <a href="https://www.linkedin.com/company/hlcorporation-th/" target="_blank"
-                            style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: rgba(255, 255, 255, 0.1); border-radius: 10px; color: white; text-decoration: none;">
+                            aria-label="LinkedIn">
                             <i class="fa fa-linkedin"></i>
                         </a>
-                        <a href="https://lin.ee/pz2YLa3" target="_blank"
-                            style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: rgba(255, 255, 255, 0.1); border-radius: 10px; color: white; text-decoration: none;">
+                        <a href="https://lin.ee/pz2YLa3" target="_blank" aria-label="LINE">
                             <i class="fa fa-comment"></i>
                         </a>
                     </div>
                 </div>
+
+                <!-- Services -->
+                <div class="footer-section">
+                    <h6>Services</h6>
+                    <ul class="footer-links">
+                        <li><a href="index.html#services">Web Development</a></li>
+                        <li><a href="index.html#services">Mobile Apps</a></li>
+                        <li><a href="index.html#services">IT Outsourcing</a></li>
+                        <li><a href="index.html#services">Digital Marketing</a></li>
+                        <li><a href="index.html#services">System Integration</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div class="footer-section">
+                    <h6>Company</h6>
+                    <ul class="footer-links">
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#portfolio">Our Work</a></li>
+                        <li><a href="partner.html">Partner</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#contact">Get Quote</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="footer-section">
+                    <h6>Contact</h6>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fa fa-envelope"></i>
+                            <a href="mailto:hlcorp.th@gmail.com">hlcorp.th@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa fa-map-marker"></i>
+                            <span>Bangkok, Thailand</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="footer-bottom"
-                style="border-top: 1px solid #334155; padding-top: 2rem; margin-top: 2rem; text-align: center;">
-                <p style="color: #94A3B8; margin: 0;">© 2025 H.L. Corporation Co.,Ltd. All rights reserved.</p>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2025 H.L. Corporation Co.,Ltd. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="index.html#privacy">Privacy Policy</a>
+                    <a href="index.html#terms">Terms of Service</a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/owl-carousel.js"></script>
     <script src="assets/js/animation.js"></script>
     <script src="assets/js/imagesloaded.js"></script>
     <script src="assets/js/custom.js"></script>
-
-    <script>
-        // Filter functionality
-        document.addEventListener('DOMContentLoaded', function () {
-            const filterButtons = document.querySelectorAll('.filter-btn');
-            const productItems = document.querySelectorAll('.product-item');
-
-            filterButtons.forEach(button => {
-                button.addEventListener('click', function () {
-                    const filter = this.getAttribute('data-filter');
-
-                    // Update active button
-                    filterButtons.forEach(btn => btn.classList.remove('active'));
-                    this.classList.add('active');
-
-                    // Filter products
-                    productItems.forEach(item => {
-                        if (filter === 'all' || item.getAttribute('data-category') === filter) {
-                            item.style.display = 'block';
-                            setTimeout(() => {
-                                item.style.opacity = '1';
-                                item.style.transform = 'translateY(0)';
-                            }, 10);
-                        } else {
-                            item.style.opacity = '0';
-                            item.style.transform = 'translateY(30px)';
-                            setTimeout(() => {
-                                item.style.display = 'none';
-                            }, 300);
-                        }
-                    });
-                });
-            });
-
-            // Mobile menu toggle
-            const headerToggle = document.querySelector('.header-toggle');
-            const mainMenu = document.querySelector('.main-menu');
-
-            if (headerToggle) {
-                headerToggle.addEventListener('click', function () {
-                    mainMenu.classList.toggle('active');
-                });
-            }
-
-            // Smooth scroll
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                });
-            });
-
-            // Header scroll effect
-            window.addEventListener('scroll', function () {
-                const header = document.querySelector('.site-header');
-                if (window.scrollY > 50) {
-                    header.classList.add('scrolled');
-                } else {
-                    header.classList.remove('scrolled');
-                }
-            });
-        });
-    </script>
-
 </body>
 
 </html>

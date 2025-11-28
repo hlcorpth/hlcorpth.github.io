@@ -24,9 +24,9 @@ body {
   --white: #ffffff;
   --text-dark: #2c3e50;
   --text-light: #6c757d;
-  --shadow-light: 0 5px 15px rgba(0,0,0,0.08);
-  --shadow-medium: 0 10px 30px rgba(0,0,0,0.12);
-  --shadow-heavy: 0 20px 40px rgba(0,0,0,0.15);
+  --shadow-light: 0 5px 15px rgba(0, 0, 0, 0.08);
+  --shadow-medium: 0 10px 30px rgba(0, 0, 0, 0.12);
+  --shadow-heavy: 0 20px 40px rgba(0, 0, 0, 0.15);
   --border-radius: 20px;
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -59,12 +59,25 @@ body {
   animation: bounce 1.4s ease-in-out infinite both;
 }
 
-.preloader-inner .dot:nth-child(1) { animation-delay: -0.32s; }
-.preloader-inner .dot:nth-child(2) { animation-delay: -0.16s; }
+.preloader-inner .dot:nth-child(1) {
+  animation-delay: -0.32s;
+}
+
+.preloader-inner .dot:nth-child(2) {
+  animation-delay: -0.16s;
+}
 
 @keyframes bounce {
-  0%, 80%, 100% { transform: scale(0); }
-  40% { transform: scale(1); }
+
+  0%,
+  80%,
+  100% {
+    transform: scale(0);
+  }
+
+  40% {
+    transform: scale(1);
+  }
 }
 
 /* Modern Header */
@@ -89,7 +102,7 @@ body {
 .pre-header ul.social-media li a {
   width: 35px;
   height: 35px;
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -108,15 +121,15 @@ body {
 
 /* Enhanced Header */
 .header-area {
-  background: rgba(255,255,255,0.95);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: var(--shadow-light);
   transition: var(--transition);
 }
 
 .header-area.header-sticky {
-  background: rgba(255,255,255,0.98);
+  background: rgba(255, 255, 255, 0.98);
   box-shadow: var(--shadow-medium);
 }
 
@@ -190,20 +203,20 @@ body {
 }
 
 .main-title {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 800;
   color: var(--white);
   margin-bottom: 25px;
   line-height: 1.1;
-  text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .hero-description {
   font-size: 1.2rem;
-  color: rgba(255,255,255,0.9);
+  color: rgba(255, 255, 255, 0.9);
   line-height: 1.8;
   margin-bottom: 40px;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .hero-buttons {
@@ -212,7 +225,8 @@ body {
   flex-wrap: wrap;
 }
 
-.primary-btn, .secondary-btn {
+.primary-btn,
+.secondary-btn {
   padding: 18px 40px;
   border-radius: 50px;
   font-weight: 600;
@@ -241,12 +255,12 @@ body {
 .secondary-btn {
   background: transparent;
   color: var(--white);
-  border: 2px solid rgba(255,255,255,0.3);
+  border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .secondary-btn:hover {
-  background: rgba(255,255,255,0.1);
-  border-color: rgba(255,255,255,0.5);
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
   transform: translateY(-5px);
   color: var(--white);
 }
@@ -429,7 +443,7 @@ body {
 .services .naccs .menu div .icon {
   width: 50px;
   height: 50px;
-  background: rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -437,7 +451,7 @@ body {
 }
 
 .services .naccs .menu div.active .icon {
-  background: rgba(255,255,255,0.3);
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .services .naccs .menu div .icon img {
@@ -558,11 +572,11 @@ body {
 }
 
 .testimonial-item {
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border-radius: var(--border-radius);
   padding: 40px 30px;
-  border: 1px solid rgba(255,255,255,0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   transition: var(--transition);
   position: relative;
   overflow: hidden;
@@ -595,7 +609,7 @@ body {
 }
 
 .testimonial-content p {
-  color: rgba(255,255,255,0.9);
+  color: rgba(255, 255, 255, 0.9);
   font-size: 1.1rem;
   line-height: 1.8;
   margin-bottom: 25px;
@@ -609,7 +623,7 @@ body {
 }
 
 .author-info span {
-  color: rgba(255,255,255,0.7);
+  color: rgba(255, 255, 255, 0.7);
   font-size: 0.9rem;
 }
 
@@ -683,23 +697,23 @@ footer p {
   .main-title {
     font-size: 2.5rem;
   }
-  
+
   .hero-buttons {
     flex-direction: column;
   }
-  
+
   .stat-number {
     font-size: 2.5rem;
   }
-  
+
   .section-heading h4 {
     font-size: 2rem;
   }
-  
+
   .services .naccs .menu div {
     padding: 20px;
   }
-  
+
   .testimonial-item {
     padding: 30px 20px;
   }
@@ -711,6 +725,7 @@ footer p {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -737,4 +752,4 @@ footer p {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--secondary-gradient);
-} 
+}
