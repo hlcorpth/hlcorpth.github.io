@@ -66,20 +66,24 @@ Based on the clean, corporate design from the image
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  color: white;
+  width: 40px;
+  height: 40px;
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  color: #FFFFFF !important;
+  border-radius: 8px;
   text-decoration: none;
   transition: all 0.3s ease;
-  font-size: 0.875rem;
+  font-size: 1.2rem;
 }
 
 .social-list a:hover {
-  background: #3498db;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  color: #3B82F6 !important;
+  transform: translateY(-3px);
 }
 
 /* Main Header */

@@ -702,22 +702,25 @@ section,
 }
 
 .footer-social a {
-  width: 36px;
-  height: 36px;
-  border-radius: 999px;
-  background: var(--apple-surface);
-  border: 1px solid var(--apple-border);
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: none !important;
+  background-color: transparent !important;
+  border: none !important;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: var(--apple-muted);
-  transition: all .2s ease;
+  color: white !important;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
 }
 
 .footer-social a:hover {
-  background: #000;
-  color: #fff;
-  border-color: #000;
+  background: none !important;
+  background-color: transparent !important;
+  border: none !important;
+  color: #3B82F6 !important;
 }
 
 .footer-section h6 {
@@ -1340,6 +1343,7 @@ p,
   font-size: 10px;
   font-weight: 600;
   text-transform: uppercase;
+  z-index: 10;
 }
 
 .service-icon {

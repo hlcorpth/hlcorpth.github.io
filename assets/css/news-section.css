@@ -4,7 +4,8 @@ Modern card design with slider/carousel
 */
 
 /* News Section */
-.news-section, .free-quote {
+.news-section,
+.free-quote {
   background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
   padding: 100px 0;
   position: relative;
@@ -274,11 +275,11 @@ Modern card design with slider/carousel
   .news-section {
     padding: 80px 0;
   }
-  
+
   .news-section .section-heading h2 {
     font-size: 2.25rem;
   }
-  
+
   .news-image {
     height: 200px;
   }
@@ -288,31 +289,31 @@ Modern card design with slider/carousel
   .news-section {
     padding: 60px 0;
   }
-  
+
   .news-section .section-heading {
     margin-bottom: 3rem;
   }
-  
+
   .news-section .section-heading h2 {
     font-size: 2rem;
   }
-  
+
   .news-section .section-heading p {
     font-size: 1rem;
   }
-  
+
   .news-card {
     margin: 0 5px;
   }
-  
+
   .news-content {
     padding: 1.5rem;
   }
-  
+
   .news-content h3 {
     font-size: 1.125rem;
   }
-  
+
   .news-meta {
     flex-direction: column;
     gap: 0.75rem;
@@ -324,19 +325,19 @@ Modern card design with slider/carousel
   .news-section .section-heading h2 {
     font-size: 1.75rem;
   }
-  
+
   .news-image {
     height: 180px;
   }
-  
+
   .news-content {
     padding: 1.25rem;
   }
-  
+
   .news-content h3 {
     font-size: 1rem;
   }
-  
+
   .news-content p {
     font-size: 0.875rem;
   }

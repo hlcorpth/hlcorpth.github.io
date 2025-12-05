@@ -403,7 +403,6 @@ p {
   box-shadow: 0 4px 20px var(--shadow-light);
   height: 100%;
   position: relative;
-  overflow: hidden;
 }
 
 .service-card::before {
@@ -431,6 +430,7 @@ p {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   box-shadow: var(--shadow-gradient);
+  z-index: 10;
 }
 
 .service-card:hover {
@@ -772,16 +772,22 @@ p {
   justify-content: center;
   width: 40px;
   height: 40px;
-  background: rgba(255, 255, 255, 0.1);
+  background: none !important;
+  background-color: transparent !important;
+  border: none !important;
   border-radius: 10px;
-  color: white;
+  color: white !important;
   text-decoration: none;
   margin-right: 0.5rem;
   transition: all 0.3s ease;
+  font-size: 1.2rem;
 }
 
 .footer-social a:hover {
-  background: var(--primary-blue);
+  background: none !important;
+  background-color: transparent !important;
+  border: none !important;
+  color: #3B82F6 !important;
   transform: translateY(-2px);
 }
 
