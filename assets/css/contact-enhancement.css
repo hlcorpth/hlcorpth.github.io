@@ -90,7 +90,7 @@ Features: Enhanced layout, modern styling, improved UX, better visual hierarchy
 /* Main Contact Section */
 .contact-us {
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  padding: 80px 0;
+  padding: 80px 0 0 !important;
 }
 
 .contact-us .container {
@@ -387,12 +387,12 @@ Features: Enhanced layout, modern styling, improved UX, better visual hierarchy
 
 /* Enhanced LINE QR Section */
 .line-qr-section {
-  background: linear-gradient(135deg, #00c851 0%, #00a844 100%);
+  background: linear-gradient(135deg, #337ab7 0%, #4a90e2 100%);
   border-radius: 20px;
   padding: 2.5rem;
   text-align: center;
   margin-top: 2rem;
-  box-shadow: 0 15px 35px rgba(0, 200, 81, 0.2);
+  box-shadow: 0 15px 35px rgba(51, 122, 183, 0.2);
   position: relative;
   overflow: hidden;
 }

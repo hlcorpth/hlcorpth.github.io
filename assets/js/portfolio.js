@@ -1,3 +1,4 @@
+/* Disabled - alerts make website look unprofessional
 (function(){
   window.openPortfolioModal = function(kind){
     var data = {
@@ -21,6 +22,7 @@
     alert(item.title + '\n' + item.desc + (item.tech.length ? ('\nTech: ' + item.tech.join(', ')) : ''));
   }
 })();
+*/
 
 
 

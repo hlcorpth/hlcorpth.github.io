@@ -89,6 +89,7 @@ Applies the beautiful gradient colors from products page to the entire site
 
 /* Buttons with Gradient */
 .primary-btn,
+.btn-primary,
 .main-button,
 .border-first-button a,
 .main-button-icon a {
@@ -100,6 +101,7 @@ Applies the beautiful gradient colors from products page to the entire site
 }
 
 .primary-btn:hover,
+.btn-primary:hover,
 .main-button:hover,
 .border-first-button a:hover,
 .main-button-icon a:hover {
@@ -144,8 +146,8 @@ Applies the beautiful gradient colors from products page to the entire site
 /* Navigation Menu Active/Hover States */
 .main-menu a:hover,
 .main-menu a.active {
-    color: var(--primary-blue) !important;
-    background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%) !important;
+    color: white !important;
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.9) 0%, rgba(59, 130, 246, 0.9) 100%) !important;
 }
 
 .main-menu a::after {
