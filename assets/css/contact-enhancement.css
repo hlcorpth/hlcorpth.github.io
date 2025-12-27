@@ -387,12 +387,12 @@ Features: Enhanced layout, modern styling, improved UX, better visual hierarchy
 
 /* Enhanced LINE QR Section */
 .line-qr-section {
-  background: linear-gradient(135deg, #337ab7 0%, #4a90e2 100%);
+  background: linear-gradient(135deg, #434343 0%, #2c3e50 100%);
   border-radius: 20px;
   padding: 2.5rem;
   text-align: center;
   margin-top: 2rem;
-  box-shadow: 0 15px 35px rgba(51, 122, 183, 0.2);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
   position: relative;
   overflow: hidden;
 }
