@@ -147,7 +147,7 @@ hlcorpth.github.io/
 
 - **Email**: hlcorp.th@gmail.com
 - **Location**: Bangkok, Thailand
-- **Facebook**: [H.L. Corporation](https://www.facebook.com/hlcth)
+- **Facebook**: [H.L. Corporation](https://www.facebook.com/hlcorpth)
 - **LinkedIn**: [H.L. Corporation](https://www.linkedin.com/company/hlcorporation-th/)
 - **LINE**: [Official Account](https://lin.ee/pz2YLa3)
 
