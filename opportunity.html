@@ -184,8 +184,8 @@
             <div class="header-actions">
                 <a href="index.html#contact" class="btn-cta">
                     <i class="fa fa-envelope"></i>
-                    <span lang="en">Get Quote</span>
-                    <span lang="th">ขอใบเสนอราคา</span>
+                    <span lang="en">Free Consult</span>
+                    <span lang="th">ปรึกษาฟรี</span>
                 </a>
             </div>
         </div>
@@ -558,8 +558,10 @@
                             loading="lazy">
                         <h5>H.L. Corporation Co.,Ltd.</h5>
                         <p>
-                            <span lang="en">Leading AI & IT Solutions for Business Growth.</span>
-                            <span lang="th">ผู้นำโซลูชัน AI และ IT เพื่อการเติบโตของธุรกิจ</span>
+                            <span lang="en">Thailand's Leading AI & IT Solutions Provider. We help businesses grow
+                                through technology and innovation.</span>
+                            <span lang="th">ผู้นำด้านโซลูชัน AI และเทคโนโลยีสารสนเทศของไทย
+                                เราช่วยให้ธุรกิจเติบโตด้วยเทคโนโลยีและนวัตกรรม</span>
                         </p>
                         <div class="footer-social">
                             <a href="https://www.facebook.com/hlcorpth" target="_blank" aria-label="Facebook"><i
@@ -574,13 +576,19 @@
                     <div class="footer-section">
                         <h6>
                             <span lang="en">Services</span>
-                            <span lang="th">บริการ</span>
+                            <span lang="th">บริการของเรา</span>
                         </h6>
                         <ul class="footer-links">
-                            <li><a href="index.html#services">Software Development</a></li>
-                            <li><a href="index.html#services">Mobile Apps</a></li>
-                            <li><a href="index.html#services">AI Solutions</a></li>
-                            <li><a href="index.html#services">IT Outsourcing</a></li>
+                            <li><a href="index.html#services"><span lang="en">AI & Software Dev</span><span lang="th">AI
+                                        และพัฒนาซอฟต์แวร์</span></a></li>
+                            <li><a href="index.html#services"><span lang="en">Mobile Applications</span><span
+                                        lang="th">แอปพลิเคชันมือถือ</span></a></li>
+                            <li><a href="opportunity.html"><span lang="en">IT Outsourcing</span><span
+                                        lang="th">จัดหาบุคลากรไอที</span></a></li>
+                            <li><a href="opportunity.html"><span lang="en">Business Setup (BOI)</span><span
+                                        lang="th">จัดตั้งธุรกิจ (BOI)</span></a></li>
+                            <li><a href="index.html#services"><span lang="en">Digital Marketing</span><span
+                                        lang="th">การตลาดดิจิทัล</span></a></li>
                         </ul>
                     </div>
 
@@ -590,30 +598,32 @@
                             <span lang="th">บริษัท</span>
                         </h6>
                         <ul class="footer-links">
-                            <li><a href="index.html#about">About Us</a></li>
-                            <li><a href="index.html#portfolio">Portfolio</a></li>
-                            <li><a href="opportunity.html">Opportunity</a></li>
-                            <li><a href="index.html#contact">Contact</a></li>
+                            <li><a href="index.html#about"><span lang="en">About Us</span><span
+                                        lang="th">เกี่ยวกับเรา</span></a></li>
+                            <li><a href="index.html#portfolio"><span lang="en">Our Projects</span><span
+                                        lang="th">ผลงานของเรา</span></a></li>
+                            <li><a href="opportunity.html"><span lang="en">Business Opportunity</span><span
+                                        lang="th">โอกาสทางธุรกิจ</span></a></li>
+                            <li><a href="index.html#contact"><span lang="en">Contact Us</span><span
+                                        lang="th">ติดต่อเรา</span></a></li>
+                            <li><a href="index.html#contact"><span lang="en">Free Consult</span><span
+                                        lang="th">ปรึกษาฟรี</span></a></li>
                         </ul>
                     </div>
 
                     <div class="footer-section">
                         <h6>
                             <span lang="en">Contact</span>
-                            <span lang="th">ติดต่อ</span>
+                            <span lang="th">ติดต่อเรา</span>
                         </h6>
                         <div class="footer-contact">
-                            <div class="contact-item">
-                                <i class="fa fa-map-marker"></i>
-                                <span>Bangkok, Thailand</span>
-                            </div>
                             <div class="contact-item">
                                 <i class="fa fa-envelope"></i>
                                 <a href="mailto:hlcorp.th@gmail.com">hlcorp.th@gmail.com</a>
                             </div>
                             <div class="contact-item">
-                                <i class="fa fa-phone"></i>
-                                <a href="tel:+66955575283">+66 95 557 5283</a>
+                                <i class="fa fa-map-marker"></i>
+                                <span>Bangkok, Thailand</span>
                             </div>
                         </div>
                     </div>
@@ -621,7 +631,7 @@
 
                 <div class="footer-bottom">
                     <div class="footer-bottom-content">
-                        <p class="copyright">Copyright © 2025 H.L. Corporation Co.,Ltd. All Rights Reserved.</p>
+                        <p>&copy; 2025 H.L. Corporation Co.,Ltd. All rights reserved.</p>
                         <div class="footer-bottom-links">
                             <a href="#">Privacy Policy</a>
                             <a href="#">Terms of Service</a>
@@ -639,33 +649,29 @@
         <script src="assets/js/imagesloaded.js"></script>
         <script src="assets/js/custom.js"></script>
         <script>
-            // Simple language switcher script
-            document.addEventListener("DOMContentLoaded", function () {
-                const langBtns = document.querySelectorAll(".lang-btn");
+            $(document).ready(function () {
+                // Language Switcher
+                const savedLang = localStorage.getItem('language') || 'en';
+                switchLanguage(savedLang);
 
-                langBtns.forEach(btn => {
-                    btn.addEventListener("click", () => {
-                        // Remove active class from all buttons
-                        langBtns.forEach(b => b.classList.remove("active"));
-                        // Add active class to clicked button
-                        btn.classList.add("active");
-
-                        const lang = btn.getAttribute("data-lang");
-
-                        // Toggle visibility based on language
-                        document.querySelectorAll("[lang='en']").forEach(el => {
-                            el.style.display = lang === "en" ? "inline" : "none";
-                        });
-                        document.querySelectorAll("[lang='th']").forEach(el => {
-                            el.style.display = lang === "th" ? "inline" : "none";
-                        });
-                    });
+                $('.lang-btn').on('click', function () {
+                    const lang = $(this).data('lang');
+                    switchLanguage(lang);
+                    localStorage.setItem('language', lang);
                 });
 
-                // Default to EN
-                document.querySelector(".lang-btn[data-lang='en']").click();
+                function switchLanguage(lang) {
+                    // Update HTML lang attribute
+                    $('html').attr('lang', lang);
 
-                // Smooth scroll for anchors on this page that are just IDs
+                    // Update button states
+                    $('.lang-btn').removeClass('active');
+                    $(`.lang-btn[data-lang="${lang}"]`).addClass('active');
+
+                    // No need for manual show/hide loop as CSS handles it via [lang] selectors
+                }
+
+                // Smooth scroll for anchors
                 $('a[href^="#"]').on('click', function (e) {
                     var target = $(this.getAttribute('href'));
                     if (target.length) {

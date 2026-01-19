@@ -45,23 +45,24 @@ Thai and English language toggle
 }
 
 /* Language Content Visibility */
-[lang]:not([lang="en"]) {
+/* Language Content Visibility */
+[lang]:not(html):not(body):not([lang="en"]) {
   display: none;
 }
 
-html[lang="th"] [lang="th"] {
+html[lang="th"] [lang="th"]:not(html):not(body) {
   display: block;
 }
 
-html[lang="th"] [lang="en"] {
+html[lang="th"] [lang="en"]:not(html):not(body) {
   display: none;
 }
 
-html[lang="en"] [lang="en"] {
+html[lang="en"] [lang="en"]:not(html):not(body) {
   display: block;
 }
 
-html[lang="en"] [lang="th"] {
+html[lang="en"] [lang="th"]:not(html):not(body) {
   display: none;
 }
 
@@ -95,12 +96,12 @@ html[lang="en"] .lang-content[lang="th"] {
   .language-switcher {
     padding: 0.2rem;
   }
-  
+
   .lang-btn {
     padding: 0.4rem 0.75rem;
     font-size: 0.8rem;
   }
-  
+
   .lang-btn .flag {
     font-size: 0.875rem;
   }
