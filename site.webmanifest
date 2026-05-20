@@ -1,11 +1,11 @@
 {
-  "name": "H.L. Corporation Co.,Ltd. - AI & IT Solutions",
+  "name": "H.L. Corporation Co.,Ltd. - IT Solutions & Tech Provider",
   "short_name": "HL Corporation",
-  "description": "Thailand's premier AI & IT outsourcing company specializing in custom software development, web applications, mobile apps, and AI solutions.",
+  "description": "Thailand's IT outsourcing company specializing in custom software development, web applications, mobile apps, and business automation solutions.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#337ab7",
+  "theme_color": "#2563EB",
   "orientation": "portrait-primary",
   "scope": "/",
   "lang": "en",
@@ -25,7 +25,7 @@
       "purpose": "any"
     },
     {
-      "src": "assets/images/hlcorp-logo.png", 
+      "src": "assets/images/hlcorp-logo.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
@@ -55,8 +55,20 @@
     {
       "name": "Our Services",
       "short_name": "Services",
-      "description": "View our AI & IT services",
+      "description": "View our IT services and solutions",
       "url": "/#services",
+      "icons": [
+        {
+          "src": "assets/images/favicon.png",
+          "sizes": "16x16"
+        }
+      ]
+    },
+    {
+      "name": "Product Showcase",
+      "short_name": "Showcase",
+      "description": "See our shipped products and case studies",
+      "url": "/#showcase",
       "icons": [
         {
           "src": "assets/images/favicon.png",
