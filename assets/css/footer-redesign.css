@@ -24,7 +24,8 @@ body {
 .main-banner, .section, .contact-us, .hero,
 .products-container, .stats, .partner-hero,
 .investment-metrics, .opportunities-section,
-.roi-section, .contact-partner, .product-showcase-section {
+.roi-section, .contact-partner, .product-showcase-section,
+.join-us-section {
     flex-shrink: 0;
 }
 .site-footer { margin-top: auto !important; width: 100%; }
