@@ -660,6 +660,10 @@
                     <i class="fa fa-envelope"></i>
                     <span lang="en">Send via Email</span><span lang="th">ส่งผ่าน Email</span>
                 </a>
+                <button class="btn-checkout-copy" id="btn-copy-quote">
+                    <i class="fa fa-copy"></i>
+                    <span lang="en">Copy for Chat</span><span lang="th">คัดลอกสำหรับแชท</span>
+                </button>
             </div>
             <p class="checkout-modal-note">
                 <i class="fa fa-info-circle"></i>
@@ -779,6 +783,7 @@
     <script src="assets/js/imagesloaded.js"></script>
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/header-modern.js"></script>
+    <script src="assets/js/analytics.js" defer></script>
     <script>
     // ── Language Switcher ────────────────────────────────────────────
     $(document).ready(function () {
@@ -1003,12 +1008,36 @@
         // ── Cart ──────────────────────────────────────────────────────
         function toggleCart(id) {
             var idx = cart.indexOf(id);
-            if (idx === -1) cart.push(id); else cart.splice(idx, 1);
+            var adding = idx === -1;
+            if (adding) cart.push(id); else cart.splice(idx, 1);
+            var p = PRODUCTS.filter(function(x){ return x.id === id; })[0];
+            if (p) {
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({
+                    event: adding ? 'add_to_cart' : 'remove_from_cart',
+                    item_name: p.name.en,
+                    item_category: p.cat,
+                    price: p.price || 0,
+                    currency: 'THB'
+                });
+            }
             updateCartUI();
             var f = document.querySelector('.filter-pill.active');
             renderProducts(f ? f.dataset.cat : 'all');
         }
         function removeFromCart(id) {
+            var p = PRODUCTS.filter(function(x){ return x.id === id; })[0];
+            if (p) {
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({
+                    event: 'remove_from_cart',
+                    item_name: p.name.en,
+                    item_category: p.cat,
+                    price: p.price || 0,
+                    currency: 'THB',
+                    location: 'cart_drawer'
+                });
+            }
             cart = cart.filter(function(i){ return i !== id; });
             updateCartUI();
             var f = document.querySelector('.filter-pill.active');
@@ -1123,6 +1152,8 @@
                     return;
                 }
                 activeCoupon = { code: raw, pct: def.pct, min: def.min, cap: def.cap };
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({ event: 'coupon_apply', coupon_code: raw, discount_pct: def.pct, success: true });
                 var capNote = def.cap > 0 ? ' (max '+fmt(def.cap)+')' : '';
                 fb.className = 'coupon-feedback coupon-ok';
                 fb.innerHTML = '<i class="fa fa-check-circle"></i>'
@@ -1133,6 +1164,8 @@
                 document.getElementById('coupon-apply-btn').disabled = true;
             } else {
                 activeCoupon = null;
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({ event: 'coupon_apply', coupon_code: raw, success: false });
                 fb.className = 'coupon-feedback coupon-err';
                 fb.innerHTML = '<i class="fa fa-times-circle"></i> <span lang="en">Invalid coupon code.</span><span lang="th">รหัสไม่ถูกต้อง</span>';
             }
@@ -1185,6 +1218,18 @@
             totalEl.innerHTML = totalHtml;
             emailBody += '\nOne-time total: '+fmt(oneTime)+'\nMonthly total: '+fmt(monthly)+'/mo'+emailDiscount+'\n\nPlease send me a detailed proposal.\n\nThank you.';
             document.getElementById('btn-email').href = 'mailto:hlcorp.th@gmail.com?subject=Service Quote Request&body='+encodeURIComponent(emailBody);
+            var chatText = 'สวัสดีครับ/ค่ะ สนใจบริการดังนี้:\n\n' + cart.map(function(id){
+                var p = PRODUCTS.filter(function(x){ return x.id===id; })[0];
+                if (!p) return '';
+                var isCustom = p.period==='custom';
+                var priceStr = isCustom ? 'ราคากำหนดเอง (Custom Quote)' : fmt(p.price)+p.periodLabel.th;
+                return '• ' + p.name.th + ' — ' + priceStr;
+            }).filter(Boolean).join('\n');
+            if (activeCoupon && discResult) {
+                chatText += '\n\nใช้คูปอง: '+activeCoupon.code+' (-'+activeCoupon.pct+'%)';
+            }
+            chatText += '\n\nรบกวนส่งข้อเสนอโดยละเอียดให้ด้วยนะครับ/ค่ะ ขอบคุณครับ/ค่ะ';
+            document.getElementById('btn-copy-quote').dataset.text = chatText;
             var mo = document.getElementById('checkout-modal-overlay');
             mo.classList.add('open');
             document.body.style.overflow = 'hidden';
@@ -1196,6 +1241,29 @@
         });
         document.getElementById('checkout-modal-overlay').addEventListener('click', function(e){
             if (e.target === this) { this.classList.remove('open'); document.body.style.overflow = ''; }
+        });
+        document.getElementById('btn-copy-quote').addEventListener('click', function(){
+            var text = this.dataset.text || '';
+            var btn = this;
+            function markCopied() {
+                btn.innerHTML = '<i class="fa fa-check"></i> <span lang="en">Copied!</span><span lang="th">คัดลอกแล้ว!</span>';
+                btn.classList.add('btn-copy-done');
+                setTimeout(function(){
+                    btn.innerHTML = '<i class="fa fa-copy"></i> <span lang="en">Copy for Chat</span><span lang="th">คัดลอกสำหรับแชท</span>';
+                    btn.classList.remove('btn-copy-done');
+                }, 2000);
+            }
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(text).then(markCopied).catch(function(){
+                    var ta = document.createElement('textarea');
+                    ta.value = text; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); document.body.removeChild(ta);
+                    markCopied();
+                });
+            } else {
+                var ta = document.createElement('textarea');
+                ta.value = text; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); document.body.removeChild(ta);
+                markCopied();
+            }
         });
 
         // ── Hero Coupon Copy ──────────────────────────────────────────
