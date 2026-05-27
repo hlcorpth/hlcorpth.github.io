@@ -1,17 +1,17 @@
 /* UI Enhancements (site-wide) */
 :root {
-  --ui-primary: #0ea5e9;
+  --ui-primary: #3D3DFF;
   /* sky-500 */
-  --ui-primary-dark: #0284c7;
+  --ui-primary-dark: #2828E0;
   /* sky-600 */
-  --ui-text: #0f172a;
+  --ui-text: #111111;
   /* slate-900 */
-  --ui-muted: #64748b;
+  --ui-muted: #6B6B6B;
   /* slate-500 */
-  --ui-border: #e5e7eb;
+  --ui-border: #D8D6D0;
   /* gray-200 */
   --ui-surface: #ffffff;
-  --ui-surface-muted: #f8fafc;
+  --ui-surface-muted: #EEECEA;
 }
 
 /* Section heading */
@@ -161,9 +161,9 @@
 }
 
 .portfolio-tags .tag {
-  background: rgba(14, 165, 233, .12);
+  background: rgba(200,240,58,0.12);
   color: var(--ui-primary);
-  border-color: rgba(14, 165, 233, .26);
+  border-color: rgba(200,240,58,0.3);
 }
 
 /* Portfolio overlay */
@@ -227,17 +227,17 @@ form#contact input:focus,
 form#contact textarea:focus {
   outline: 0;
   border-color: var(--ui-primary);
-  box-shadow: 0 0 0 3px rgba(14, 165, 233, .18);
+  box-shadow: 0 0 0 3px rgba(61,61,255, .18);
 }
 
 /* Footer */
 footer {
-  background: #0f172a;
-  color: #cbd5e1;
+  background: #111111;
+  color: #D0CEC8;
 }
 
 footer a {
-  color: #e2e8f0;
+  color: #D8D6D0;
   text-decoration: none;
 }
 
@@ -320,7 +320,7 @@ footer a:hover {
   align-items: center;
   justify-content: center;
   border-radius: 12px;
-  background: rgba(14, 165, 233, .12);
+  background: rgba(200,240,58,0.12);
   color: var(--ui-primary);
   margin-bottom: 10px;
   font-size: 20px;

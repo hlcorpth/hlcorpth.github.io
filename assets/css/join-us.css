@@ -1,20 +1,19 @@
 /* Join Us Section — Modern Redesign */
 .join-us-section {
     padding: 120px 0;
-    background: linear-gradient(135deg, #0a0f1e 0%, #0d1b3e 40%, #1a0a2e 100%);
+    background: linear-gradient(135deg, #EEECEA 0%, #EEECEA 50%, #f0fdf9 100%);
     position: relative;
     overflow: hidden;
 }
 
-/* Animated background blobs */
 .join-us-section::before {
     content: '';
     position: absolute;
-    top: -200px;
-    right: -150px;
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(108, 92, 231, 0.2) 0%, transparent 70%);
+    top: -180px;
+    right: -120px;
+    width: 560px;
+    height: 560px;
+    background: radial-gradient(circle, rgba(108,92,231,0.08) 0%, transparent 70%);
     border-radius: 50%;
     animation: floatBlob 8s ease-in-out infinite;
     z-index: 0;
@@ -23,11 +22,11 @@
 .join-us-section::after {
     content: '';
     position: absolute;
-    bottom: -150px;
-    left: -100px;
-    width: 500px;
-    height: 500px;
-    background: radial-gradient(circle, rgba(0, 184, 148, 0.15) 0%, transparent 70%);
+    bottom: -120px;
+    left: -80px;
+    width: 440px;
+    height: 440px;
+    background: radial-gradient(circle, rgba(0,184,148,0.07) 0%, transparent 70%);
     border-radius: 50%;
     animation: floatBlob 10s ease-in-out infinite reverse;
     z-index: 0;
@@ -53,7 +52,7 @@
     display: inline-block;
     background: rgba(108, 92, 231, 0.2);
     border: 1px solid rgba(108, 92, 231, 0.5);
-    color: #a29bfe;
+    color: #3D3DFF;
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 3px;
@@ -61,19 +60,21 @@
     padding: 6px 18px;
     border-radius: 50px;
     margin-bottom: 20px;
+    background: rgba(108,92,231,0.08);
+    border-color: rgba(108,92,231,0.25);
 }
 
 .join-title {
     font-size: 44px;
     font-weight: 800;
     margin-bottom: 20px;
-    color: #fff;
+    color: #1A1A1A;
     line-height: 1.2;
 }
 
 .join-title em {
     font-style: normal;
-    background: linear-gradient(90deg, #a29bfe, #6c5ce7, #00cec9);
+    background: linear-gradient(90deg, #3D3DFF, #C8F03A, #00b894);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -81,7 +82,7 @@
 
 .join-subtitle {
     font-size: 17px;
-    color: rgba(255, 255, 255, 0.6);
+    color: #6B6B6B;
     max-width: 640px;
     margin: 0 auto;
     line-height: 1.7;
@@ -98,14 +99,13 @@
 
 /* Card */
 .join-card {
-    background: rgba(255, 255, 255, 0.04);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    background: #fff;
     border-radius: 24px;
     padding: 48px 40px;
     width: 100%;
     max-width: 440px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid #D8D6D0;
+    box-shadow: 0 4px 24px rgba(17,17,17,0.06);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -122,15 +122,15 @@
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(90deg, #6c5ce7, #a29bfe, #00cec9);
+    background: linear-gradient(90deg, #3D3DFF, #C8F03A, #00cec9);
     opacity: 0;
     transition: opacity 0.4s ease;
 }
 
 .join-card:hover {
-    transform: translateY(-12px);
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4), 0 0 40px rgba(108, 92, 231, 0.15);
-    border-color: rgba(108, 92, 231, 0.3);
+    transform: translateY(-10px);
+    box-shadow: 0 20px 48px rgba(108,92,231,0.12), 0 4px 16px rgba(17,17,17,0.08);
+    border-color: rgba(108,92,231,0.25);
 }
 
 .join-card:hover::before {
@@ -139,15 +139,15 @@
 
 /* Featured card highlight */
 .join-card.featured {
-    border-color: rgba(108, 92, 231, 0.25);
-    background: rgba(108, 92, 231, 0.07);
+    border-color: rgba(108,92,231,0.3);
+    background: #EAEAFF;
 }
 
 .featured-badge {
     position: absolute;
     top: 20px;
     right: 20px;
-    background: linear-gradient(45deg, #6c5ce7, #a29bfe);
+    background: linear-gradient(45deg, #3D3DFF, #C8F03A);
     color: white;
     font-size: 11px;
     font-weight: 700;
@@ -171,15 +171,15 @@
 }
 
 .join-icon-wrapper.blue {
-    background: rgba(51, 122, 183, 0.15);
-    color: #74b9ff;
-    box-shadow: 0 0 20px rgba(51, 122, 183, 0.2);
+    background: #EAEAFF;
+    color: #3D3DFF;
+    box-shadow: 0 4px 12px rgba(61,61,255,0.15);
 }
 
 .join-icon-wrapper.purple {
-    background: rgba(108, 92, 231, 0.15);
-    color: #a29bfe;
-    box-shadow: 0 0 20px rgba(108, 92, 231, 0.2);
+    background: #EAEAFF;
+    color: #3D3DFF;
+    box-shadow: 0 4px 12px rgba(108,92,231,0.15);
 }
 
 /* Typography */
@@ -187,11 +187,11 @@
     font-size: 22px;
     font-weight: 700;
     margin-bottom: 12px;
-    color: #fff;
+    color: #1A1A1A;
 }
 
 .join-card p {
-    color: rgba(255, 255, 255, 0.55);
+    color: #6B6B6B;
     margin-bottom: 24px;
     line-height: 1.7;
     font-size: 15px;
@@ -210,15 +210,15 @@
 }
 
 .commission-badge.green {
-    background: rgba(0, 184, 148, 0.12);
-    color: #55efc4;
-    border: 1px solid rgba(0, 184, 148, 0.25);
+    background: #F4F2EE;
+    color: #059669;
+    border: 1px solid #bbf7d0;
 }
 
 .commission-badge.purple {
-    background: rgba(108, 92, 231, 0.12);
-    color: #a29bfe;
-    border: 1px solid rgba(108, 92, 231, 0.25);
+    background: #EAEAFF;
+    color: #3D3DFF;
+    border: 1px solid #EAEAFF;
 }
 
 /* Feature list */
@@ -231,7 +231,7 @@
 
 .join-features li {
     margin-bottom: 12px;
-    color: rgba(255, 255, 255, 0.65);
+    color: #3D3D3D;
     display: flex;
     align-items: center;
     gap: 12px;
@@ -239,7 +239,7 @@
 }
 
 .join-features li i {
-    color: #00cec9;
+    color: #059669;
     font-size: 13px;
     flex-shrink: 0;
 }
@@ -248,7 +248,7 @@
 .join-card-divider {
     width: 100%;
     height: 1px;
-    background: rgba(255, 255, 255, 0.07);
+    background: #D8D6D0;
     margin-bottom: 28px;
 }
 
@@ -269,7 +269,7 @@
 }
 
 .join-btn-primary {
-    background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+    background: linear-gradient(135deg, #111111, #C8F03A);
     color: white !important;
     box-shadow: 0 8px 24px rgba(108, 92, 231, 0.35);
 }
@@ -281,16 +281,16 @@
 }
 
 .join-btn-secondary {
-    background: rgba(255, 255, 255, 0.06);
-    color: rgba(255, 255, 255, 0.85) !important;
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: #fff;
+    color: #3D3DFF !important;
+    border: 1px solid #EAEAFF;
 }
 
 .join-btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.3);
+    background: #EAEAFF;
+    border-color: #C8F03A;
     transform: translateY(-2px);
-    color: white !important;
+    color: #3D3DFF !important;
 }
 
 /* Responsive */

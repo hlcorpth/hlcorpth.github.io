@@ -1,17 +1,17 @@
 /* Apple-inspired minimal theme */
 :root {
   --apple-text: #111;
-  --apple-muted: #6e6e73;
-  --apple-border: #e5e5e7;
-  --apple-surface: #fff;
-  --apple-surface-alt: #fafafa;
-  --apple-link: #06c;
+  --apple-muted: #6B6B6B;
+  --apple-border: #D8D6D0;
+  --apple-surface: #EEECEA;
+  --apple-surface-alt: #F4F2EE;
+  --apple-link: #3D3DFF;
 }
 
 html,
 body {
   color: var(--apple-text);
-  background: var(--apple-surface);
+  background: #EEECEA;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   -webkit-font-smoothing: antialiased;
 }
@@ -59,7 +59,7 @@ a:hover {
 }
 
 .site-header {
-  background: var(--apple-surface);
+  background: #FFFFFF;
   border-bottom: 1px solid var(--apple-border);
   position: sticky;
   top: 0;
@@ -78,7 +78,7 @@ a:hover {
 
 /* Hero */
 .main-banner {
-  background: var(--apple-surface) !important;
+  background: #EEECEA !important;
   box-shadow: none !important;
   padding-top: 140px !important;
 }
@@ -116,14 +116,14 @@ a:hover {
 .portfolio,
 .testimonials-section,
 .contact-us {
-  background: var(--apple-surface);
+  background: #EEECEA;
 }
 
 .card,
 .service-card,
 .portfolio-item,
 .testimonial-item {
-  background: var(--apple-surface);
+  background: #FFFFFF;
   border: 1px solid var(--apple-border);
   box-shadow: none !important;
   border-radius: 18px;
@@ -131,14 +131,14 @@ a:hover {
 
 /* Services */
 .services .naccs .menu div {
-  background: var(--apple-surface);
+  background: #FFFFFF;
   border: 1px solid var(--apple-border);
   border-radius: 18px;
   box-shadow: none;
 }
 
 .services .naccs .menu div.active {
-  background: var(--apple-surface);
+  background: #FFFFFF;
   box-shadow: none;
   border-color: #c9c9cc;
 }
@@ -269,7 +269,7 @@ a:hover {
 /* Footer tweaks if any footer exists */
 footer,
 .footer {
-  background: var(--apple-surface);
+  background: #FFFFFF;
   border-top: 1px solid var(--apple-border);
 }
 
@@ -387,7 +387,7 @@ h2 {
 /* Cards minimalism */
 .service-card .service-icon i {
   font-size: 22px;
-  color: #6e6e73;
+  color: #6B6B6B;
 }
 
 .service-card h5 {
@@ -407,7 +407,7 @@ h2 {
 .services,
 .testimonials-section,
 .contact-us {
-  background: var(--apple-surface);
+  background: #EEECEA;
 }
 
 /* Testimonials refinements */
@@ -420,7 +420,7 @@ h2 {
 }
 
 .testimonial-item {
-  background: var(--apple-surface);
+  background: #FFFFFF;
   border: 1px solid var(--apple-border);
   border-radius: 18px;
   box-shadow: none !important;
@@ -447,7 +447,7 @@ h2 {
 
 .testimonial-content .quote-icon i {
   font-size: 30px;
-  color: #6e6e73;
+  color: #6B6B6B;
 }
 
 .testimonial-content p {
@@ -484,7 +484,7 @@ h2 {
 }
 
 .stat-item {
-  background: var(--apple-surface);
+  background: #FFFFFF;
   border: 1px solid var(--apple-border);
   border-radius: 16px;
   padding: 22px;
@@ -503,7 +503,7 @@ h2 {
   height: 44px;
   border-radius: 999px;
   background: var(--apple-surface-alt);
-  color: #6e6e73;
+  color: #6B6B6B;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -573,8 +573,8 @@ h2 {
   padding: 8px 12px;
   border: 1px solid var(--apple-border);
   border-radius: 999px;
-  background: var(--apple-surface);
-  color: #6e6e73;
+  background: #FFFFFF;
+  color: #6B6B6B;
   font-weight: 600;
   font-size: 13px;
 }
@@ -720,7 +720,7 @@ section,
   background: none !important;
   background-color: transparent !important;
   border: none !important;
-  color: #3B82F6 !important;
+  color: #3D3DFF !important;
 }
 
 .footer-section h6 {
@@ -861,7 +861,7 @@ section,
 }
 
 .contact-badge {
-  background: linear-gradient(135deg, #34C759, #30D158);
+  background: linear-gradient(135deg, #C8F03A, #30D158);
   color: #fff;
   padding: 8px 16px;
   border-radius: 20px;
@@ -934,7 +934,7 @@ section,
 }
 
 .contact-us {
-  background: var(--apple-surface);
+  background: #EEECEA;
 }
 
 .contact-map .map-container {
@@ -955,7 +955,7 @@ section,
 }
 
 .contact-card {
-  background: var(--apple-surface);
+  background: #FFFFFF;
   border: 1px solid var(--apple-border);
   border-radius: 12px;
   padding: 20px;
@@ -1009,7 +1009,7 @@ section,
 }
 
 .contact-form-container {
-  background: var(--apple-surface);
+  background: #FFFFFF;
   border: 1px solid var(--apple-border);
   border-radius: 16px;
   padding: 40px;
@@ -1158,7 +1158,7 @@ p,
 
 /* Statistics section refinements */
 .statistics-section {
-  background: var(--apple-surface);
+  background: #EEECEA;
   padding: 60px 0;
 }
 
@@ -1204,8 +1204,8 @@ p,
 }
 
 .services-badge {
-  background: linear-gradient(135deg, #007AFF, #5856D6);
-  color: #fff;
+  background: rgba(200,240,58,0.15);
+  color: #3D3DFF;
   padding: 8px 16px;
   border-radius: 20px;
   font-size: 12px;
@@ -1270,7 +1270,7 @@ p,
 }
 
 .category-tab {
-  background: var(--apple-surface);
+  background: #FFFFFF;
   border: 1px solid var(--apple-border);
   color: var(--apple-muted);
   padding: 12px 24px;
@@ -1310,7 +1310,7 @@ p,
 }
 
 .service-card {
-  background: var(--apple-surface);
+  background: #FFFFFF;
   border: 1px solid var(--apple-border);
   border-radius: 16px;
   padding: 32px;
@@ -1336,8 +1336,8 @@ p,
   position: absolute;
   top: 16px;
   right: 16px;
-  background: linear-gradient(135deg, #FF3B30, #FF9500);
-  color: #fff;
+  background: #111111;
+  color: #C8F03A;
   padding: 4px 12px;
   border-radius: 12px;
   font-size: 10px;
@@ -1350,8 +1350,8 @@ p,
   width: 60px;
   height: 60px;
   border-radius: 16px;
-  background: linear-gradient(135deg, var(--apple-surface-alt), var(--apple-border));
-  color: var(--apple-text);
+  background: #111111;
+  color: #C8F03A;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1387,7 +1387,7 @@ p,
 }
 
 .service-features li i {
-  color: #34C759;
+  color: #C8F03A;
   margin-right: 8px;
   font-size: 12px;
 }
@@ -1426,7 +1426,7 @@ p,
 }
 
 .services-cta {
-  background: var(--apple-surface);
+  background: #FFFFFF;
   border: 1px solid var(--apple-border);
   border-radius: 20px;
   padding: 40px;
@@ -1467,7 +1467,7 @@ p,
 
 .cta-badges span i {
   margin-right: 6px;
-  color: #34C759;
+  color: #C8F03A;
 }
 
 .cta-buttons {
@@ -1561,7 +1561,7 @@ p,
   position: absolute;
   bottom: 70px;
   right: 0;
-  background: var(--apple-surface);
+  background: #FFFFFF;
   border: 1px solid var(--apple-border);
   border-radius: 12px;
   padding: 8px;
@@ -1645,7 +1645,7 @@ p,
 /* Previous Work Section */
 .previous-work-section {
   padding: 80px 0;
-  background: var(--apple-surface);
+  background: #EEECEA;
 }
 
 .work-item {
@@ -1779,7 +1779,7 @@ p,
   font-size: 16px;
   font-weight: 700;
   color: #FFFFFF;
-  background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%);
+  background: linear-gradient(135deg, #3D3DFF 0%, #3D3DFF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1787,13 +1787,13 @@ p,
 
 .cookie-consent-content p {
   margin: 6px 0 0;
-  color: #CBD5E1;
+  color: #D0CEC8;
   line-height: 1.5;
   font-size: 13px;
 }
 
 .cookie-consent-content a {
-  color: #8B5CF6;
+  color: #3D3DFF;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.2s ease;
@@ -1809,7 +1809,7 @@ p,
   letter-spacing: 0.1em;
   font-size: 10px;
   font-weight: 700;
-  background: linear-gradient(135deg, #8B5CF6 0%, #06B6D4 100%);
+  background: linear-gradient(135deg, #3D3DFF 0%, #3D3DFF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1842,7 +1842,7 @@ p,
 
 .cookie-consent-actions .btn-primary,
 .cookie-consent-actions .cookie-accept {
-  background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%);
+  background: linear-gradient(135deg, #3D3DFF 0%, #3D3DFF 100%);
   color: #FFFFFF;
   box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
 }
@@ -1856,7 +1856,7 @@ p,
 .cookie-consent-actions .btn-secondary,
 .cookie-consent-actions .cookie-deny {
   background: rgba(255, 255, 255, 0.1);
-  color: #E2E8F0;
+  color: #D8D6D0;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -1869,7 +1869,7 @@ p,
 
 .cookie-consent-link {
   font-size: 11px;
-  color: #94A3B8;
+  color: #8A8A8A;
   text-decoration: none;
   display: inline-flex;
   gap: 6px;
@@ -1878,7 +1878,7 @@ p,
 }
 
 .cookie-consent-link:hover {
-  color: #8B5CF6;
+  color: #3D3DFF;
   text-decoration: none;
 }
 
@@ -1891,7 +1891,7 @@ p,
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: rgba(255, 255, 255, 0.1);
-  color: #E2E8F0;
+  color: #D8D6D0;
   cursor: pointer;
   display: flex;
   align-items: center;

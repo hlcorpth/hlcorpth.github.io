@@ -5,7 +5,7 @@ Modern, clean, and professional layout
 
 /* About Section Base */
 .about.section {
-  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  background: #EEECEA;
   padding: 100px 0;
   position: relative;
 }
@@ -65,7 +65,7 @@ Modern, clean, and professional layout
 .mini-stat .num {
   font-size: 2rem;
   font-weight: 900;
-  color: #337ab7;
+  color: #111111;
   line-height: 1;
   display: block;
 }
@@ -73,7 +73,7 @@ Modern, clean, and professional layout
 .mini-stat .txt {
   font-size: 0.75rem;
   font-weight: 600;
-  color: #64748b;
+  color: #6B6B6B;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-top: 0.25rem;
@@ -87,8 +87,8 @@ Modern, clean, and professional layout
 
 .about-badge {
   display: inline-block;
-  background: linear-gradient(135deg, rgba(51, 122, 183, 0.1) 0%, rgba(74, 144, 226, 0.1) 100%);
-  color: #337ab7;
+  background: rgba(200,240,58,0.12);
+  color: #3D3DFF;
   padding: 0.5rem 1.25rem;
   border-radius: 25px;
   font-size: 0.875rem;
@@ -102,13 +102,13 @@ Modern, clean, and professional layout
 .about-content h2 {
   font-size: 2.75rem;
   font-weight: 800;
-  color: #1e293b;
+  color: #1A1A1A;
   line-height: 1.2;
   margin-bottom: 1.5rem;
 }
 
 .about-content h2 .highlight {
-  background: linear-gradient(135deg, #337ab7 0%, #4a90e2 100%);
+  background: linear-gradient(135deg, #3D3DFF 0%, #C8F03A 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -116,7 +116,7 @@ Modern, clean, and professional layout
 
 .about-content .intro {
   font-size: 1.125rem;
-  color: #475569;
+  color: #3D3D3D;
   line-height: 1.8;
   margin-bottom: 2rem;
 }
@@ -131,7 +131,7 @@ Modern, clean, and professional layout
 
 .feature-card {
   background: white;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #D8D6D0;
   border-radius: 16px;
   padding: 1.5rem;
   display: flex;
@@ -144,13 +144,13 @@ Modern, clean, and professional layout
 .feature-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 30px rgba(51, 122, 183, 0.15);
-  border-color: #337ab7;
+  border-color: #3D3DFF;
 }
 
 .feature-card .icon {
   width: 45px;
   height: 45px;
-  background: linear-gradient(135deg, #337ab7 0%, #4a90e2 100%);
+  background: linear-gradient(135deg, #3D3DFF 0%, #3D3DFF 100%);
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -163,13 +163,13 @@ Modern, clean, and professional layout
 .feature-card .text h5 {
   font-size: 1rem;
   font-weight: 700;
-  color: #1e293b;
+  color: #1A1A1A;
   margin-bottom: 0.25rem;
 }
 
 .feature-card .text p {
   font-size: 0.875rem;
-  color: #64748b;
+  color: #6B6B6B;
   margin: 0;
   line-height: 1.5;
 }
@@ -182,8 +182,8 @@ Modern, clean, and professional layout
 }
 
 .about-actions .btn-primary {
-  background: linear-gradient(135deg, #337ab7 0%, #4a90e2 100%);
-  color: white;
+  background: #111111;
+  color: #C8F03A;
   padding: 1rem 2rem;
   border-radius: 12px;
   font-weight: 700;
@@ -202,7 +202,7 @@ Modern, clean, and professional layout
 
 .about-actions .btn-secondary {
   background: transparent;
-  color: #337ab7;
+  color: #3D3DFF;
   padding: 1rem 2rem;
   border-radius: 12px;
   font-weight: 700;
@@ -210,13 +210,13 @@ Modern, clean, and professional layout
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
-  border: 2px solid #337ab7;
+  border: 2px solid #3D3DFF;
   transition: all 0.3s ease;
 }
 
 .about-actions .btn-secondary:hover {
-  background: #337ab7;
-  color: white;
+  background: #C8F03A;
+  color: #111111;
   transform: translateY(-3px);
 }
 

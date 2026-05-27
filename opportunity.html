@@ -87,15 +87,14 @@
     <link rel="stylesheet" href="assets/css/modern-clean-theme.css">
     <link rel="stylesheet" href="assets/css/header-fix.css">
     <link rel="stylesheet" href="assets/css/contact-enhancement.css">
-    <link rel="stylesheet" href="assets/css/header-modern.css">
     <link rel="stylesheet" href="assets/css/showcase-header.css">
     <link rel="stylesheet" href="assets/css/about-redesign.css">
-    <link rel="stylesheet" href="assets/css/news-section.css">
     <link rel="stylesheet" href="assets/css/language-switcher.css">
     <link rel="stylesheet" href="assets/css/gradient-theme.css">
     <link rel="stylesheet" href="assets/css/footer-redesign.css">
     <link rel="stylesheet" href="assets/css/join-us.css">
     <link rel="stylesheet" href="assets/css/market-opportunity.css">
+    <link rel="stylesheet" href="assets/css/header-modern.css">
 
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
@@ -172,31 +171,48 @@
                 <i class="fa fa-bars"></i> Menu
             </button>
             <ul class="main-menu">
-                <li><a href="index.html#top">
-                        <span lang="en">Home</span>
-                        <span lang="th">หน้าหลัก</span>
-                    </a></li>
-                <li><a href="index.html#about">
-                        <span lang="en">About</span>
-                        <span lang="th">เกี่ยวกับเรา</span>
-                    </a></li>
-                <li><a href="index.html#services">
-                        <span lang="en">Services</span>
-                        <span lang="th">บริการ</span>
-                    </a></li>
-                <li><a href="opportunity.html" class="active">
-                        <span lang="en">Opportunity</span>
-                        <span lang="th">โอกาสทางธุรกิจ</span>
-                    </a></li>
-                <li><a href="index.html#portfolio">
-                        <span lang="en">Projects</span>
-                        <span lang="th">โปรเจกต์</span>
-                    </a></li>
+                <li><a href="index.html#top"><span lang="en">Home</span><span lang="th">หน้าหลัก</span></a></li>
+                <li><a href="index.html#about"><span lang="en">About</span><span lang="th">เกี่ยวกับเรา</span></a></li>
 
-                <li><a href="index.html#contact">
-                        <span lang="en">Contact</span>
-                        <span lang="th">ติดต่อเรา</span>
-                    </a></li>
+                <!-- Products mega-dropdown -->
+                <li class="has-dropdown">
+                  <a href="index.html#services" class="dropdown-trigger">
+                    <span lang="en">Products</span><span lang="th">ผลิตภัณฑ์</span>
+                    <i class="fa fa-chevron-down dropdown-caret"></i>
+                  </a>
+                  <div class="nav-dropdown">
+                    <div class="dropdown-section-label"><span lang="en">Software Solutions</span><span lang="th">ซอฟต์แวร์โซลูชัน</span></div>
+                    <div class="dropdown-grid">
+                      <a href="index.html#product-hr" class="dropdown-item"><div class="di-icon c-blue"><i class="fa fa-users"></i></div><div class="di-text"><strong><span lang="en">Recruitment Software</span><span lang="th">ระบบสรรหาบุคลากร</span></strong><span><span lang="en">HR &amp; Talent Management</span><span lang="th">HR และการจัดการคน</span></span></div></a>
+                      <a href="index.html#product-ecommerce" class="dropdown-item"><div class="di-icon c-purple"><i class="fa fa-shopping-cart"></i></div><div class="di-text"><strong><span lang="en">E-Commerce System</span><span lang="th">ระบบอีคอมเมิร์ซ</span></strong><span><span lang="en">Online Store &amp; Catalog</span><span lang="th">ร้านค้าออนไลน์</span></span></div></a>
+                      <a href="index.html#product-accounting" class="dropdown-item"><div class="di-icon c-teal"><i class="fa fa-calculator"></i></div><div class="di-text"><strong><span lang="en">ERP / Accounting</span><span lang="th">ERP / บัญชี</span></strong><span><span lang="en">Finance &amp; Tax Automation</span><span lang="th">การเงินและภาษีอัตโนมัติ</span></span></div></a>
+                      <a href="index.html#product-travel" class="dropdown-item"><div class="di-icon c-amber"><i class="fa fa-plane"></i></div><div class="di-text"><strong><span lang="en">Travel Booking Platform</span><span lang="th">แพลตฟอร์มท่องเที่ยว</span></strong><span><span lang="en">Flight, Hotel &amp; Tours</span><span lang="th">เที่ยวบิน โรงแรม ทัวร์</span></span></div></a>
+                      <a href="index.html#product-realestate" class="dropdown-item"><div class="di-icon c-indigo"><i class="fa fa-home"></i></div><div class="di-text"><strong><span lang="en">Real Estate Platform</span><span lang="th">แพลตฟอร์มอสังหาฯ</span></strong><span><span lang="en">Property &amp; Agent CRM</span><span lang="th">ทรัพย์สินและ CRM</span></span></div></a>
+                      <a href="index.html#product-pos" class="dropdown-item"><div class="di-icon c-red"><i class="fa fa-credit-card"></i></div><div class="di-text"><strong><span lang="en">POS System</span><span lang="th">ระบบ POS</span></strong><span><span lang="en">Retail &amp; Inventory</span><span lang="th">ร้านค้าและสต็อก</span></span></div></a>
+                      <a href="index.html#product-docs" class="dropdown-item"><div class="di-icon c-sky"><i class="fa fa-file-text"></i></div><div class="di-text"><strong><span lang="en">Document Management</span><span lang="th">ระบบจัดการเอกสาร</span></strong><span><span lang="en">DMS &amp; Version Control</span><span lang="th">DMS และควบคุมเวอร์ชัน</span></span></div></a>
+                      <a href="index.html#product-workflow" class="dropdown-item"><div class="di-icon c-green"><i class="fa fa-sitemap"></i></div><div class="di-text"><strong><span lang="en">Workflow Automation</span><span lang="th">ระบบ Workflow</span></strong><span><span lang="en">Approvals &amp; SLA Tracking</span><span lang="th">อนุมัติและติดตาม SLA</span></span></div></a>
+                    </div>
+                    <div class="dropdown-footer">
+                      <a href="index.html#showcase" class="df-link df-outline"><i class="fa fa-th-large"></i><span lang="en">All Products</span><span lang="th">ดูทั้งหมด</span></a>
+                      <a href="index.html#contact" class="df-link df-primary"><i class="fa fa-comments"></i><span lang="en">Free Demo</span><span lang="th">ทดลองใช้ฟรี</span></a>
+                    </div>
+                  </div>
+                  <div class="mobile-sub-menu">
+                    <a href="index.html#product-hr" class="mobile-sub-item"><div class="mobile-sub-icon di-icon c-blue"><i class="fa fa-users"></i></div><div class="mobile-sub-text"><strong><span lang="en">Recruitment Software</span><span lang="th">ระบบสรรหาบุคลากร</span></strong><em>HR &amp; Talent</em></div></a>
+                    <a href="index.html#product-ecommerce" class="mobile-sub-item"><div class="mobile-sub-icon di-icon c-purple"><i class="fa fa-shopping-cart"></i></div><div class="mobile-sub-text"><strong><span lang="en">E-Commerce System</span><span lang="th">ระบบอีคอมเมิร์ซ</span></strong><em>Online Store</em></div></a>
+                    <a href="index.html#product-accounting" class="mobile-sub-item"><div class="mobile-sub-icon di-icon c-teal"><i class="fa fa-calculator"></i></div><div class="mobile-sub-text"><strong><span lang="en">ERP / Accounting</span><span lang="th">ERP / บัญชี</span></strong><em>Finance &amp; Tax</em></div></a>
+                    <a href="index.html#product-travel" class="mobile-sub-item"><div class="mobile-sub-icon di-icon c-amber"><i class="fa fa-plane"></i></div><div class="mobile-sub-text"><strong><span lang="en">Travel Platform</span><span lang="th">แพลตฟอร์มท่องเที่ยว</span></strong><em>Flight &amp; Hotel</em></div></a>
+                    <a href="index.html#product-realestate" class="mobile-sub-item"><div class="mobile-sub-icon di-icon c-indigo"><i class="fa fa-home"></i></div><div class="mobile-sub-text"><strong><span lang="en">Real Estate</span><span lang="th">แพลตฟอร์มอสังหาฯ</span></strong><em>Property CRM</em></div></a>
+                    <a href="index.html#product-pos" class="mobile-sub-item"><div class="mobile-sub-icon di-icon c-red"><i class="fa fa-credit-card"></i></div><div class="mobile-sub-text"><strong><span lang="en">POS System</span><span lang="th">ระบบ POS</span></strong><em>Retail &amp; Inventory</em></div></a>
+                    <a href="index.html#product-docs" class="mobile-sub-item"><div class="mobile-sub-icon di-icon c-sky"><i class="fa fa-file-text"></i></div><div class="mobile-sub-text"><strong><span lang="en">Document Mgmt</span><span lang="th">จัดการเอกสาร</span></strong><em>DMS &amp; Versioning</em></div></a>
+                    <a href="index.html#product-workflow" class="mobile-sub-item"><div class="mobile-sub-icon di-icon c-green"><i class="fa fa-sitemap"></i></div><div class="mobile-sub-text"><strong><span lang="en">Workflow Automation</span><span lang="th">ระบบ Workflow</span></strong><em>Approvals &amp; SLA</em></div></a>
+                  </div>
+                </li>
+
+                <li><a href="opportunity.html" class="active"><span lang="en">Opportunity</span><span lang="th">โอกาสทางธุรกิจ</span></a></li>
+                <li><a href="packages.html" class="nav-promo"><i class="fa fa-fire"></i><span lang="en">Promotion</span><span lang="th">โปรโมชัน</span><span class="nav-hot-badge">HOT</span></a></li>
+                <li><a href="index.html#portfolio"><span lang="en">Projects</span><span lang="th">โปรเจกต์</span></a></li>
+                <li><a href="index.html#contact"><span lang="en">Contact</span><span lang="th">ติดต่อเรา</span></a></li>
             </ul>
             <div class="header-actions">
                 <a href="index.html#contact" class="btn-cta">
@@ -606,33 +622,33 @@
                             </div>
                         </div>
 
-                        <!-- Services -->
+                        <!-- Products -->
                         <div class="footer-section">
-                            <h6>
-                                <span lang="en">Services</span>
-                                <span lang="th">บริการ</span>
-                            </h6>
+                            <h6><span lang="en">Products</span><span lang="th">ผลิตภัณฑ์</span></h6>
                             <ul class="footer-links">
-                                <li><a href="index.html#services"><span lang="en">IT Solutions &amp; Software Dev</span><span lang="th">ไอทีโซลูชันและพัฒนาซอฟต์แวร์</span></a></li>
-                                <li><a href="index.html#services"><span lang="en">Mobile Applications</span><span lang="th">แอปพลิเคชันมือถือ</span></a></li>
-                                <li><a href="index.html#services"><span lang="en">DevOps Solution</span><span lang="th">DevOps โซลูชัน</span></a></li>
-                                <li><a href="opportunity.html"><span lang="en">IT Outsourcing</span><span lang="th">จัดหาบุคลากรไอที</span></a></li>
-                                <li><a href="index.html#services"><span lang="en">Digital Marketing</span><span lang="th">การตลาดดิจิทัล</span></a></li>
+                                <li><a href="index.html#product-hr"><span lang="en">Recruitment Software</span><span lang="th">ระบบสรรหาบุคลากร</span></a></li>
+                                <li><a href="index.html#product-ecommerce"><span lang="en">E-Commerce System</span><span lang="th">ระบบอีคอมเมิร์ซ</span></a></li>
+                                <li><a href="index.html#product-accounting"><span lang="en">ERP / Accounting</span><span lang="th">ERP / บัญชี</span></a></li>
+                                <li><a href="index.html#product-travel"><span lang="en">Travel Platform</span><span lang="th">แพลตฟอร์มท่องเที่ยว</span></a></li>
+                                <li><a href="index.html#product-realestate"><span lang="en">Real Estate Platform</span><span lang="th">แพลตฟอร์มอสังหาฯ</span></a></li>
+                                <li><a href="index.html#product-pos"><span lang="en">POS System</span><span lang="th">ระบบ POS</span></a></li>
+                                <li><a href="index.html#product-docs"><span lang="en">Document Management</span><span lang="th">จัดการเอกสาร</span></a></li>
+                                <li><a href="index.html#product-workflow"><span lang="en">Workflow Automation</span><span lang="th">ระบบ Workflow</span></a></li>
                             </ul>
                         </div>
 
                         <!-- Company -->
                         <div class="footer-section">
-                            <h6>
-                                <span lang="en">Company</span>
-                                <span lang="th">บริษัท</span>
-                            </h6>
+                            <h6><span lang="en">Company</span><span lang="th">บริษัท</span></h6>
                             <ul class="footer-links">
                                 <li><a href="index.html#about"><span lang="en">About Us</span><span lang="th">เกี่ยวกับเรา</span></a></li>
                                 <li><a href="index.html#portfolio"><span lang="en">Our Projects</span><span lang="th">ผลงานของเรา</span></a></li>
+                                <li><a href="index.html#service-web"><span lang="en">Web Development</span><span lang="th">พัฒนาเว็บ</span></a></li>
+                                <li><a href="index.html#service-mobile"><span lang="en">Mobile Apps</span><span lang="th">แอปมือถือ</span></a></li>
+                                <li><a href="index.html#service-devops"><span lang="en">DevOps Solution</span><span lang="th">DevOps โซลูชัน</span></a></li>
                                 <li><a href="opportunity.html"><span lang="en">Business Opportunity</span><span lang="th">โอกาสทางธุรกิจ</span></a></li>
+                                <li><a href="packages.html"><span lang="en">Pricing &amp; Promotion</span><span lang="th">ราคาและโปรโมชัน</span></a></li>
                                 <li><a href="index.html#contact"><span lang="en">Contact Us</span><span lang="th">ติดต่อเรา</span></a></li>
-                                <li><a href="index.html#contact"><span lang="en">Free Consult</span><span lang="th">ปรึกษาฟรี</span></a></li>
                             </ul>
                         </div>
 
