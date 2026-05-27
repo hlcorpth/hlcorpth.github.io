@@ -89,10 +89,11 @@ Applies the beautiful gradient colors from products page to the entire site
 }
 
 .main-banner .gradient-text {
-    background: linear-gradient(135deg, #C8F03A, #A8D020) !important;
-    -webkit-background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
-    background-clip: text !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+    background-clip: unset !important;
+    color: #3D3DFF !important;
 }
 
 /* Buttons with Gradient */
@@ -165,7 +166,7 @@ Applies the beautiful gradient colors from products page to the entire site
 /* Section Headings with Gradient */
 .section-heading h6,
 .section-heading .gradient-text {
-    background: linear-gradient(135deg, #3D3DFF 0%, #C8F03A 100%) !important;
+    background: linear-gradient(135deg, #3D3DFF 0%, #2828E0 100%) !important;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
     background-clip: text !important;
