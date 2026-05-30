@@ -13,7 +13,6 @@ Disallow: /private/
 
 # Allow important pages
 Allow: /assets/
-Allow: /vendor/
 
 # Specific bot instructions
 User-agent: Googlebot
