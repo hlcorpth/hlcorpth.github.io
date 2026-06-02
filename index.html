@@ -673,170 +673,331 @@
         </p>
       </div>
 
-      <div class="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      <!-- Sliding record-style carousel (auto left→right, hover to pause) -->
+      <div class="marquee marquee-mask mt-16 overflow-hidden">
+        <div class="marquee-track flex gap-6" style="animation-duration:55s">
 
-        <!-- 1. HR Recruitment -->
-        <article class="group flex flex-col overflow-hidden rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-1 transition-all duration-300">
-          <div class="relative overflow-hidden aspect-[16/10] bg-slate-100">
-            <img src="assets/images/hlcorp-hr-recruitment.png" alt="HL Corp HR Recruitment Platform" loading="lazy"
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-            <span class="absolute top-3 left-3 rounded-full bg-white/90 backdrop-blur px-3 py-1 text-xs font-semibold text-blue-700 shadow-sm">HR Tech</span>
-          </div>
-          <div class="flex flex-col flex-1 p-6">
-            <h3 class="text-lg font-bold text-slate-900">HL Corp HR Recruitment Platform</h3>
-            <p class="mt-2 text-sm text-slate-600 leading-relaxed flex-1">
-              Modern bilingual recruitment hub with applicant tracking, employer branding, and integrated interview scheduling.
-            </p>
-            <div class="mt-4 flex flex-wrap gap-2">
-              <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Next.js</span>
-              <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Tailwind CSS</span>
-              <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Firebase</span>
+          <!-- 1. HR Recruitment -->
+          <article class="group shrink-0 w-80 flex flex-col overflow-hidden rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-1 transition-all duration-300">
+            <div class="relative overflow-hidden aspect-[16/10] bg-slate-100">
+              <img src="assets/images/hlcorp-hr-recruitment.png" alt="HL Corp HR Recruitment Platform" loading="lazy"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <span class="absolute top-3 left-3 rounded-full bg-white/90 backdrop-blur px-3 py-1 text-xs font-semibold text-blue-700 shadow-sm">HR Tech</span>
             </div>
-          </div>
-        </article>
-
-        <!-- 2. E-commerce -->
-        <article class="group flex flex-col overflow-hidden rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-1 transition-all duration-300">
-          <div class="relative overflow-hidden aspect-[16/10] bg-slate-100">
-            <img src="assets/images/webe-commerce.png" alt="WebE Commerce Experience Platform" loading="lazy"
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-            <span class="absolute top-3 left-3 rounded-full bg-white/90 backdrop-blur px-3 py-1 text-xs font-semibold text-blue-700 shadow-sm">E-commerce</span>
-          </div>
-          <div class="flex flex-col flex-1 p-6">
-            <h3 class="text-lg font-bold text-slate-900">WebE Commerce Experience Platform</h3>
-            <p class="mt-2 text-sm text-slate-600 leading-relaxed flex-1">
-              Full-featured storefront with dynamic catalogs, promotion management, and conversion-focused UI blocks.
-            </p>
-            <div class="mt-4 flex flex-wrap gap-2">
-              <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Vue.js</span>
-              <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Vite</span>
-              <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Headless CMS</span>
+            <div class="flex flex-col flex-1 p-6">
+              <h3 class="text-lg font-bold text-slate-900">HL Corp HR Recruitment Platform</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-relaxed flex-1">
+                Modern bilingual recruitment hub with applicant tracking, employer branding, and integrated interview scheduling.
+              </p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Next.js</span>
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Tailwind CSS</span>
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Firebase</span>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
 
-        <!-- 3. Accounting -->
-        <article class="group flex flex-col overflow-hidden rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-1 transition-all duration-300">
-          <div class="relative overflow-hidden aspect-[16/10] bg-slate-100">
-            <img src="assets/images/modern-accounting-system.png" alt="Modern Accounting Management System" loading="lazy"
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-            <span class="absolute top-3 left-3 rounded-full bg-white/90 backdrop-blur px-3 py-1 text-xs font-semibold text-blue-700 shadow-sm">Finance</span>
-          </div>
-          <div class="flex flex-col flex-1 p-6">
-            <h3 class="text-lg font-bold text-slate-900">Modern Accounting Management System</h3>
-            <p class="mt-2 text-sm text-slate-600 leading-relaxed flex-1">
-              Multi-company accounting with automated bookkeeping, tax calculations, payroll, and real-time financial dashboards.
-            </p>
-            <div class="mt-4 flex flex-wrap gap-2">
-              <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Vue.js</span>
-              <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Laravel</span>
-              <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">MySQL</span>
+          <!-- 2. E-commerce -->
+          <article class="group shrink-0 w-80 flex flex-col overflow-hidden rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-1 transition-all duration-300">
+            <div class="relative overflow-hidden aspect-[16/10] bg-slate-100">
+              <img src="assets/images/webe-commerce.png" alt="WebE Commerce Experience Platform" loading="lazy"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <span class="absolute top-3 left-3 rounded-full bg-white/90 backdrop-blur px-3 py-1 text-xs font-semibold text-blue-700 shadow-sm">E-commerce</span>
             </div>
-          </div>
-        </article>
-
-        <!-- 4. Travel -->
-        <article class="group flex flex-col overflow-hidden rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-1 transition-all duration-300">
-          <div class="relative overflow-hidden aspect-[16/10] bg-slate-100">
-            <img src="assets/images/travel-hub.png" alt="Online Travel Agency Platform" loading="lazy"
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-            <span class="absolute top-3 left-3 rounded-full bg-white/90 backdrop-blur px-3 py-1 text-xs font-semibold text-blue-700 shadow-sm">Travel Tech</span>
-          </div>
-          <div class="flex flex-col flex-1 p-6">
-            <h3 class="text-lg font-bold text-slate-900">Online Travel Agency Platform</h3>
-            <p class="mt-2 text-sm text-slate-600 leading-relaxed flex-1">
-              Real-time flight &amp; hotel search, AI-powered recommendations, dynamic pricing, and multi-currency payments.
-            </p>
-            <div class="mt-4 flex flex-wrap gap-2">
-              <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">React</span>
-              <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Node.js</span>
-              <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">MongoDB</span>
+            <div class="flex flex-col flex-1 p-6">
+              <h3 class="text-lg font-bold text-slate-900">WebE Commerce Experience Platform</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-relaxed flex-1">
+                Full-featured storefront with dynamic catalogs, promotion management, and conversion-focused UI blocks.
+              </p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Vue.js</span>
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Vite</span>
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Headless CMS</span>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
 
-        <!-- 5. Real Estate -->
-        <article class="group flex flex-col overflow-hidden rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-1 transition-all duration-300">
-          <div class="relative overflow-hidden aspect-[16/10] bg-slate-100">
-            <img src="assets/images/real_eastate2025.png" alt="Real Estate Management System" loading="lazy"
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-            <span class="absolute top-3 left-3 rounded-full bg-white/90 backdrop-blur px-3 py-1 text-xs font-semibold text-blue-700 shadow-sm">Real Estate</span>
-          </div>
-          <div class="flex flex-col flex-1 p-6">
-            <h3 class="text-lg font-bold text-slate-900">Real Estate Management System</h3>
-            <p class="mt-2 text-sm text-slate-600 leading-relaxed flex-1">
-              Property management with virtual tours via WebRTC, automated valuation, lead CRM, and agent performance dashboards.
-            </p>
-            <div class="mt-4 flex flex-wrap gap-2">
-              <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Vue.js</span>
-              <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Laravel</span>
-              <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">WebRTC</span>
+          <!-- 3. Accounting -->
+          <article class="group shrink-0 w-80 flex flex-col overflow-hidden rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-1 transition-all duration-300">
+            <div class="relative overflow-hidden aspect-[16/10] bg-slate-100">
+              <img src="assets/images/modern-accounting-system.png" alt="Modern Accounting Management System" loading="lazy"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <span class="absolute top-3 left-3 rounded-full bg-white/90 backdrop-blur px-3 py-1 text-xs font-semibold text-blue-700 shadow-sm">Finance</span>
             </div>
-          </div>
-        </article>
-
-        <!-- 6. POS -->
-        <article class="group flex flex-col overflow-hidden rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-1 transition-all duration-300">
-          <div class="relative overflow-hidden aspect-[16/10] bg-slate-100">
-            <img src="assets/images/pos-image-02.jpg" alt="Stock Management & Point of Sale System" loading="lazy"
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-            <span class="absolute top-3 left-3 rounded-full bg-white/90 backdrop-blur px-3 py-1 text-xs font-semibold text-blue-700 shadow-sm">Retail</span>
-          </div>
-          <div class="flex flex-col flex-1 p-6">
-            <h3 class="text-lg font-bold text-slate-900">Stock Management &amp; POS System</h3>
-            <p class="mt-2 text-sm text-slate-600 leading-relaxed flex-1">
-              End-to-end retail POS with barcode scanning, multi-payment processing, real-time inventory alerts, and sales analytics.
-            </p>
-            <div class="mt-4 flex flex-wrap gap-2">
-              <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">React</span>
-              <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Node.js</span>
-              <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">PostgreSQL</span>
-              <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Stripe</span>
+            <div class="flex flex-col flex-1 p-6">
+              <h3 class="text-lg font-bold text-slate-900">Modern Accounting Management System</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-relaxed flex-1">
+                Multi-company accounting with automated bookkeeping, tax calculations, payroll, and real-time financial dashboards.
+              </p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Vue.js</span>
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Laravel</span>
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">MySQL</span>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
 
-        <!-- 7. Construction -->
-        <article class="group flex flex-col overflow-hidden rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-1 transition-all duration-300">
-          <div class="relative overflow-hidden aspect-[16/10] bg-slate-100">
-            <img src="assets/images/construction-claim-sys02.jpg" alt="Construction Claim Management System" loading="lazy"
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-            <span class="absolute top-3 left-3 rounded-full bg-white/90 backdrop-blur px-3 py-1 text-xs font-semibold text-blue-700 shadow-sm">Construction</span>
-          </div>
-          <div class="flex flex-col flex-1 p-6">
-            <h3 class="text-lg font-bold text-slate-900">Construction Claim Management System</h3>
-            <p class="mt-2 text-sm text-slate-600 leading-relaxed flex-1">
-              Specialized platform for claims, change orders, and document control with multi-step approval workflows and cost tracking.
-            </p>
-            <div class="mt-4 flex flex-wrap gap-2">
-              <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Vue.js</span>
-              <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Laravel</span>
-              <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">AWS S3</span>
+          <!-- 4. Travel -->
+          <article class="group shrink-0 w-80 flex flex-col overflow-hidden rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-1 transition-all duration-300">
+            <div class="relative overflow-hidden aspect-[16/10] bg-slate-100">
+              <img src="assets/images/travel-hub.png" alt="Online Travel Agency Platform" loading="lazy"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <span class="absolute top-3 left-3 rounded-full bg-white/90 backdrop-blur px-3 py-1 text-xs font-semibold text-blue-700 shadow-sm">Travel Tech</span>
             </div>
-          </div>
-        </article>
-
-        <!-- 8. Approval Flow -->
-        <article class="group flex flex-col overflow-hidden rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-1 transition-all duration-300">
-          <div class="relative overflow-hidden aspect-[16/10] bg-slate-100">
-            <img src="assets/images/approval-flow-sys01.jpg" alt="Approval Flow Process System" loading="lazy"
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-            <span class="absolute top-3 left-3 rounded-full bg-white/90 backdrop-blur px-3 py-1 text-xs font-semibold text-blue-700 shadow-sm">Workflow</span>
-          </div>
-          <div class="flex flex-col flex-1 p-6">
-            <h3 class="text-lg font-bold text-slate-900">Approval Flow Process System</h3>
-            <p class="mt-2 text-sm text-slate-600 leading-relaxed flex-1">
-              Enterprise workflow engine for expense, PO, and document approvals with multi-level routing, SLA tracking, and full audit trails.
-            </p>
-            <div class="mt-4 flex flex-wrap gap-2">
-              <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Angular</span>
-              <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Spring Boot</span>
-              <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Redis</span>
+            <div class="flex flex-col flex-1 p-6">
+              <h3 class="text-lg font-bold text-slate-900">Online Travel Agency Platform</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-relaxed flex-1">
+                Real-time flight &amp; hotel search, AI-powered recommendations, dynamic pricing, and multi-currency payments.
+              </p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">React</span>
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Node.js</span>
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">MongoDB</span>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
 
+          <!-- 5. Real Estate -->
+          <article class="group shrink-0 w-80 flex flex-col overflow-hidden rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-1 transition-all duration-300">
+            <div class="relative overflow-hidden aspect-[16/10] bg-slate-100">
+              <img src="assets/images/real_eastate2025.png" alt="Real Estate Management System" loading="lazy"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <span class="absolute top-3 left-3 rounded-full bg-white/90 backdrop-blur px-3 py-1 text-xs font-semibold text-blue-700 shadow-sm">Real Estate</span>
+            </div>
+            <div class="flex flex-col flex-1 p-6">
+              <h3 class="text-lg font-bold text-slate-900">Real Estate Management System</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-relaxed flex-1">
+                Property management with virtual tours via WebRTC, automated valuation, lead CRM, and agent performance dashboards.
+              </p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Vue.js</span>
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Laravel</span>
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">WebRTC</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. POS -->
+          <article class="group shrink-0 w-80 flex flex-col overflow-hidden rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-1 transition-all duration-300">
+            <div class="relative overflow-hidden aspect-[16/10] bg-slate-100">
+              <img src="assets/images/pos-image-02.jpg" alt="Stock Management & Point of Sale System" loading="lazy"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <span class="absolute top-3 left-3 rounded-full bg-white/90 backdrop-blur px-3 py-1 text-xs font-semibold text-blue-700 shadow-sm">Retail</span>
+            </div>
+            <div class="flex flex-col flex-1 p-6">
+              <h3 class="text-lg font-bold text-slate-900">Stock Management &amp; POS System</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-relaxed flex-1">
+                End-to-end retail POS with barcode scanning, multi-payment processing, real-time inventory alerts, and sales analytics.
+              </p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">React</span>
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Node.js</span>
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">PostgreSQL</span>
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Stripe</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7. Construction -->
+          <article class="group shrink-0 w-80 flex flex-col overflow-hidden rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-1 transition-all duration-300">
+            <div class="relative overflow-hidden aspect-[16/10] bg-slate-100">
+              <img src="assets/images/construction-claim-sys02.jpg" alt="Construction Claim Management System" loading="lazy"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <span class="absolute top-3 left-3 rounded-full bg-white/90 backdrop-blur px-3 py-1 text-xs font-semibold text-blue-700 shadow-sm">Construction</span>
+            </div>
+            <div class="flex flex-col flex-1 p-6">
+              <h3 class="text-lg font-bold text-slate-900">Construction Claim Management System</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-relaxed flex-1">
+                Specialized platform for claims, change orders, and document control with multi-step approval workflows and cost tracking.
+              </p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Vue.js</span>
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Laravel</span>
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">AWS S3</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 8. Approval Flow -->
+          <article class="group shrink-0 w-80 flex flex-col overflow-hidden rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-1 transition-all duration-300">
+            <div class="relative overflow-hidden aspect-[16/10] bg-slate-100">
+              <img src="assets/images/approval-flow-sys01.jpg" alt="Approval Flow Process System" loading="lazy"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <span class="absolute top-3 left-3 rounded-full bg-white/90 backdrop-blur px-3 py-1 text-xs font-semibold text-blue-700 shadow-sm">Workflow</span>
+            </div>
+            <div class="flex flex-col flex-1 p-6">
+              <h3 class="text-lg font-bold text-slate-900">Approval Flow Process System</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-relaxed flex-1">
+                Enterprise workflow engine for expense, PO, and document approvals with multi-level routing, SLA tracking, and full audit trails.
+              </p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Angular</span>
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Spring Boot</span>
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Redis</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- ===== Duplicate set for seamless loop ===== -->
+          <article aria-hidden="true" class="group shrink-0 w-80 flex flex-col overflow-hidden rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-1 transition-all duration-300">
+            <div class="relative overflow-hidden aspect-[16/10] bg-slate-100">
+              <img src="assets/images/hlcorp-hr-recruitment.png" alt="" loading="lazy"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <span class="absolute top-3 left-3 rounded-full bg-white/90 backdrop-blur px-3 py-1 text-xs font-semibold text-blue-700 shadow-sm">HR Tech</span>
+            </div>
+            <div class="flex flex-col flex-1 p-6">
+              <h3 class="text-lg font-bold text-slate-900">HL Corp HR Recruitment Platform</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-relaxed flex-1">
+                Modern bilingual recruitment hub with applicant tracking, employer branding, and integrated interview scheduling.
+              </p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Next.js</span>
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Tailwind CSS</span>
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Firebase</span>
+              </div>
+            </div>
+          </article>
+
+          <article aria-hidden="true" class="group shrink-0 w-80 flex flex-col overflow-hidden rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-1 transition-all duration-300">
+            <div class="relative overflow-hidden aspect-[16/10] bg-slate-100">
+              <img src="assets/images/webe-commerce.png" alt="" loading="lazy"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <span class="absolute top-3 left-3 rounded-full bg-white/90 backdrop-blur px-3 py-1 text-xs font-semibold text-blue-700 shadow-sm">E-commerce</span>
+            </div>
+            <div class="flex flex-col flex-1 p-6">
+              <h3 class="text-lg font-bold text-slate-900">WebE Commerce Experience Platform</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-relaxed flex-1">
+                Full-featured storefront with dynamic catalogs, promotion management, and conversion-focused UI blocks.
+              </p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Vue.js</span>
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Vite</span>
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Headless CMS</span>
+              </div>
+            </div>
+          </article>
+
+          <article aria-hidden="true" class="group shrink-0 w-80 flex flex-col overflow-hidden rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-1 transition-all duration-300">
+            <div class="relative overflow-hidden aspect-[16/10] bg-slate-100">
+              <img src="assets/images/modern-accounting-system.png" alt="" loading="lazy"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <span class="absolute top-3 left-3 rounded-full bg-white/90 backdrop-blur px-3 py-1 text-xs font-semibold text-blue-700 shadow-sm">Finance</span>
+            </div>
+            <div class="flex flex-col flex-1 p-6">
+              <h3 class="text-lg font-bold text-slate-900">Modern Accounting Management System</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-relaxed flex-1">
+                Multi-company accounting with automated bookkeeping, tax calculations, payroll, and real-time financial dashboards.
+              </p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Vue.js</span>
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Laravel</span>
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">MySQL</span>
+              </div>
+            </div>
+          </article>
+
+          <article aria-hidden="true" class="group shrink-0 w-80 flex flex-col overflow-hidden rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-1 transition-all duration-300">
+            <div class="relative overflow-hidden aspect-[16/10] bg-slate-100">
+              <img src="assets/images/travel-hub.png" alt="" loading="lazy"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <span class="absolute top-3 left-3 rounded-full bg-white/90 backdrop-blur px-3 py-1 text-xs font-semibold text-blue-700 shadow-sm">Travel Tech</span>
+            </div>
+            <div class="flex flex-col flex-1 p-6">
+              <h3 class="text-lg font-bold text-slate-900">Online Travel Agency Platform</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-relaxed flex-1">
+                Real-time flight &amp; hotel search, AI-powered recommendations, dynamic pricing, and multi-currency payments.
+              </p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">React</span>
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Node.js</span>
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">MongoDB</span>
+              </div>
+            </div>
+          </article>
+
+          <article aria-hidden="true" class="group shrink-0 w-80 flex flex-col overflow-hidden rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-1 transition-all duration-300">
+            <div class="relative overflow-hidden aspect-[16/10] bg-slate-100">
+              <img src="assets/images/real_eastate2025.png" alt="" loading="lazy"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <span class="absolute top-3 left-3 rounded-full bg-white/90 backdrop-blur px-3 py-1 text-xs font-semibold text-blue-700 shadow-sm">Real Estate</span>
+            </div>
+            <div class="flex flex-col flex-1 p-6">
+              <h3 class="text-lg font-bold text-slate-900">Real Estate Management System</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-relaxed flex-1">
+                Property management with virtual tours via WebRTC, automated valuation, lead CRM, and agent performance dashboards.
+              </p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Vue.js</span>
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Laravel</span>
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">WebRTC</span>
+              </div>
+            </div>
+          </article>
+
+          <article aria-hidden="true" class="group shrink-0 w-80 flex flex-col overflow-hidden rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-1 transition-all duration-300">
+            <div class="relative overflow-hidden aspect-[16/10] bg-slate-100">
+              <img src="assets/images/pos-image-02.jpg" alt="" loading="lazy"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <span class="absolute top-3 left-3 rounded-full bg-white/90 backdrop-blur px-3 py-1 text-xs font-semibold text-blue-700 shadow-sm">Retail</span>
+            </div>
+            <div class="flex flex-col flex-1 p-6">
+              <h3 class="text-lg font-bold text-slate-900">Stock Management &amp; POS System</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-relaxed flex-1">
+                End-to-end retail POS with barcode scanning, multi-payment processing, real-time inventory alerts, and sales analytics.
+              </p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">React</span>
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Node.js</span>
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">PostgreSQL</span>
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Stripe</span>
+              </div>
+            </div>
+          </article>
+
+          <article aria-hidden="true" class="group shrink-0 w-80 flex flex-col overflow-hidden rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-1 transition-all duration-300">
+            <div class="relative overflow-hidden aspect-[16/10] bg-slate-100">
+              <img src="assets/images/construction-claim-sys02.jpg" alt="" loading="lazy"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <span class="absolute top-3 left-3 rounded-full bg-white/90 backdrop-blur px-3 py-1 text-xs font-semibold text-blue-700 shadow-sm">Construction</span>
+            </div>
+            <div class="flex flex-col flex-1 p-6">
+              <h3 class="text-lg font-bold text-slate-900">Construction Claim Management System</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-relaxed flex-1">
+                Specialized platform for claims, change orders, and document control with multi-step approval workflows and cost tracking.
+              </p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Vue.js</span>
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Laravel</span>
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">AWS S3</span>
+              </div>
+            </div>
+          </article>
+
+          <article aria-hidden="true" class="group shrink-0 w-80 flex flex-col overflow-hidden rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-1 transition-all duration-300">
+            <div class="relative overflow-hidden aspect-[16/10] bg-slate-100">
+              <img src="assets/images/approval-flow-sys01.jpg" alt="" loading="lazy"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <span class="absolute top-3 left-3 rounded-full bg-white/90 backdrop-blur px-3 py-1 text-xs font-semibold text-blue-700 shadow-sm">Workflow</span>
+            </div>
+            <div class="flex flex-col flex-1 p-6">
+              <h3 class="text-lg font-bold text-slate-900">Approval Flow Process System</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-relaxed flex-1">
+                Enterprise workflow engine for expense, PO, and document approvals with multi-level routing, SLA tracking, and full audit trails.
+              </p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Angular</span>
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Spring Boot</span>
+                <span class="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">Redis</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
       </div>
+
+      <p class="mt-6 text-center text-sm text-slate-400">
+        <i class="fa-solid fa-hand-pointer"></i> Hover to pause the slider
+      </p>
 
       <div class="mt-12 text-center">
         <a href="#contact"
@@ -958,7 +1119,7 @@
       <div class="marquee-track flex items-center gap-4 sm:gap-6">
         <!-- Logo set (duplicated for seamless loop) -->
         <div class="flex flex-col items-center justify-center gap-2 shrink-0 w-24 sm:w-28"><i class="devicon-react-original colored text-4xl sm:text-5xl"></i><span class="text-xs font-medium text-slate-500">React</span></div>
-        <div class="flex flex-col items-center justify-center gap-2 shrink-0 w-24 sm:w-28"><i class="devicon-nextjs-original text-4xl sm:text-5xl text-slate-900"></i><span class="text-xs font-medium text-slate-500">Next.js</span></div>
+        <div class="flex flex-col items-center justify-center gap-2 shrink-0 w-24 sm:w-28"><i class="devicon-nextjs-plain text-4xl sm:text-5xl text-slate-900"></i><span class="text-xs font-medium text-slate-500">Next.js</span></div>
         <div class="flex flex-col items-center justify-center gap-2 shrink-0 w-24 sm:w-28"><i class="devicon-vuejs-plain colored text-4xl sm:text-5xl"></i><span class="text-xs font-medium text-slate-500">Vue.js</span></div>
         <div class="flex flex-col items-center justify-center gap-2 shrink-0 w-24 sm:w-28"><i class="devicon-angularjs-plain colored text-4xl sm:text-5xl"></i><span class="text-xs font-medium text-slate-500">Angular</span></div>
         <div class="flex flex-col items-center justify-center gap-2 shrink-0 w-24 sm:w-28"><i class="devicon-nodejs-plain colored text-4xl sm:text-5xl"></i><span class="text-xs font-medium text-slate-500">Node.js</span></div>
@@ -977,7 +1138,7 @@
 
         <!-- Duplicate set -->
         <div class="flex flex-col items-center justify-center gap-2 shrink-0 w-24 sm:w-28" aria-hidden="true"><i class="devicon-react-original colored text-4xl sm:text-5xl"></i><span class="text-xs font-medium text-slate-500">React</span></div>
-        <div class="flex flex-col items-center justify-center gap-2 shrink-0 w-24 sm:w-28" aria-hidden="true"><i class="devicon-nextjs-original text-4xl sm:text-5xl text-slate-900"></i><span class="text-xs font-medium text-slate-500">Next.js</span></div>
+        <div class="flex flex-col items-center justify-center gap-2 shrink-0 w-24 sm:w-28" aria-hidden="true"><i class="devicon-nextjs-plain text-4xl sm:text-5xl text-slate-900"></i><span class="text-xs font-medium text-slate-500">Next.js</span></div>
         <div class="flex flex-col items-center justify-center gap-2 shrink-0 w-24 sm:w-28" aria-hidden="true"><i class="devicon-vuejs-plain colored text-4xl sm:text-5xl"></i><span class="text-xs font-medium text-slate-500">Vue.js</span></div>
         <div class="flex flex-col items-center justify-center gap-2 shrink-0 w-24 sm:w-28" aria-hidden="true"><i class="devicon-angularjs-plain colored text-4xl sm:text-5xl"></i><span class="text-xs font-medium text-slate-500">Angular</span></div>
         <div class="flex flex-col items-center justify-center gap-2 shrink-0 w-24 sm:w-28" aria-hidden="true"><i class="devicon-nodejs-plain colored text-4xl sm:text-5xl"></i><span class="text-xs font-medium text-slate-500">Node.js</span></div>
